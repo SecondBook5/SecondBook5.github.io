@@ -66,7 +66,7 @@ career-profile:
   summary: |
     I am a computational biologist working at the intersection of spatial regulatory biology, systems immunology, and cell-state dynamics. My central scientific interest is how regulatory programs—including transcription factors, RNA-binding proteins, microRNAs, and chromatin architecture—interact with immune and tissue context to determine which cellular states emerge, persist, transition, or fail in disease.
 
-    I am an M.S. candidate in Bioinformatics at Johns Hopkins University and a Graduate Research Assistant in the [Advanced Computing and Oncology Laboratory](https://www.mskcc.org/research-areas/labs/members/abraham-aj-book) at Memorial Sloan Kettering Cancer Center. My thesis project, [StageBridge](https://github.com/SecondBook5/StageBridge), develops niche-conditioned models of cell-state transition from cross-sectional single-cell and spatial transcriptomic data. In parallel, my work at MSK integrates quantitative imaging, immune profiling, tumor genomics, circulating biomarkers, and clinical outcomes to study how host biology shapes treatment response and disease trajectory.
+    I hold an M.S. in Bioinformatics from Johns Hopkins University and am a Graduate Research Assistant in the [Advanced Computing and Oncology Laboratory](https://www.mskcc.org/research-areas/labs/members/abraham-aj-book) at Memorial Sloan Kettering Cancer Center. My master's thesis, *StageBridge: Niche-Conditioned Regulatory Transport in Premalignant Epithelial Progression*, developed [CRRT-UDE](https://github.com/SecondBook5/crrt-ude), a structured universal differential equation framework for estimating how local tissue ecology alters progression-aligned regulatory transport beyond intrinsic epithelial state. The framework was evaluated in lung adenocarcinoma precursor progression and pancreatic intraepithelial neoplasia. In parallel, my work at MSK integrates quantitative imaging, immune profiling, tumor genomics, circulating biomarkers, and clinical outcomes to study how host biology shapes treatment response and disease trajectory.
 
     Across these projects, I aim to move from static molecular description toward mechanistically interpretable models of biological change. I am especially interested in computational frameworks that connect gene-regulatory programs to spatial organization and cell-state transitions, and in universal differential equations and other hybrid mechanistic-learning approaches that can incorporate known biology while learning the dynamics that remain unknown. This is the research direction I intend to develop through Ph.D. training.
 
@@ -74,7 +74,7 @@ current-focus:
   title: Current focus
   items:
   - title: Spatial regulatory biology and cell-state dynamics
-    description: I study how local niche context and regulatory programs shape cell-state transitions across premalignant, malignant, inflammatory, and tissue-remodeling settings. StageBridge is the current methodological foundation for this direction, combining receiver-centered niche representations with progression-aware transition modeling.
+    description: I study how local niche context and regulatory programs shape cell-state transitions across premalignant, malignant, inflammatory, and tissue-remodeling settings. My completed StageBridge thesis and its continuing CRRT-UDE implementation provide the methodological foundation for this direction, combining receiver-centered tissue-context representations, conditional transport, and structured regulatory dynamics.
   - title: Systems immunology and host response
     description: Through HostBio and the broader thymic-reserve program, I investigate how systemic immune architecture and host tissue state modify treatment response, toxicity, recurrence, and survival. This work connects quantitative imaging with longitudinal immune phenotyping, tumor genomics, radiation exposure, and clinical outcomes across multiple lung cancer cohorts.
   - title: Collaborative disease biology
@@ -87,11 +87,11 @@ current-focus:
 projects:
   title: Selected projects
   intro: >
-    Together, these projects form a connected research program: learning how cell states are regulated in tissue context, quantifying host and immune biology from clinical data, and building rigorous computational infrastructure that can carry those questions across cohorts and modalities.
+    These projects form a connected research program: learning how cell states are regulated in tissue context, quantifying host and immune biology from clinical data, and building rigorous computational infrastructure that can carry those questions across cohorts and modalities.
   assignments:
-  - title: StageBridge
-    link: "https://github.com/SecondBook5/StageBridge"
-    tagline: "A thesis-driven framework for inferring how local immune and stromal niches reshape epithelial cell-state trajectories during lung adenocarcinoma progression. StageBridge integrates dual-reference atlas mapping, receiver-centered set representations, optimal transport, conditional flow matching, spatial transcriptomics, and evolutionary context to move beyond static stage comparisons toward niche-conditioned models of transition."
+  - title: StageBridge / CRRT-UDE
+    link: "https://github.com/SecondBook5/crrt-ude"
+    tagline: "The computational framework developed for my completed M.S. thesis, StageBridge: Niche-Conditioned Regulatory Transport in Premalignant Epithelial Progression. CRRT-UDE separates intrinsic epithelial progression from a niche-gated context-residual field in interpretable transcription-factor and pathway coordinates, using conditional-stratified optimal transport, conditional flow matching, and structured universal differential equations. The framework was evaluated in lung adenocarcinoma precursor progression and replicated in pancreatic intraepithelial neoplasia, with prespecified identifiability and falsification analyses defining the supported scope of inference."
 
   - title: HostBio
     link: "https://github.com/Advanced-Computing-and-Oncology-Lab/HostBio"
@@ -121,14 +121,16 @@ education:
   title: Education
   info:
   - degree: M.S. in Bioinformatics
-    university: Johns Hopkins University
-    time: 2024 - 2026 expected
+    university: Johns Hopkins University — Krieger School of Arts and Sciences, Advanced Academic Programs
+    time: 2024 - 2026
     details: |
-      GPA: 4.0
+      Completed August 2026. GPA: 4.0.
 
-      Master's thesis: StageBridge: Context-Residual Inference of Cell-State-Resolved Niche Effects in Premalignant Epithelial Transitions.
+      Master's thesis: *StageBridge: Niche-Conditioned Regulatory Transport in Premalignant Epithelial Progression*.
 
-      Advisor: Christopher Bradburne, PhD, Department of Genetic Medicine, Johns Hopkins University School of Medicine / Johns Hopkins Applied Physics Laboratory.
+      Advisor: Chris Bradburne, PhD, Associate Professor, Department of Genetic Medicine, Johns Hopkins University.
+
+      Code and reproducible workflow: [CRRT-UDE](https://github.com/SecondBook5/crrt-ude).
 
       Selected coursework: Advanced Genomics; Gene Expression Analysis; Systems Biology; Deep Learning Using Transformers; Epigenetics; Cellular Signal Transduction.
 
