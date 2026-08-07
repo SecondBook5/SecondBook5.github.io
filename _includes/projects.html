@@ -12,27 +12,27 @@
 
   {% if projects.intro %}
   <div class="intro">
-      <p>{{ projects.intro }}</p>
-  </div><!--//intro-->
+    <p>{{ projects.intro }}</p>
+  </div>
   {% endif %}
 
   {% for project in projects.assignments %}
-    <div class="item">
-
-      <span class="project-title">
-        {% if project.link %}
-        <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
-        {% else %}
-        {{ project.title }}
-        {% endif %}
-      </span>
-
-      {% if project.tagline %}
-      - <span class="project-tagline">{{ project.tagline }}</span>
+  <div class="item">
+    <span class="project-title">
+      {% if project.link %}
+      <a href="{{ project.link }}" target="_blank" rel="noopener noreferrer">{{ project.title }}</a>
+      {% else %}
+      {{ project.title }}
       {% endif %}
+    </span>
 
-    </div><!--//item-->
+    <p class="project-tagline">
+      <strong>Problem.</strong> {{ project.problem }}
+      <strong>Contribution.</strong> {{ project.contribution }}
+      <strong>Status.</strong> {{ project.status }}
+    </p>
+  </div>
   {% endfor %}
 
-</section><!--//section-->
+</section>
 {% endif %}
