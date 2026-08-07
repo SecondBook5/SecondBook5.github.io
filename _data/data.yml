@@ -64,59 +64,118 @@ sidebar:
 career-profile:
   title: Bio
   summary: |
-    I am a computational biologist working at the intersection of spatial regulatory biology, systems immunology, and cell-state dynamics. My central scientific interest is how regulatory programs—including transcription factors, RNA-binding proteins, microRNAs, and chromatin architecture—interact with immune and tissue context to determine which cellular states emerge, persist, transition, or fail in disease.
+    I am a computational biologist at Memorial Sloan Kettering Cancer Center studying how regulatory programs, immune state, and tissue context shape cell-state transitions. My work combines single-cell and spatial omics, quantitative imaging, genomics, and mechanistic machine learning.
 
-    I hold an M.S. in Bioinformatics from Johns Hopkins University and am a Graduate Research Assistant in the [Advanced Computing and Oncology Laboratory](https://www.mskcc.org/research-areas/labs/members/abraham-aj-book) at Memorial Sloan Kettering Cancer Center. My master's thesis, *StageBridge: Niche-Conditioned Regulatory Transport in Premalignant Epithelial Progression*, developed [CRRT-UDE](https://github.com/SecondBook5/crrt-ude), a structured universal differential equation framework for estimating how local tissue ecology alters progression-aligned regulatory transport beyond intrinsic epithelial state. The framework was evaluated in lung adenocarcinoma precursor progression and pancreatic intraepithelial neoplasia. In parallel, my work at MSK integrates quantitative imaging, immune profiling, tumor genomics, circulating biomarkers, and clinical outcomes to study how host biology shapes treatment response and disease trajectory.
-
-    Across these projects, I aim to move from static molecular description toward mechanistically interpretable models of biological change. I am especially interested in computational frameworks that connect gene-regulatory programs to spatial organization and cell-state transitions, and in universal differential equations and other hybrid mechanistic-learning approaches that can incorporate known biology while learning the dynamics that remain unknown. This is the research direction I intend to develop through Ph.D. training.
-
+    My M.S. thesis in Bioinformatics at Johns Hopkins University developed [CRRT-UDE](https://github.com/SecondBook5/crrt-ude), a structured framework for estimating niche-conditioned regulatory transport from cross-sectional tissue data. I am extending this direction through research on premalignant progression, systemic immune architecture, and interpretable models of biological change.
 current-focus:
   title: Current focus
   items:
-  - title: Spatial regulatory biology and cell-state dynamics
-    description: I study how local niche context and regulatory programs shape cell-state transitions across premalignant, malignant, inflammatory, and tissue-remodeling settings. My completed StageBridge thesis and its continuing CRRT-UDE implementation provide the methodological foundation for this direction, combining receiver-centered tissue-context representations, conditional transport, and structured regulatory dynamics.
-  - title: Systems immunology and host response
-    description: Through HostBio and the broader thymic-reserve program, I investigate how systemic immune architecture and host tissue state modify treatment response, toxicity, recurrence, and survival. This work connects quantitative imaging with longitudinal immune phenotyping, tumor genomics, radiation exposure, and clinical outcomes across multiple lung cancer cohorts.
-  - title: Collaborative disease biology
-    description: I contribute computational analysis and model development to collaborations in secondary lymphedema, myasthenia gravis and thymoma, cGAS-STING biology, and head and neck squamous cell carcinoma. These projects provide complementary systems in which to study immune regulation, tissue remodeling, and disease-associated cell states.
-  - title: Mechanistic models of biological dynamics
-    description: A growing methods focus is the use of universal differential equations and other hybrid mechanistic-machine-learning models to represent biological systems whose governing structure is partly known but whose context-dependent dynamics must be learned from data.
-  - title: Research software as scientific infrastructure
-    description: I build reproducible, configuration-driven platforms for single-cell analysis, quantitative imaging, microbiome research, and cancer genomics. The goal is not software for its own sake, but infrastructure that makes complex biological questions auditable, scalable, and testable across datasets.
-
+  - title: Spatial regulatory dynamics
+    description: >
+      I develop models of how local tissue context alters cell-state transitions,
+      centered on CRRT-UDE and its evaluation in lung adenocarcinoma precursor
+      progression and pancreatic intraepithelial neoplasia.
+  - title: Systems immunology and host biology
+    description: >
+      I integrate quantitative imaging, immune phenotyping, tumor genomics, and
+      clinical outcomes to study thymic reserve and other host determinants of
+      treatment response and toxicity.
+  - title: Reproducible computational methods
+    description: >
+      I build auditable workflows for single-cell, imaging, microbiome, and
+      cancer-genomics analyses with explicit data contracts, validation, and
+      provenance.
 projects:
   title: Selected projects
   intro: >
-    These projects form a connected research program: learning how cell states are regulated in tissue context, quantifying host and immune biology from clinical data, and building rigorous computational infrastructure that can carry those questions across cohorts and modalities.
+    Selected work spanning spatial regulatory modeling, systems immunology,
+    translational analysis, and reproducible research software.
   assignments:
   - title: StageBridge / CRRT-UDE
     link: "https://github.com/SecondBook5/crrt-ude"
-    tagline: "The computational framework developed for my completed M.S. thesis, StageBridge: Niche-Conditioned Regulatory Transport in Premalignant Epithelial Progression. CRRT-UDE separates intrinsic epithelial progression from a niche-gated context-residual field in interpretable transcription-factor and pathway coordinates, using conditional-stratified optimal transport, conditional flow matching, and structured universal differential equations. The framework was evaluated in lung adenocarcinoma precursor progression and replicated in pancreatic intraepithelial neoplasia, with prespecified identifiability and falsification analyses defining the supported scope of inference."
+    problem: >
+      Cross-sectional tissue data obscure how local niche context changes
+      epithelial progression.
+    contribution: >
+      I developed CRRT-UDE to estimate a niche-conditioned context-residual
+      field in interpretable regulatory coordinates using stratified optimal
+      transport and structured universal differential equations.
+    status: >
+      Completed M.S. thesis; evaluated in lung adenocarcinoma precursors and
+      pancreatic intraepithelial neoplasia; continuing as a research implementation.
 
   - title: HostBio
     link: "https://github.com/Advanced-Computing-and-Oncology-Lab/HostBio"
-    tagline: "A scalable platform for extracting biologically interpretable host phenotypes from routine CT and MRI. HostBio combines organ segmentation, scan-adaptive tissue-composition modeling, cohort-scale workflow orchestration, and quantitative quality control to measure thymic, muscle, liver, and tumor-associated states and connect them to immune function, treatment response, toxicity, and survival."
+    problem: >
+      Routine CT and MRI contain host phenotypes that standard tumor-centered
+      analyses do not quantify.
+    contribution: >
+      I am building a cohort-scale platform that combines organ segmentation,
+      scan-adaptive tissue-composition modeling, quantitative quality control,
+      and clinical-outcome integration.
+    status: >
+      Active MSK research platform supporting multi-cohort translational studies.
 
   - title: CellQuorum
     link: "https://github.com/SecondBook5/CellQuorum"
-    tagline: "A reproducible, GPU-aware single-cell RNA-seq workflow engine built to make advanced analysis scalable without sacrificing auditability or scientific discipline. CellQuorum combines strict configuration validation, fail-loud data contracts, provenance tracking, backend-aware execution, ambient-RNA correction, quality control, normalization, integration, clustering, and annotation, with regulatory-network, communication, and trajectory modules under active development."
+    problem: >
+      Single-cell workflows are difficult to reproduce and audit across cohorts
+      and computing environments.
+    contribution: >
+      I built a configuration-driven, GPU-aware workflow engine with validated
+      data contracts, provenance tracking, and reproducible core processing.
+    status: >
+      Beta research software; regulatory-network, communication, and trajectory
+      modules are under development.
 
   - title: Thymus nnUNetv2 Segmentation
     link: "https://github.com/Advanced-Computing-and-Oncology-Lab/Thymus-nnUNetv2-Segmentation"
-    tagline: "A pretrained five-fold nnUNetv2 framework for 3D thymus segmentation on thoracic CT, with standalone inference, fold-wise evaluation, quantitative metrics, multiplanar overlays, and GPU/CPU support. The model provides the segmentation backbone for scalable radiographic thymic phenotyping within HostBio."
+    problem: >
+      Manual thymus delineation prevents scalable radiographic phenotyping in
+      thoracic CT cohorts.
+    contribution: >
+      I developed a five-fold nnUNetv2 framework with standalone inference,
+      fold-wise evaluation, quantitative metrics, and multiplanar quality-control
+      overlays.
+    status: >
+      Internal research software and the segmentation backbone for HostBio.
 
   - title: Secondary Lymphedema Single-Cell Analysis
     link: "https://github.com/SecondBook5/lymphedema_keratinocyte_par2"
-    tagline: "A collaboration with the Mehrara Lab using paired normal and lymphedematous human skin to resolve disease-associated keratinocyte states and tissue remodeling. The published PAR2 study established a keratinocyte-centered mechanism in secondary lymphedema; ongoing work extends the analysis across epithelial, immune, and stromal compartments with donor-aware inference and cross-dataset validation."
+    problem: >
+      The cellular programs sustaining human secondary lymphedema remain
+      incompletely resolved.
+    contribution: >
+      I perform donor-aware analysis of paired normal and lymphedematous skin
+      to characterize epithelial, immune, and stromal remodeling.
+    status: >
+      PAR2 study published; extended multi-compartment and cross-dataset analyses
+      are ongoing.
 
   - title: Dysbioscope
     link: "https://github.com/SecondBook5/Dysbioscope"
-    tagline: "A collaboration with the Mehrara Lab and a reproducible multi-cohort framework for discovering convergent and context-dependent microbiome responses. Dysbioscope links raw 16S processing, dual taxonomic classification, compositional differential-abundance methods, functional prediction, cross-cohort concordance, and publication-grade visualization in a single Snakemake workflow."
+    problem: >
+      Microbiome findings often vary across cohorts, processing choices, and
+      differential-abundance methods.
+    contribution: >
+      I built a Snakemake workflow connecting raw 16S processing, dual taxonomic
+      classification, compositional inference, cross-cohort concordance, and
+      publication-grade visualization.
+    status: >
+      Active collaboration; code will be released with the associated manuscript.
 
   - title: Cosmic-IMPACT
     link: "https://github.com/SecondBook5/Cosmic-IMPACT"
-    tagline: "A cancer-genomics toolkit that unifies MSK-IMPACT tissue sequencing and MSK-ACCESS cell-free DNA analysis. The platform integrates mutation annotation, tumor mutational burden, genomic instability, mutational signatures, clonality, driver discovery, ctDNA estimation, and longitudinal clonal-evolution summaries to connect genomic state with clinical trajectory. Research use only; not a clinical diagnostic tool."
-
+    problem: >
+      Tissue and cell-free DNA panel outputs are fragmented across specialized
+      cancer-genomics tools.
+    contribution: >
+      I built a unified research toolkit for mutation annotation, genomic burden
+      and instability, mutational signatures, clonality, ctDNA estimation, and
+      longitudinal clonal summaries.
+    status: >
+      Beta, research-use-only software undergoing validation and public-release
+      preparation.
 education:
   title: Education
   info:
@@ -233,23 +292,30 @@ recommendations:
   list: []
 
 skills:
-  title: Technical skills
-  toolset:
-  - name: Programming and infrastructure
-    level: 95%
-  - name: Single-cell and spatial omics
-    level: 90%
-  - name: Genomics and epigenomics
-    level: 85%
-  - name: Immune profiling and biomarker integration
-    level: 85%
-  - name: Proteomics and spatial proteomics interpretation
-    level: 70%
-  - name: Statistical modeling and survival analysis
-    level: 85%
-  - name: Optimal transport and transition modeling
-    level: 85%
-  - name: Deep learning and representation learning
-    level: 80%
-  - name: Computational pathology and medical imaging
-    level: 80%
+  title: Technical competencies
+  groups:
+  - name: Languages
+    items:
+    - Python
+    - R
+    - Rust
+    - SQL
+  - name: Modeling
+    items:
+    - Optimal transport
+    - Universal differential equations
+    - Survival analysis
+    - Statistical learning
+  - name: Biology
+    items:
+    - Single-cell analysis
+    - Spatial omics
+    - Cancer genomics
+    - Systems immunology
+  - name: Infrastructure
+    items:
+    - Reproducible workflow systems
+    - HPC and SLURM
+    - Containers
+    - Continuous integration
+    - Provenance tracking
