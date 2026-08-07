@@ -1,90 +1,41 @@
-<a href="https://jekyll-themes.com">
-<img src="https://img.shields.io/badge/featured%20on-JT-red.svg" height="20" alt="Jekyll Themes Shield" >
-</a>
+# AJ Book — Research Portfolio
 
-# Orbit
-> This theme is designed by Xiaoying Riley at [3rd Wave Media](http://themes.3rdwavemedia.com/).
-> Visit [her website](http://themes.3rdwavemedia.com/) for more themes.
+This repository contains the source for [secondbook5.github.io](https://secondbook5.github.io/), my research portfolio and academic CV.
 
-I have made this into a Jekyll Theme. Checkout the live demo [here](https://online-cv.webjeda.com).
+The site summarizes my work in spatial regulatory biology, systems immunology, cell-state dynamics, and reproducible computational biology. It includes selected projects, publications, presentations, research experience, education, and technical competencies.
 
-<table>
-  <tr>
-    <th>Desktop</th>
-    <th>Mobile</th>
-  </tr>
-  <tr>
-    <td>
-        <img src="https://online-cv.webjeda.com/assets/images/desktop.png?raw=true" width="600"/>
-    </td>
-    <td>
-        <img src="https://online-cv.webjeda.com/assets/images/mobile.png?raw=true" width="250"/>
-    </td>
-  </tr>
-</table>
+## Repository structure
 
-## Installation
+- `_data/data.yml` — biography, research focus, projects, education, experience, and competencies
+- `_data/publications.yml` — publications and preprints
+- `_includes/` — reusable Jekyll sections
+- `_layouts/` — page layouts
+- `assets/` — stylesheets, images, and supporting assets
+- `index.html` — homepage section order
 
-* [Fork](https://github.com/sharu725/online-cv/fork) the repository;
-* Go to settings and set master branch as Github Pages source;
-* Your new site should be ready at `https://<username>.github.io/online-cv/`;
-* Printable version of the site can be found at `https://<username>.github.io/online-cv/print`. Use a third party link https://pdflayer.com/, https://www.web2pdfconvert.com/ etc to get the printable PDF.
+## Local development
 
-Change all the details from one place: `_data/data.yml`.
-
-### To preview/edit locally with docker
-
-```sh
-docker-compose up
-```
-
-*docker-compose.yml* file is used to create a container that is reachable under <http://localhost:4000>.
-Changes *_data/data.yml* will be visible after a while.
-
-### Local machine
-
-* Get the repo into your machine 
+The site is built with Jekyll. To run it locally:
 
 ```bash
-git clone https://github.com/sharu725/online-cv.git
-```
-
-* Install required ruby gems
-
-```bash
+git clone https://github.com/SecondBook5/SecondBook5.github.io.git
+cd SecondBook5.github.io
 bundle install
-```
-
-* Serve the site locally
-
-```bash
 bundle exec jekyll serve
 ```
 
-* Navigate to `http://localhost:4000`
+The preview will be available at [http://localhost:4000](http://localhost:4000).
 
+Docker is also supported:
 
-## Skins
+```bash
+docker-compose up
+```
 
-There are 6 color schemes available:
+## Deployment
 
-| Blue | Turquoise | Green |
-|---------|---------|---------|
-| <img src="https://online-cv.webjeda.com/assets/images/blue.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/turquoise.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/green.jpg" width="300"/> |
+The site is published through GitHub Pages from the `master` branch. Changes should be previewed locally before they are merged.
 
-| Berry | Orange | Ceramic |
-|---------|---------|---------|
-| <img src="https://online-cv.webjeda.com/assets/images/berry.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/orange.jpg" width="300"/> | <img src="https://online-cv.webjeda.com/assets/images/ceramic.jpg" width="300"/> |
+## Theme attribution
 
-## Credits
-
-Thanks to [Nelson Estevão](https://github.com/nelsonmestevao) for all the [contributions](https://github.com/sharu725/online-cv/commits?author=nelsonmestevao).
-
-Thanks to [t-h-e(sfrost)](https://github.com/t-h-e) for all the [contributions](https://github.com/sharu725/online-cv/commits?author=t-h-e).
-
-Check out for more themes: [**Jekyll Themes**](http://jekyll-themes.com).
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=sharu725/online-cv&type=Date)](https://star-history.com/#sharu725/online-cv&Date)
-
+The site is adapted from the [Orbit](https://themes.3rdwavemedia.com/bootstrap-templates/resume/orbit-free-resume-cv-bootstrap-theme-for-developers/) CV theme by Xiaoying Riley and the [online-cv](https://github.com/sharu725/online-cv) Jekyll implementation.
