@@ -9,11 +9,11 @@ sidebar:
 
   # Profile information
   name: AJ Book
-  tagline: "Spatial Regulatory Biology · Systems Immunology · Cell-State Dynamics"
+  tagline: "Computational & Systems Biology · Quantitative Imaging · Biological Memory"
   avatar: https://avatars.githubusercontent.com/u/42758438?v=4
 
   # Sidebar links
-  email:
+  email: ajbook12@gmail.com
   phone:
   timezone:
   citizenship:
@@ -46,175 +46,176 @@ sidebar:
   interests:
     title: Research interests
     info:
-    - item: Spatial regulatory biology
+    - item: Biological memory and inflammatory history
       link:
-    - item: Systems immunology
+    - item: Immune and tissue-state dynamics
       link:
-    - item: Cell-state dynamics and tissue-state transitions
+    - item: Quantitative imaging and radiobiology
       link:
-    - item: Gene regulation and regulatory genomics
+    - item: Regulatory biology and gene regulatory networks
       link:
-    - item: Single-cell and spatial multi-omics
+    - item: Single-cell and spatial genomics
       link:
-    - item: Mechanistic machine learning and universal differential equations
+    - item: Interpretable deep learning and probabilistic modeling
       link:
-    - item: Translational biomarker discovery
+    - item: Multimodal inference from sparse observations
       link:
 
 career-profile:
   title: Bio
   summary: |
-    I am a computational biologist at Memorial Sloan Kettering Cancer Center studying how regulatory programs, immune state, and tissue context shape cell-state transitions. My work combines single-cell and spatial omics, quantitative imaging, genomics, and mechanistic machine learning.
+    I am a Research Assistant at Memorial Sloan Kettering studying how inflammatory history, aging, and treatment reshape immune and tissue states over time. My imaging-focused work uses quantitative clinical imaging and radiobiology to extract host phenotypes and relate them to immune, genomic, treatment, and outcome data. I also use single-cell and spatial transcriptomics, bulk RNA, proteomics, and microbiome data to study regulatory and tissue-state dynamics.
 
-    My M.S. thesis in Bioinformatics at Johns Hopkins University developed [CRRT-UDE](https://github.com/SecondBook5/crrt-ude), a structured framework for estimating niche-conditioned regulatory transport from cross-sectional tissue data. I am extending this direction through research on premalignant progression, systemic immune architecture, and interpretable models of biological change.
+    I received my M.S. in Bioinformatics from Johns Hopkins University, where I defended *StageBridge: Niche-Conditioned Regulatory Transport in Premalignant Epithelial Progression*. I modeled how tissue context shapes regulatory state transitions during epithelial progression using spatial and single-nucleus transcriptomics, transcription factor activity, and gene regulatory networks.
+
+    Across these problems, I use interpretable deep learning and probabilistic modeling to infer latent biological states from sparse, heterogeneous observations. I am especially interested in biological memory, cell-state transitions, and which computational ideas transfer across modalities, where they break down, and what can be inferred from incomplete data.
+
 current-focus:
-  title: Current focus
+  title: Research themes
   items:
-  - title: Spatial regulatory dynamics
+  - title: Imaging host biology and radiobiology
     description: >
-      I develop models of how local tissue context alters cell-state transitions,
-      centered on CRRT-UDE and its evaluation in lung adenocarcinoma precursor
-      progression and pancreatic intraepithelial neoplasia.
-  - title: Systems immunology and host biology
+      I use quantitative clinical imaging to derive host and tissue phenotypes from
+      routine scans and relate them to immune state, tumor genomics, radiation exposure,
+      treatment response, toxicity, and clinical outcomes.
+  - title: Regulatory and tissue-state dynamics
     description: >
-      I integrate quantitative imaging, immune phenotyping, tumor genomics, and
-      clinical outcomes to study thymic reserve and other host determinants of
-      treatment response and toxicity.
-  - title: Reproducible computational methods
+      I use single-cell, spatial, transcriptomic, proteomic, and microbiome data to study
+      persistent epithelial, stromal, immune, and regulatory states in cancer and
+      inflammatory disease.
+  - title: Interpretable inference across modalities
     description: >
-      I build auditable workflows for single-cell, imaging, microbiome, and
-      cancer-genomics analyses with explicit data contracts, validation, and
-      provenance.
-projects:
-  title: Selected projects
-  intro: >
-    Selected work spanning spatial regulatory modeling, systems immunology,
-    translational analysis, and reproducible research software.
-  assignments:
-  - title: StageBridge / CRRT-UDE
-    link: "https://github.com/SecondBook5/crrt-ude"
-    problem: >
-      Cross-sectional tissue data obscure how local niche context changes
-      epithelial progression.
-    contribution: >
-      I developed CRRT-UDE to estimate a niche-conditioned context-residual
-      field in interpretable regulatory coordinates using stratified optimal
-      transport and structured universal differential equations.
-    status: >
-      Completed M.S. thesis; evaluated in lung adenocarcinoma precursors and
-      pancreatic intraepithelial neoplasia; continuing as a research implementation.
+      I develop interpretable deep-learning and probabilistic approaches for latent
+      biological-state inference, with emphasis on biological structure, uncertainty,
+      identifiability, and determining which computational ideas transfer across
+      measurement modalities and where they fail.
 
-  - title: HostBio
+projects:
+  title: Selected research
+  intro: >
+    Selected work spanning quantitative imaging, systems immunology, regulatory biology,
+    and inference of dynamic biological processes from sparse human observations.
+  assignments:
+  - title: HostBio / Comp-MRF
     link: "https://github.com/Advanced-Computing-and-Oncology-Lab/HostBio"
     problem: >
-      Routine CT and MRI contain host phenotypes that standard tumor-centered
-      analyses do not quantify.
+      Routine clinical scans contain information about host tissue state, but acquisition
+      variability and partial-volume effects complicate biological interpretation.
     contribution: >
-      I am building a cohort-scale platform that combines organ segmentation,
-      scan-adaptive tissue-composition modeling, quantitative quality control,
-      and clinical-outcome integration.
+      I conceived a scan-adaptive probabilistic framework for quantifying interpretable
+      host-tissue composition using partial-volume mixture modeling, spatial regularization,
+      nuisance-component handling, and within-scan reference tissues. I apply these
+      phenotypes to studies of immune state, tumor genomics, treatment response, toxicity,
+      and outcomes.
     status: >
-      Active MSK research platform supporting multi-cohort translational studies.
+      Active MSK research platform supporting multiple lung-cancer cohorts and
+      translational studies.
 
-  - title: CellQuorum
-    link: "https://github.com/SecondBook5/CellQuorum"
+  - title: StageBridge
+    link: "https://github.com/SecondBook5/crrt-ude"
     problem: >
-      Single-cell workflows are difficult to reproduce and audit across cohorts
-      and computing environments.
+      Human disease progression is dynamic, but tissue data are usually sparse and
+      cross-sectional, making regulatory transitions only partially observable.
     contribution: >
-      I built a configuration-driven, GPU-aware workflow engine with validated
-      data contracts, provenance tracking, and reproducible core processing.
+      For my M.S. thesis, I modeled how local tissue context shapes regulatory state
+      transitions during premalignant epithelial progression using spatial and
+      single-nucleus transcriptomics, transcription factor activity, gene regulatory
+      networks, and context-conditioned transport.
     status: >
-      Beta research software; regulatory-network, communication, and trajectory
-      modules are under development.
+      M.S. thesis defended at Johns Hopkins University; methodological and biological
+      follow-up is ongoing.
 
-  - title: Thymus nnUNetv2 Segmentation
-    link: "https://github.com/Advanced-Computing-and-Oncology-Lab/Thymus-nnUNetv2-Segmentation"
-    problem: >
-      Manual thymus delineation prevents scalable radiographic phenotyping in
-      thoracic CT cohorts.
-    contribution: >
-      I developed a five-fold nnUNetv2 framework with standalone inference,
-      fold-wise evaluation, quantitative metrics, and multiplanar quality-control
-      overlays.
-    status: >
-      Internal research software and the segmentation backbone for HostBio.
-
-  - title: Secondary Lymphedema Single-Cell Analysis
+  - title: Secondary Lymphedema Multi-omics
     link: "https://github.com/SecondBook5/lymphedema_keratinocyte_par2"
     problem: >
-      The cellular programs sustaining human secondary lymphedema remain
-      incompletely resolved.
+      Chronic lymphatic dysfunction produces persistent epithelial, stromal, and immune
+      remodeling whose regulatory programs remain incompletely resolved.
     contribution: >
-      I perform donor-aware analysis of paired normal and lymphedematous skin
-      to characterize epithelial, immune, and stromal remodeling.
+      I analyze single-cell and bulk transcriptomic, proteomic, and microbiome data to
+      characterize inflammatory tissue states, regulatory programs, and cross-compartment
+      remodeling across secondary lymphedema studies.
     status: >
-      PAR2 study published; extended multi-compartment and cross-dataset analyses
-      are ongoing.
+      Work includes peer-reviewed studies and ongoing multi-omic analyses and manuscripts.
 
+research-software:
+  title: Research software
+  intro: >
+    Reusable tools developed to support reproducible quantitative imaging, single-cell,
+    cancer-genomics, and multi-omic research.
+  contributions:
+  - title: CellQuorum
+    link: "https://github.com/SecondBook5/CellQuorum"
+    description: >
+      Configuration-driven single-cell analysis infrastructure with explicit data
+      contracts, provenance tracking, quality control, and modular downstream analysis.
+  - title: COSMIC-IMPACT
+    link: "https://github.com/SecondBook5/Cosmic-IMPACT"
+    description: >
+      Research toolkit for MSK-IMPACT and MSK-ACCESS analysis spanning mutation
+      annotation, genomic burden, copy-number and structural alterations, clonality,
+      mutational signatures, longitudinal ctDNA, and clinical interpretation.
+  - title: Thymus nnUNetv2 Segmentation
+    link: "https://github.com/Advanced-Computing-and-Oncology-Lab/Thymus-nnUNetv2-Segmentation"
+    description: >
+      Five-fold nnUNetv2 framework for scalable thymus segmentation, inference,
+      quantitative evaluation, and multiplanar quality control in thoracic CT.
   - title: Dysbioscope
     link: "https://github.com/SecondBook5/Dysbioscope"
-    problem: >
-      Microbiome findings often vary across cohorts, processing choices, and
-      differential-abundance methods.
-    contribution: >
-      I built a Snakemake workflow connecting raw 16S processing, dual taxonomic
-      classification, compositional inference, cross-cohort concordance, and
-      publication-grade visualization.
-    status: >
-      Active collaboration; code will be released with the associated manuscript.
+    description: >
+      Reproducible microbiome workflow for raw 16S processing, taxonomic classification,
+      compositional inference, cross-cohort comparison, and visualization.
 
-  - title: Cosmic-IMPACT
-    link: "https://github.com/SecondBook5/Cosmic-IMPACT"
-    problem: >
-      Tissue and cell-free DNA panel outputs are fragmented across specialized
-      cancer-genomics tools.
-    contribution: >
-      I built a unified research toolkit for mutation annotation, genomic burden
-      and instability, mutational signatures, clonality, ctDNA estimation, and
-      longitudinal clonal summaries.
-    status: >
-      Beta, research-use-only software undergoing validation and public-release
-      preparation.
 education:
   title: Education
   info:
   - degree: M.S. in Bioinformatics
-    university: Johns Hopkins University — Krieger School of Arts and Sciences, Advanced Academic Programs
+    university: Johns Hopkins University, Krieger School of Arts and Sciences
     time: 2024 - 2026
     details: |
       Completed August 2026. GPA: 4.0.
 
       Master's thesis: *StageBridge: Niche-Conditioned Regulatory Transport in Premalignant Epithelial Progression*.
 
-      Advisor: Chris Bradburne, PhD, Associate Professor, Department of Genetic Medicine, Johns Hopkins University.
+      Modeled how tissue context shapes regulatory state transitions during epithelial progression using spatial and single-nucleus transcriptomics, transcription factor activity, and gene regulatory networks.
 
-      Code and reproducible workflow: [CRRT-UDE](https://github.com/SecondBook5/crrt-ude).
+      Advisor: Christopher Bradburne, PhD, Department of Genetic Medicine, Johns Hopkins University School of Medicine.
 
-      Selected coursework: Advanced Genomics; Gene Expression Analysis; Systems Biology; Deep Learning Using Transformers; Epigenetics; Cellular Signal Transduction.
+      Selected coursework: Systems Biology; Epigenetics, Gene Organization & Expression; Cellular Signal Transduction; Advanced Genomics & Genetics Analyses; Algorithms for Bioinformatics; Advanced Applied Machine Learning; Deep Learning Using Transformers.
 
-  - degree: B.A. in Biochemistry and Mathematics
+  - degree: B.A. in Biochemistry, Minor in Mathematics
     university: Yeshiva University
     time: 2019 - 2023
     details: |
-      Summa Cum Laude, GPA 3.9.
+      Summa Cum Laude, GPA 3.9. J&J Schottenstein Honors Program.
 
-      Honors thesis: Investigating the Role of MMP14, B7-H3, PTK7, and LRRC15 in Head and Neck Cancers: Implications for Antibody-Drug Conjugates.
+      Honors thesis: *Investigating the Role of MMP14, B7-H3, PTK7, and LRRC15 in Head and Neck Cancers: Implications for Antibody-Drug Conjugates*.
+
+  - degree: A.A. in Jewish Studies
+    university: Isaac Breuer College, Yeshiva University
+    time: 2017 - 2023
+    details: |
+      GPA 3.93.
 
 experiences:
   title: Experience
   info:
-  - role: Graduate Research Assistant
-    time: 2025 - present
-    company: Advanced Computing and Oncology Lab, Sloan Kettering Institute, Memorial Sloan Kettering Cancer Center
+  - role: Research Assistant, Advanced Computing and Oncology Laboratory
+    time: Aug 2026 - present
+    company: Sloan Kettering Institute, Memorial Sloan Kettering Cancer Center
     details: |
-      Lead conceptual development and computational strategy for translational studies of tumor-host interaction, immune remodeling, thymic composition, treatment toxicity, and lung cancer outcomes.
+      Drive quantitative study design and computational strategy across translational studies of tumor-host interactions, immune state, treatment response, toxicity, and lung-cancer outcomes.
 
-      - Develop multimodal analysis frameworks integrating thoracic CT, radiation dose, clinical outcomes, targeted sequencing, circulating tumor DNA, RNA-seq, flow cytometry, cytokine profiling, and immune validation assays.
-      - Build spatial and single-cell workflows for reference-atlas mapping, spatial deconvolution, cell-state annotation, regulatory-network analysis, cell-cell communication, and interpretation of inflammatory, stromal, epithelial, and immune programs.
-      - Contribute to cross-group collaborations in secondary lymphedema and translational systems immunology.
-      - Develop reusable research software for cohort-scale quantitative imaging, single-cell analysis, microbiome comparison, and cancer genomics.
-      - Generate publication-grade figures, statistical analyses, reproducible workflows, abstracts, and manuscript-ready results; contribute as co-first author and primary quantitative analyst on translational studies.
+      - Develop imaging-centered analyses integrating quantitative CT, radiation exposure, tumor genomics, circulating tumor DNA, immune profiling, and longitudinal clinical outcomes.
+      - Conceived and developed HostBio / Comp-MRF, a scan-adaptive probabilistic framework for interpretable host-tissue composition from routine CT.
+      - Lead analyses linking thymic and body-composition phenotypes with peripheral immune profiling, cytokines, tumor genomics, treatment response, toxicity, and survival.
+      - Develop interpretable deep-learning and longitudinal imaging approaches for thoracic imaging and patient-level trajectory analysis.
+      - Build reusable computational infrastructure for cancer genomics, imaging, and reproducible translational research.
+
+  - role: Graduate Research Assistant, Advanced Computing and Oncology Laboratory
+    time: Mar 2025 - Jul 2026
+    company: Sloan Kettering Institute, Memorial Sloan Kettering Cancer Center
+    details: |
+      Conducted computational and translational research while completing the M.S. in Bioinformatics at Johns Hopkins University, with work spanning quantitative imaging, systems immunology, cancer genomics, and multimodal clinical analysis.
 
   - role: Medical / Laboratory Assistant
     time: 2023 - 2024
@@ -229,9 +230,10 @@ experiences:
     time: Jan - Jul 2023
     company: Department of Biology, Yeshiva University
     details: |
-      Analyzed TCGA and GEO transcriptomic datasets in R and Bioconductor to study tumor immune microenvironment programs in head and neck squamous cell carcinoma, with emphasis on cancer-associated fibroblast and cancer stem-like cell states.
+      Developed a surfaceome-constrained multi-omic target-discovery analysis for head and neck squamous cell carcinoma.
 
-      - Integrated differential expression, pathway enrichment, survival analysis, cell-cell communication evidence, and structural biology context to prioritize candidate antibody-drug conjugate targets.
+      - Integrated TCGA, CPTAC, GEO, and protein/localization resources to evaluate transcriptomic expression, proteomic evidence, tumor selectivity, immune context, and therapeutic feasibility.
+      - Prioritized candidate antibody-drug conjugate targets including B7-H3, MMP14, PTK7, and LRRC15.
 
   - role: Research Assistant
     time: 2019
@@ -239,49 +241,26 @@ experiences:
     details: |
       Built and maintained a clinical oncology research database, performed retrospective survival analyses, and contributed to peer-reviewed studies of prognostic factors and treatment outcomes in gastrointestinal cancers.
 
-publications:
-  title: Publications
-  intro: |
-    Selected peer-reviewed publications, preprints, and manuscripts.
-  papers:
-  - title: Thymic Composition Predicts Radiation Pneumonitis in Locally Advanced NSCLC
-    link: "https://doi.org/10.1016/j.jtho.2026.103949"
-    authors: Chaunzwa TL, Krishnan G, Book AJ, Miller DG, Amoako-Boadu K, Garomsa B, Meng YJ, Yang E, Ma J, Chidi A, Gomez DR, Shaverdian N.
-    conference: "Journal of Thoracic Oncology. 2026;103949. doi: 10.1016/j.jtho.2026.103949."
-
-  - title: Critical Role of Keratinocytes and Protease-Activated Receptor 2 in Secondary Lymphedema Development
-    link: "https://doi.org/10.1002/ctm2.70682"
-    authors: Park HJ, Pal S, Chen X, Shin J, García Nores GD, Baik JE, Stull-Lane A, Book AJ, Clement CC, Encarnacion EM, Klang MG, Riedel E, Chaunzwa TL, Hespe GE, Santambrogio L, Coriddi M, Dayan JH, Mehrara BJ, Kataru RP.
-    conference: "Clinical and Translational Medicine. 2026;16(6):e70682. doi: 10.1002/ctm2.70682."
-
-  - title: Mechanistic Modeling and Machine Learning Identifies Optimum Radiotherapy Schedules to Prevent Treatment-Induced Metastasis
-    link: "#"
-    authors: Graser CJ, Zhou Z, Schürch M, Moorhead G, Chaunzwa TL, Book AJ, Dean J, Lin C, Dean JA, Gomez D, Kozono D, Lahav G, Michor F.
-    conference: Manuscript under review, 2026.
-
-  - title: Thymus Composition, Disease Control, and Toxicity in Locally Advanced Lung Cancer
-    link: "https://doi.org/10.1101/2025.10.20.25338395"
-    authors: Chaunzwa TL, Book AJ, Garomsa B, Meng YJ, Yang E, Krishnan G, Chidi A, Kim R, Ma J, Riely GJ, Huang J, Simone CB, Shaverdian N, Gomez DR.
-    conference: "medRxiv. 2025. doi: 10.1101/2025.10.20.25338395."
-
-  - title: Cholangiocarcinoma, Sequential Chemotherapy, and Prognostic Tests
-    link: "https://doi.org/10.3389/fonc.2024.1361420"
-    authors: Bruckner HW, De Jager R, Knopf E, Bassali F, Book A, Gurell D, Nghiem V, Schwartz M, Hirschfeld A.
-    conference: "Frontiers in Oncology. 2024;14:1361420. doi: 10.3389/fonc.2024.1361420."
-
-  - title: Actionable Tests and Treatments for Patients with Gastrointestinal Cancers and Historically Short Median Survival Times
-    link: "https://doi.org/10.1371/journal.pone.0276492"
-    authors: Bruckner HW, Bassali F, Dusowitz E, Gurell D, Book A, De Jager R.
-    conference: "PLOS One. 2022;17(11):e0276492. doi: 10.1371/journal.pone.0276492."
-
 oss:
   title: Presentations
   intro: >
-    Selected scientific presentations.
+    Selected scientific presentations and accepted conference abstracts.
   contributions:
   - title: StageBridge Resolves Inflammatory-Stromal Transition Niches in Lung Adenocarcinoma Progression
     link: "https://www.linkedin.com/posts/aj-abraham-book_computationalbiology-systemsbiology-spatialbiology-share-7464752894995779586-QZxl/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACvL30wBWX9OgfTQwwbDg57b6BkHxSkKiPI"
-    tagline: "Poster presentation, Center for Tumor Immune Systems Biology Symposium, Sloan Kettering Institute, 2026. Authors: Abraham J. Book, Jung Hun Oh, Anish K. Simhal, Joseph O. Deasy, Erhan Guven, Christopher Bradburne, Tafadzwa L. Chaunzwa."
+    tagline: "Poster presentation, Center for Tumor Immune Systems Biology Symposium, Sloan Kettering Institute, 2026. Abraham J. Book, Jung Hun Oh, Anish K. Simhal, Joseph O. Deasy, Erhan Guven, Tafadzwa L. Chaunzwa, Christopher Bradburne."
+
+  - title: CT-Based Integrated Body Phenotyping Captures Host Susceptibility to Radiation Pneumonitis in Locally Advanced NSCLC
+    link:
+    tagline: "Accepted abstract, IASLC World Conference on Lung Cancer, 2026."
+
+  - title: CT-Derived Host Immuno-Metabolic Phenotyping Predicts Response to Neoadjuvant Chemoimmunotherapy in Resectable Locally Advanced NSCLC
+    link:
+    tagline: "Accepted abstract, IASLC World Conference on Lung Cancer, 2026."
+
+  - title: CT-Derived Multi-Organ Host Phenotyping of Never-Smoking Women with Lung Cancer
+    link:
+    tagline: "Accepted abstract, MSK Cancer Engineering Symposium, 2026."
 
 certifications:
   title:
@@ -302,16 +281,20 @@ skills:
     - SQL
   - name: Modeling
     items:
+    - Interpretable deep learning
+    - Probabilistic modeling
     - Optimal transport
-    - Universal differential equations
     - Survival analysis
     - Statistical learning
   - name: Biology
     items:
+    - Quantitative imaging
+    - Radiobiology
     - Single-cell analysis
-    - Spatial omics
+    - Spatial transcriptomics
     - Cancer genomics
     - Systems immunology
+    - Regulatory biology
   - name: Infrastructure
     items:
     - Reproducible workflow systems
