@@ -29,6 +29,7 @@
           alt="{{ visual.alt }}"
           loading="lazy"
           class="research-card-image"
+          onerror="this.closest('.research-card-figure').style.display='none';"
         >
         {% if visual.caption %}
         <figcaption class="research-card-caption">
