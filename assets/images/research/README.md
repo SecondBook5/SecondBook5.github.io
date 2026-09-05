@@ -1,9 +1,9 @@
-# Research image assets
+# Research images
 
-Homepage research cards expect these files:
+Homepage research-card assets:
 
 - `hostbio-compmrf-posterior-map.png`
 - `stagebridge-spatial-progression.png`
 - `lymphedema-par2-published.png`
 
-The lymphedema image is an adapted crop from Park et al., *Clinical and Translational Medicine* (2026) and should retain the CC BY 4.0 attribution configured in `_data/research_visuals.yml`.
+The lymphedema image is an adapted crop from the published PAR2 study and is credited on the site under CC BY 4.0. The HostBio and StageBridge images are project figures used to illustrate the corresponding research programs.
