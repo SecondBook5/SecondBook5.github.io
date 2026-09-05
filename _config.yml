@@ -7,7 +7,12 @@ theme_skin: olive
 chrome_mobile_color:
 
 # Tracker
-analytics: G-V23DQT85GG
+analytics:
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
 
 # Build settings
 compress-site: yes
@@ -15,18 +20,10 @@ compress-site: yes
 encoding: "utf-8"
 compress_html:
   clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
   ignore:
-    envs: ['development']
+    envs: development
 
-sass:
-  sass_dir: _sass
-  style: compressed
-
-# Site Settings
-sidebar:
-  position: right
-
-plugins:
-  - jekyll-seo-tag
+# Development Settings
+port: 4000
+host: 0.0.0.0
+safe: false
