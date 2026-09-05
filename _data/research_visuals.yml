@@ -1,15 +1,18 @@
 hostbio-comp-mrf:
   image: "/assets/images/research/hostbio-compmrf-posterior-map.png"
+  link: "https://github.com/Advanced-Computing-and-Oncology-Lab/HostBio"
   alt: "Axial, coronal, and sagittal thoracic CT views showing voxel-level posterior estimates of thymic tissue composition from Comp-MRF."
-  caption: "Probabilistic thymic tissue-composition mapping from routine thoracic CT."
+  caption: "Voxel-level posterior mapping of thymic tissue composition from routine thoracic CT."
 
 stagebridge:
   image: "/assets/images/research/stagebridge-spatial-progression.png"
+  link: "https://github.com/SecondBook5/crrt-ude"
   alt: "Three spatial transcriptomics panels showing pathological stage, spatial CytoTRACE, and spatial pseudotime for a lung adenocarcinoma sample."
   caption: "Spatial progression structure used to study premalignant epithelial state transitions."
 
 secondary-lymphedema-multi-omics:
   image: "/assets/images/research/lymphedema-par2-published.png"
+  link: "https://doi.org/10.1002/ctm2.70682"
   alt: "Published secondary lymphedema figure crop showing epidermal inflammatory remodeling and single-cell localization of F2RL1 PAR2 expression."
   caption: "Epidermal inflammatory remodeling and cell-specific PAR2 biology in secondary lymphedema."
   credit: "Adapted from Park et al., Clinical and Translational Medicine (2026), CC BY 4.0."
