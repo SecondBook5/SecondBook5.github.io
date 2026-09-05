@@ -24,13 +24,26 @@
     <article class="research-card">
       {% if visual and visual.image %}
       <figure class="research-card-figure">
+        {% if visual.link %}
+        <a
+          href="{{ visual.link }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="research-card-image-link"
+          aria-label="Open {{ project.title }} research source"
+        >
+        {% endif %}
         <img
           src="{{ visual.image | relative_url }}"
           alt="{{ visual.alt }}"
           loading="lazy"
+          decoding="async"
           class="research-card-image"
           onerror="this.closest('.research-card-figure').style.display='none';"
         >
+        {% if visual.link %}
+        </a>
+        {% endif %}
         {% if visual.caption %}
         <figcaption class="research-card-caption">
           {{ visual.caption }}
