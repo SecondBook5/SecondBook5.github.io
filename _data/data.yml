@@ -97,7 +97,7 @@ projects:
     and inference of dynamic biological processes from sparse human observations.
   assignments:
   - title: HostBio / Comp-MRF
-    link: "https://github.com/Advanced-Computing-and-Oncology-Lab/HostBio"
+    link:
     problem: >
       Routine clinical scans contain information about host tissue state, but acquisition
       variability and partial-volume effects complicate biological interpretation.
@@ -149,18 +149,18 @@ research-software:
       Configuration-driven single-cell analysis infrastructure with explicit data
       contracts, provenance tracking, quality control, and modular downstream analysis.
   - title: COSMIC-IMPACT
-    link: "https://github.com/SecondBook5/Cosmic-IMPACT"
+    link:
     description: >
       Research toolkit for MSK-IMPACT and MSK-ACCESS analysis spanning mutation
       annotation, genomic burden, copy-number and structural alterations, clonality,
       mutational signatures, longitudinal ctDNA, and clinical interpretation.
   - title: Thymus nnUNetv2 Segmentation
-    link: "https://github.com/Advanced-Computing-and-Oncology-Lab/Thymus-nnUNetv2-Segmentation"
+    link:
     description: >
       Five-fold nnUNetv2 framework for scalable thymus segmentation, inference,
       quantitative evaluation, and multiplanar quality control in thoracic CT.
   - title: Dysbioscope
-    link: "https://github.com/SecondBook5/Dysbioscope"
+    link:
     description: >
       Reproducible microbiome workflow for raw 16S processing, taxonomic classification,
       compositional inference, cross-cohort comparison, and visualization.
