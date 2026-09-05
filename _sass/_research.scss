@@ -2,7 +2,7 @@
 .research-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 28px;
+  gap: 30px;
 }
 
 .research-card {
@@ -18,13 +18,30 @@
   background: #f8f9fa;
 }
 
+.research-card-image-link {
+  display: block;
+  overflow: hidden;
+  background: #fff;
+
+  &:focus {
+    outline: 2px solid darken($theme-color, 10%);
+    outline-offset: -2px;
+  }
+}
+
 .research-card-image {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 360px;
+  max-height: 390px;
   object-fit: contain;
   background: #fff;
+  transition: transform 0.18s ease, opacity 0.18s ease;
+}
+
+.research-card-image-link:hover .research-card-image {
+  transform: scale(1.008);
+  opacity: 0.97;
 }
 
 .research-card-caption {
@@ -39,10 +56,11 @@
   display: block;
   margin-top: 4px;
   font-size: 11px;
+  line-height: 1.4;
 }
 
 .research-card-body {
-  padding: 18px 20px 20px;
+  padding: 19px 20px 21px;
 }
 
 .research-card-title {
@@ -74,11 +92,11 @@
 
 @media (max-width: 767px) {
   .research-grid {
-    gap: 20px;
+    gap: 22px;
   }
 
   .research-card-image {
-    max-height: 280px;
+    max-height: 300px;
   }
 
   .research-card-body {
