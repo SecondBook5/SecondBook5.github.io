@@ -16,23 +16,73 @@
   </div>
   {% endif %}
 
+  <div class="research-grid">
   {% for project in projects.assignments %}
-  <div class="item">
-    <span class="project-title">
-      {% if project.link %}
-      <a href="{{ project.link }}" target="_blank" rel="noopener noreferrer">{{ project.title }}</a>
-      {% else %}
-      {{ project.title }}
-      {% endif %}
-    </span>
+    {% assign visual_key = project.title | slugify %}
+    {% assign visual = site.data.research_visuals[visual_key] %}
 
-    <p class="project-tagline">
-      <strong>Problem.</strong> {{ project.problem }}
-      <strong>Contribution.</strong> {{ project.contribution }}
-      <strong>Status.</strong> {{ project.status }}
-    </p>
-  </div>
+    <article class="research-card">
+      {% if visual and visual.image %}
+      <figure class="research-card-figure">
+        {% if visual.link %}
+        <a
+          href="{{ visual.link }}"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="research-card-image-link"
+          aria-label="Open source for {{ project.title }}"
+        >
+        {% endif %}
+        <img
+          src="{{ visual.image | relative_url }}"
+          alt="{{ visual.alt }}"
+          loading="lazy"
+          decoding="async"
+          class="research-card-image"
+          onerror="this.closest('.research-card-figure').style.display='none';"
+        >
+        {% if visual.link %}
+        </a>
+        {% endif %}
+        {% if visual.caption %}
+        <figcaption class="research-card-caption">
+          {{ visual.caption }}
+          {% if visual.credit %}
+            <span class="research-card-credit">
+              {% if visual.credit_link %}
+              <a href="{{ visual.credit_link }}" target="_blank" rel="noopener noreferrer">{{ visual.credit }}</a>
+              {% else %}
+              {{ visual.credit }}
+              {% endif %}
+            </span>
+          {% endif %}
+        </figcaption>
+        {% endif %}
+      </figure>
+      {% endif %}
+
+      <div class="research-card-body">
+        <h3 class="research-card-title">
+          {% if project.link %}
+          <a href="{{ project.link }}" target="_blank" rel="noopener noreferrer">{{ project.title }}</a>
+          {% else %}
+          {{ project.title }}
+          {% endif %}
+        </h3>
+
+        <p class="research-card-question">{{ project.problem }}</p>
+
+        <p class="research-card-contribution">
+          <strong>My contribution.</strong> {{ project.contribution }}
+        </p>
+
+        <p class="research-card-status">
+          <strong>Status.</strong> {{ project.status }}
+        </p>
+      </div>
+    </article>
   {% endfor %}
+  </div>
 
 </section>
 {% endif %}

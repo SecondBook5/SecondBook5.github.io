@@ -1,6 +1,6 @@
 title: Publications
 intro: |
-  Selected peer-reviewed publications, preprints, and manuscripts.
+  Selected peer-reviewed publications, preprints, and manuscripts under review.
 papers:
 - title: "From stasis to systematics: deciphering the pathophysiology of secondary lymphedema through omics"
   link: "https://doi.org/10.3389/fimmu.2026.1850725"
@@ -17,10 +17,20 @@ papers:
   authors: Park HJ, Pal S, Chen X, Shin J, García Nores GD, Baik JE, Stull-Lane A, Book AJ, Clement CC, Encarnacion EM, Klang MG, Riedel E, Chaunzwa TL, Hespe GE, Santambrogio L, Coriddi M, Dayan JH, Mehrara BJ, Kataru RP.
   conference: "Clinical and Translational Medicine. 2026;16(6):e70682. doi: 10.1002/ctm2.70682."
 
+- title: CT-Derived Thymic Involution Is Associated with a Peripheral CD8+ Inhibitory-Receptor Phenotype and Inferior Survival in Unresected Locally Advanced NSCLC
+  link:
+  authors: Miller DG*, Chaunzwa TL*, Book AJ*, Amoako-Boadu K, Krishnan G, Wu A, Gelblum DY, Okamura YT, Kagami S-I, Rimner A, Deasy JO, Simone CB II, Gomez DR, Chaft JE, Shaverdian N.
+  conference: "Manuscript under review, 2026. *Shared first authorship."
+
+- title: Critical Role of Skin Mast Cells in Secondary Lymphedema Pathology
+  link:
+  authors: Roberts A, Chen X, Book AJ, Ashokan G, Shin J, Park HJ, Bodapati DG, Pollack BL, Stull-Lane AR, Rubin J, Campbell A-C, Wagner BD, Pal S, Chaunzwa TL, Hespe GE, Barrio AV, Mehrara BJ, Kataru RP.
+  conference: "Manuscript under review, 2026."
+
 - title: Mechanistic Modeling and Machine Learning Identifies Optimum Radiotherapy Schedules to Prevent Treatment-Induced Metastasis
-  link: "#"
+  link:
   authors: Graser CJ, Zhou Z, Schürch M, Moorhead G, Chaunzwa TL, Book AJ, Dean J, Lin C, Dean JA, Gomez D, Kozono D, Lahav G, Michor F.
-  conference: Manuscript under review, 2026.
+  conference: "Manuscript under review, 2026."
 
 - title: Thymus Composition, Disease Control, and Toxicity in Locally Advanced Lung Cancer
   link: "https://doi.org/10.1101/2025.10.20.25338395"
@@ -35,4 +45,4 @@ papers:
 - title: Actionable Tests and Treatments for Patients with Gastrointestinal Cancers and Historically Short Median Survival Times
   link: "https://doi.org/10.1371/journal.pone.0276492"
   authors: Bruckner HW, Bassali F, Dusowitz E, Gurell D, Book A, De Jager R.
-  conference: "PLOS One. 2022;17(11):e0276492. doi: 10.1371/journal.pone.0276492."
+  conference: "PLOS ONE. 2022;17(11):e0276492. doi: 10.1371/journal.pone.0276492."

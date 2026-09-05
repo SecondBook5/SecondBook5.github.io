@@ -1,0 +1,33 @@
+{% assign software = site.data.data.research-software %}
+{% if software %}
+<section class="section research-software-section">
+
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-code fa-stack-1x fa-inverse"></i>
+    </span>
+    {{ software.title }}
+  </h2>
+
+  {% if software.intro %}
+  <div class="intro">
+    <p>{{ software.intro }}</p>
+  </div>
+  {% endif %}
+
+  {% for item in software.contributions %}
+  <div class="item">
+    <span class="project-title">
+      {% if item.link %}
+      <a href="{{ item.link }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+      {% else %}
+      {{ item.title }}
+      {% endif %}
+    </span>
+    <p class="project-tagline">{{ item.description }}</p>
+  </div>
+  {% endfor %}
+
+</section>
+{% endif %}
