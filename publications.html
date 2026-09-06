@@ -3,32 +3,49 @@ layout: portfolio
 page_title: Publications
 nav: publications
 permalink: /publications/
-description: Peer-reviewed publications, preprints, manuscripts under review, published meeting abstracts, and scientific presentations by AJ Book.
+description: Peer-reviewed research articles, reviews, preprints, manuscripts, published meeting abstracts, and scientific presentations by AJ Book.
 ---
 
 <header class="page-header">
   <div class="shell">
     <p class="eyebrow">Scientific record</p>
     <h1>Publications &amp; presentations</h1>
-    <p class="page-lede">Peer-reviewed papers, public preprints, manuscripts under review, published meeting abstracts, and selected scientific presentations. <strong>Book AJ</strong> is emphasized in author lists.</p>
+    <p class="page-lede">A complete research record, separated by publication status so full articles, current manuscripts, and journal-indexed meeting abstracts remain easy to distinguish.</p>
     <p class="record-link"><a class="text-link" href="https://scholar.google.com/citations?user=yK6YIE4AAAAJ&hl=en">Google Scholar →</a> &nbsp;·&nbsp; <a class="text-link" href="https://orcid.org/0009-0004-7058-7510">ORCID →</a></p>
+    <p class="record-note"><strong>Book AJ</strong> is emphasized in author lists. An asterisk denotes shared first authorship where indicated.</p>
   </div>
 </header>
 
 <section class="section publications-section">
-  <div class="shell">
+  <div class="shell publication-shell">
     <div class="pub-group">
       <p class="section-kicker">Peer reviewed</p>
-      <h2>Publications</h2>
+      <h2>Original research</h2>
       <ul class="publication-list">
         {% for paper in site.data.publications.papers %}
-          {% unless paper.conference contains 'Manuscript under review' or paper.conference contains 'medRxiv' %}
+          {% if paper.type == 'original_research' %}
           <li class="publication-item">
             <p class="pub-title">{% if paper.link %}<a href="{{ paper.link }}">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</p>
-            <p class="pub-authors">{{ paper.authors | replace: 'Book AJ', '<strong>Book AJ</strong>' | replace: 'Book A,', '<strong>Book A</strong>,' }}</p>
+            <p class="pub-authors">{{ paper.authors | replace: 'Book AJ', '<strong>Book AJ</strong>' }}</p>
             <p class="pub-venue">{{ paper.conference }}</p>
           </li>
-          {% endunless %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="pub-group">
+      <p class="section-kicker">Peer reviewed</p>
+      <h2>Review &amp; correspondence</h2>
+      <ul class="publication-list">
+        {% for paper in site.data.publications.papers %}
+          {% if paper.type == 'review' or paper.type == 'correspondence' %}
+          <li class="publication-item">
+            <p class="pub-title">{% if paper.link %}<a href="{{ paper.link }}">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</p>
+            <p class="pub-authors">{{ paper.authors | replace: 'Book AJ', '<strong>Book AJ</strong>' }}</p>
+            <p class="pub-venue">{{ paper.conference }}</p>
+          </li>
+          {% endif %}
         {% endfor %}
       </ul>
     </div>
@@ -38,10 +55,10 @@ description: Peer-reviewed publications, preprints, manuscripts under review, pu
       <h2>Publicly available manuscripts</h2>
       <ul class="publication-list">
         {% for paper in site.data.publications.papers %}
-          {% if paper.conference contains 'medRxiv' %}
+          {% if paper.type == 'preprint' %}
           <li class="publication-item">
             <p class="pub-title">{% if paper.link %}<a href="{{ paper.link }}">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</p>
-            <p class="pub-authors">{{ paper.authors | replace: 'Book AJ', '<strong>Book AJ</strong>' | replace: 'Book A,', '<strong>Book A</strong>,' }}</p>
+            <p class="pub-authors">{{ paper.authors | replace: 'Book AJ', '<strong>Book AJ</strong>' }}</p>
             <p class="pub-venue">{{ paper.conference }}</p>
           </li>
           {% endif %}
@@ -50,14 +67,14 @@ description: Peer-reviewed publications, preprints, manuscripts under review, pu
     </div>
 
     <div class="pub-group">
-      <p class="section-kicker">In review</p>
-      <h2>Manuscripts under review</h2>
+      <p class="section-kicker">Current manuscripts</p>
+      <h2>Under review</h2>
       <ul class="publication-list">
         {% for paper in site.data.publications.papers %}
-          {% if paper.conference contains 'Manuscript under review' %}
+          {% if paper.type == 'under_review' %}
           <li class="publication-item">
             <p class="pub-title">{{ paper.title }}</p>
-            <p class="pub-authors">{{ paper.authors | replace: 'Book AJ', '<strong>Book AJ</strong>' | replace: 'Book A,', '<strong>Book A</strong>,' }}</p>
+            <p class="pub-authors">{{ paper.authors | replace: 'Book AJ', '<strong>Book AJ</strong>' }}</p>
             <p class="pub-venue">{{ paper.conference }}</p>
           </li>
           {% endif %}
@@ -65,24 +82,43 @@ description: Peer-reviewed publications, preprints, manuscripts under review, pu
       </ul>
     </div>
 
-    <div class="pub-group">
-      <p class="section-kicker">Published abstracts</p>
-      <h2>Published meeting abstracts</h2>
-      <p class="section-intro">Journal-indexed meeting abstracts are listed separately from full-length peer-reviewed papers.</p>
+    <div class="pub-group pub-group-secondary">
+      <p class="section-kicker">Current manuscripts</p>
+      <h2>In preparation</h2>
       <ul class="publication-list">
-        {% for abstract in site.data.meeting_abstracts.abstracts %}
-        <li class="publication-item">
-          <p class="pub-title">{% if abstract.link %}<a href="{{ abstract.link }}">{{ abstract.title }}</a>{% else %}{{ abstract.title }}{% endif %}</p>
-          <p class="pub-authors">{{ abstract.authors | replace: 'Book AJ', '<strong>Book AJ</strong>' }}</p>
-          <p class="pub-venue">{{ abstract.venue }}{% if abstract.doi %} doi: {{ abstract.doi }}.{% endif %}</p>
-        </li>
+        {% for paper in site.data.publications.papers %}
+          {% if paper.type == 'in_preparation' %}
+          <li class="publication-item">
+            <p class="pub-title">{{ paper.title }}</p>
+            <p class="pub-authors">{{ paper.authors | replace: 'Book AJ', '<strong>Book AJ</strong>' }}</p>
+            <p class="pub-venue">{{ paper.conference }}</p>
+          </li>
+          {% endif %}
         {% endfor %}
       </ul>
+    </div>
+
+    <div class="pub-group meeting-abstract-group">
+      <p class="section-kicker">Journal indexed</p>
+      <h2>Published meeting abstracts</h2>
+      <p class="group-intro">Conference abstracts published in journal supplements or proceedings, listed separately from full-length articles.</p>
+      <details class="archive-details">
+        <summary>Show published meeting abstracts ({{ site.data.meeting_abstracts.abstracts | size }})</summary>
+        <ul class="publication-list archive-list">
+          {% for item in site.data.meeting_abstracts.abstracts %}
+          <li class="publication-item">
+            <p class="pub-title">{% if item.link %}<a href="{{ item.link }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</p>
+            <p class="pub-authors">{{ item.authors | replace: 'Book AJ', '<strong>Book AJ</strong>' }}</p>
+            <p class="pub-venue">{{ item.venue }}{% if item.doi %} doi:{{ item.doi }}.{% endif %}</p>
+          </li>
+          {% endfor %}
+        </ul>
+      </details>
     </div>
 
     <div class="pub-group">
       <p class="section-kicker">Presentations</p>
-      <h2>Selected posters &amp; conference abstracts</h2>
+      <h2>Selected posters &amp; accepted abstracts</h2>
       <ul class="publication-list">
         {% for item in site.data.data.oss.contributions %}
         <li class="publication-item">
