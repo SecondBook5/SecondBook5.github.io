@@ -1,0 +1,71 @@
+title: Published Meeting Abstracts
+abstracts:
+  - title: "Leveraging large language models on personal computers for automated identification of lung cancer progression in radiology reports"
+    authors: "Kim A, Miller DG, Lee V, Simhal AK, Meng YJ, Book AJ, Chidi A, Gomez DR, Chaunzwa TL."
+    venue: "2025 ASCO Quality Care Symposium. JCO Oncology Practice. 2025;21(10_suppl):624."
+    doi: "10.1200/OP.2025.21.10_suppl.624"
+    link: "https://doi.org/10.1200/OP.2025.21.10_suppl.624"
+
+  - title: "Routine prognostic blood tests to compare survival outcomes with low-dose therapy in treatment-naïve and resistant advanced pancreatic cancer"
+    authors: "Bruckner HW, Knopf E, De Jager RL, Book AJ, Bassali F."
+    venue: "2026 ASCO Annual Meeting. Journal of Clinical Oncology. 2026;44(16_suppl):e16349."
+    doi: "10.1200/JCO.2026.44.16_suppl.e16349"
+    link: "https://doi.org/10.1200/JCO.2026.44.16_suppl.e16349"
+
+  - title: "Role of routine prognostic blood tests in evaluating chances of safely prolonged survival across all ages"
+    authors: "De Jager RL, Knopf E, Bassali F, Book AJ, Bruckner HW."
+    venue: "2026 ASCO Annual Meeting. Journal of Clinical Oncology. 2026;44(16_suppl):e16348."
+    doi: "10.1200/JCO.2026.44.16_suppl.e16348"
+    link: "https://doi.org/10.1200/JCO.2026.44.16_suppl.e16348"
+
+  - title: "Predictive blood tests identify patients who achieve prolonged survival with low-dose multi-drug chemotherapy in new and resistant pancreatic cancers"
+    authors: "Bruckner HW, Knopf E, De Jager R, Book AJ, Bassali F."
+    venue: "Annals of Oncology. 2025;36:S1927. Published meeting abstract."
+
+  - title: "Blood tests identify expanded eligibility and prolonged survival across all ages"
+    authors: "De Jager R, Book AJ, Knopf E, Bassali F, Bruckner HW."
+    venue: "SIOG 2025 Annual Conference. Journal of Geriatric Oncology. 2025;16(8 Suppl):102439."
+    doi: "10.1016/j.jgo.2025.102439"
+    link: "https://doi.org/10.1016/j.jgo.2025.102439"
+
+  - title: "Practical tests and 5th line treatments for real-world elderly with ovarian cancer"
+    authors: "Bruckner HW, Knopf E, Bassali F, Book AJ, De Jager R."
+    venue: "International Society of Geriatric Oncology Annual Conference. Journal of Geriatric Oncology. 2023;14(8):S14."
+    doi: "10.1016/S1879-4068(23)00281-3"
+    link: "https://doi.org/10.1016/S1879-4068(23)00281-3"
+
+  - title: "Blood tests predict safe survival of elderly with resistant GI cancers"
+    authors: "Bruckner HW, Hirschfeld A, DeJager R, Bassali F, Gurell D, Nghiem V, Dusowitz E, Distenfeld S, Schwartz M, Book AJ."
+    venue: "International Society of Geriatric Oncology Annual Conference. Journal of Geriatric Oncology. 2021;12(8):S51."
+    doi: "10.1016/S1879-4068(21)00427-6"
+    link: "https://doi.org/10.1016/S1879-4068(21)00427-6"
+
+  - title: "Moderate dose serial therapy for aged and resistant patients with cholangiocarcinomas"
+    authors: "Bruckner HW, Hirschfeld A, De Jager RL, Bassali F, Gurell D, Nghiem V, Book AJ, Distenfeld S, Schwartz ME."
+    venue: "2021 ASCO Annual Meeting. Journal of Clinical Oncology. 2021;39(15_suppl):e16160."
+    doi: "10.1200/JCO.2021.39.15_suppl.e16160"
+    link: "https://doi.org/10.1200/JCO.2021.39.15_suppl.e16160"
+
+  - title: "Blood tests to predict one- to two-year survival of patients with difficult cancers"
+    authors: "De Jager RL, Bruckner HW, Bassali F, Dusowitz E, Book AJ, Distenfeld S, Hirschfeld A."
+    venue: "2021 ASCO Annual Meeting. Journal of Clinical Oncology. 2021;39(15_suppl):e16158."
+    doi: "10.1200/JCO.2021.39.15_suppl.e16158"
+    link: "https://doi.org/10.1200/JCO.2021.39.15_suppl.e16158"
+
+  - title: "Survival and prognostic tests in a real-world phase II experience with a safe, moderate-dose, sequential chemotherapy algorithm for metastatic pancreatic adenocarcinoma"
+    authors: "De Jager RL, Bruckner HW, Bassali F, Hirschfeld A, Gurell D, Nghiem V, Distenfeld S, Weinberger NS, Book AJ."
+    venue: "2020 ASCO Annual Meeting. Journal of Clinical Oncology. 2020;38(15_suppl):e16763."
+    doi: "10.1200/JCO.2020.38.15_suppl.e16763"
+    link: "https://doi.org/10.1200/JCO.2020.38.15_suppl.e16763"
+
+  - title: "Moderate sequential third- to fourth-line chemotherapy algorithms for the elderly with resistant colorectal cancer"
+    authors: "De Jager R, Bruckner HW, Hirschfeld A, Gurell D, Nghiem V, Book AJ, Distenfeld S, Weinberger NS."
+    venue: "SIOG 2019 Annual Conference. Journal of Geriatric Oncology. 2019;10(6):S47–S48."
+    doi: "10.1016/S1879-4068(19)31196-8"
+    link: "https://doi.org/10.1016/S1879-4068(19)31196-8"
+
+  - title: "Moderate dose sequential chemotherapy algorithms for the elderly with and without resistant cancers"
+    authors: "Bruckner HW, Hirschfeld A, De Jager R, Bassali F, Gurell D, Nghiem V, et al."
+    venue: "SIOG 2019 Annual Conference. Journal of Geriatric Oncology. 2019;10(6):S39."
+    doi: "10.1016/S1879-4068(19)31181-6"
+    link: "https://doi.org/10.1016/S1879-4068(19)31181-6"

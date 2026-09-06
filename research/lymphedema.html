@@ -1,0 +1,130 @@
+---
+layout: portfolio
+page_title: Secondary Lymphedema
+nav: research
+permalink: /research/lymphedema/
+description: AJ Book's collaborative computational research on persistent tissue remodeling in secondary lymphedema using single-cell, transcriptomic, proteomic, microbiome, and experimental data.
+og_image: /assets/images/research/lymphedema-par2-published.png
+---
+
+<header class="project-hero">
+  <div class="shell project-hero-inner">
+    <div>
+      <a class="back-link" href="{{ '/research/' | relative_url }}">← Research</a>
+      <p class="eyebrow">Chronic inflammation · Multi-omics</p>
+      <h1>Secondary lymphedema</h1>
+      <p class="project-lede">Using complementary molecular measurements to identify persistent tissue-state biology while separating it from cell composition, cohort structure, and measurement artifacts.</p>
+    </div>
+  </div>
+</header>
+
+<section class="project-visual-section">
+  <div class="shell">
+    <figure class="project-hero-figure">
+      <img src="{{ '/assets/images/research/lymphedema-par2-published.png' | relative_url }}" alt="Published secondary lymphedema figure showing epidermal inflammatory remodeling and single-cell localization of F2RL1 PAR2 expression">
+      <figcaption>Epidermal inflammatory remodeling and cell-specific PAR2 biology in secondary lymphedema. Adapted from Park et al., <em>Clinical and Translational Medicine</em> (2026), CC BY 4.0.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="project-facts-section">
+  <div class="shell project-facts">
+    <div><span class="fact-label">Role</span><strong>Computational collaborator, Mehrara Laboratory</strong></div>
+    <div><span class="fact-label">Cellular scale</span><strong>Paired human skin single-cell analyses</strong></div>
+    <div><span class="fact-label">System scale</span><strong>Transcriptomics + proteomics + microbiome</strong></div>
+    <div><span class="fact-label">Validation</span><strong>Experimental assays, physiology, histopathology</strong></div>
+  </div>
+</section>
+
+<section class="project-story-section">
+  <div class="shell story-grid">
+    <aside class="story-rail">
+      <p class="section-kicker">Scientific problem</p>
+      <h2>What keeps tissue altered after the initiating injury?</h2>
+    </aside>
+    <div class="story-copy">
+      <p>Secondary lymphedema is not simply an acute inflammatory episode. Epithelial, stromal, immune, and lymphatic compartments remain remodeled, creating a useful system for studying persistent tissue state across multiple biological scales.</p>
+      <p>My role in the Mehrara laboratory is computational. I lead and contribute analyses that connect human single-cell transcriptomics, bulk RNA-seq, proteomics, microbiome data, and orthogonal experimental measurements to determine which tissue programs persist and which apparent differences disappear under more careful analysis.</p>
+    </div>
+  </div>
+</section>
+
+<section class="project-story-section alt-section">
+  <div class="shell story-grid">
+    <aside class="story-rail">
+      <p class="section-kicker">Cell state</p>
+      <h2>Separate redistribution of cell states from regulation within a state.</h2>
+    </aside>
+    <div class="story-copy">
+      <p>In paired human skin single-cell data, I use state-aware analyses to distinguish changes in cell abundance from transcriptional changes within established populations. This localized F2RL1/PAR2 enrichment to specific keratinocyte states rather than treating epidermal expression as a single bulk signal.</p>
+      <p>In a separate 79,054-cell atlas, the same logic identified an inflammatory, IL13-enriched mast-cell program consistent with remodeling within established mast-cell states. The distinction matters because a disease-associated signal can arise either from more of a cell state or from a true change within that state.</p>
+      <div class="evidence-callout two-up">
+        <span><small>Keratinocytes</small><strong>State-localized PAR2</strong></span>
+        <span><small>Mast-cell atlas</small><strong>79,054 cells</strong></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="project-story-section">
+  <div class="shell story-grid">
+    <aside class="story-rail">
+      <p class="section-kicker">Multimodal validation</p>
+      <h2>Use each modality for the question it can actually answer.</h2>
+    </aside>
+    <div class="story-copy">
+      <p>Bulk transcriptomics captures coordinated tissue programs, proteomics asks whether those programs are reflected at the protein level, and single-cell data localize them to specific cell states. In the capecitabine project, I integrated these molecular measurements with endothelial assays, genetic perturbation, lymphatic physiology, and spatial histopathology.</p>
+      <p>The combined analysis showed that valve and contractile remodeling accompanied impaired collecting-vessel structure and pumping rather than functional recovery. Related work links lymphedema-fluid signatures of epithelial-barrier loss, TGF-β/EMT, and tissue stress to spatially localized dermal-backflow pathology.</p>
+    </div>
+  </div>
+</section>
+
+<section class="project-story-section alt-section">
+  <div class="shell story-grid">
+    <aside class="story-rail">
+      <p class="section-kicker">Measurement lesson</p>
+      <h2>A large biological-looking difference can disappear when the measurement process is harmonized.</h2>
+    </aside>
+    <div class="story-copy">
+      <p>Across more than 500 microbiome samples from three cohorts, related datasets initially appeared to differ by nearly two-fold in taxonomic richness, approximately 210 versus 104 detected genera. After harmonizing classification, the counts were approximately 213 versus 203.</p>
+      <p>That discrepancy motivated Dysbioscope, a config-driven workflow for measurement-aware cross-cohort microbiome analysis. The lesson is broader than microbiome work: before explaining a striking difference biologically, test whether the pipeline created it.</p>
+      <div class="benchmark-callout microbiome-callout" aria-label="Microbiome harmonization example">
+        <span><small>Before harmonization</small><strong>210 vs 104</strong></span>
+        <span class="benchmark-arrow">→</span>
+        <span><small>After harmonization</small><strong>213 vs 203</strong></span>
+        <span class="benchmark-note">Detected genera across related cohorts; &gt;500 samples total</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="project-story-section inference-section">
+  <div class="shell story-grid">
+    <aside class="story-rail">
+      <p class="section-kicker">Collaboration</p>
+      <h2>Computational inference should remain anchored to the experimental system.</h2>
+    </aside>
+    <div class="story-copy">
+      <p>This work is deliberately collaborative. My contribution is the computational design, analysis, harmonization, and interpretation that connect molecular measurements to experiments performed by the Mehrara and Kataru teams.</p>
+      <p>Published work has examined PAR2-associated epidermal remodeling and the broader omic architecture of secondary lymphedema. Ongoing analyses and manuscripts are described here only at a level already represented in my public research record.</p>
+    </div>
+  </div>
+</section>
+
+<section class="project-outputs-section">
+  <div class="shell">
+    <div class="section-head compact-head">
+      <div>
+        <p class="section-kicker">Selected outputs</p>
+        <h2>Related work</h2>
+      </div>
+    </div>
+    <ul class="output-list">
+      <li class="output-item"><p class="output-meta">Clinical and Translational Medicine · 2026</p><p class="output-title"><a href="https://doi.org/10.1002/ctm2.70682">Critical Role of Keratinocytes and Protease-Activated Receptor 2 in Secondary Lymphedema Development</a></p></li>
+      <li class="output-item"><p class="output-meta">Frontiers in Immunology · 2026</p><p class="output-title"><a href="https://doi.org/10.3389/fimmu.2026.1850725">From Stasis to Systematics: Deciphering the Pathophysiology of Secondary Lymphedema Through Omics</a></p></li>
+      <li class="output-item"><p class="output-meta">Manuscript under review · 2026</p><p class="output-title">Critical Role of Skin Mast Cells in Secondary Lymphedema Pathology</p></li>
+      <li class="output-item"><p class="output-meta">Manuscript in preparation · 2026</p><p class="output-title">Capecitabine Impairs Lymphatic Endothelial Repair and Collecting-Vessel Function</p></li>
+      <li class="output-item"><p class="output-meta">Manuscript in preparation · 2026</p><p class="output-title">Dermal Backflow Correlates with Inflammatory Responses and Epidermal Changes in Secondary Lymphedema</p></li>
+    </ul>
+  </div>
+</section>

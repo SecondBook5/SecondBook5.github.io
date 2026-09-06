@@ -1,48 +1,81 @@
 title: Publications
 intro: |
-  Selected peer-reviewed publications, preprints, and manuscripts under review.
+  Peer-reviewed research articles, reviews and correspondence, preprints, current manuscripts, and published meeting abstracts.
 papers:
-- title: "From stasis to systematics: deciphering the pathophysiology of secondary lymphedema through omics"
-  link: "https://doi.org/10.3389/fimmu.2026.1850725"
-  authors: Stull-Lane AR, Chen X, Book AJ, Kratchmarov R, Pal S, Shin J, Ashokan G, Hespe GE, Mehrara BJ, Kataru RP.
-  conference: "Frontiers in Immunology. 2026;17:1850725. doi: 10.3389/fimmu.2026.1850725."
+  - type: original_research
+    title: "Thymic Composition Predicts Radiation Pneumonitis in Locally Advanced NSCLC"
+    link: "https://doi.org/10.1016/j.jtho.2026.103949"
+    authors: "Chaunzwa TL, Krishnan G, Book AJ, Miller DG, Amoako-Boadu K, Garomsa B, Meng YJ, Yang E, Ma J, Chidi A, Gomez DR, Shaverdian N."
+    conference: "Journal of Thoracic Oncology. 2026;103949. doi:10.1016/j.jtho.2026.103949."
 
-- title: Thymic Composition Predicts Radiation Pneumonitis in Locally Advanced NSCLC
-  link: "https://doi.org/10.1016/j.jtho.2026.103949"
-  authors: Chaunzwa TL, Krishnan G, Book AJ, Miller DG, Amoako-Boadu K, Garomsa B, Meng YJ, Yang E, Ma J, Chidi A, Gomez DR, Shaverdian N.
-  conference: "Journal of Thoracic Oncology. 2026;103949. doi: 10.1016/j.jtho.2026.103949."
+  - type: original_research
+    title: "Critical Role of Keratinocytes and Protease-Activated Receptor 2 in Secondary Lymphedema Development"
+    link: "https://doi.org/10.1002/ctm2.70682"
+    authors: "Park HJ, Pal S, Chen X, Shin J, García Nores GD, Baik JE, Stull-Lane A, Book AJ, Clement CC, Encarnacion EM, Klang MG, Riedel E, Chaunzwa TL, Hespe GE, Santambrogio L, Coriddi M, Dayan JH, Mehrara BJ, Kataru RP."
+    conference: "Clinical and Translational Medicine. 2026;16(6):e70682. doi:10.1002/ctm2.70682."
 
-- title: Critical Role of Keratinocytes and Protease-Activated Receptor 2 in Secondary Lymphedema Development
-  link: "https://doi.org/10.1002/ctm2.70682"
-  authors: Park HJ, Pal S, Chen X, Shin J, García Nores GD, Baik JE, Stull-Lane A, Book AJ, Clement CC, Encarnacion EM, Klang MG, Riedel E, Chaunzwa TL, Hespe GE, Santambrogio L, Coriddi M, Dayan JH, Mehrara BJ, Kataru RP.
-  conference: "Clinical and Translational Medicine. 2026;16(6):e70682. doi: 10.1002/ctm2.70682."
+  - type: original_research
+    title: "Cholangiocarcinoma, Sequential Chemotherapy, and Prognostic Tests"
+    link: "https://doi.org/10.3389/fonc.2024.1361420"
+    authors: "Bruckner HW, De Jager R, Knopf E, Bassali F, Book AJ, Gurell D, Nghiem V, Schwartz M, Hirschfeld A."
+    conference: "Frontiers in Oncology. 2024;14:1361420. doi:10.3389/fonc.2024.1361420."
 
-- title: CT-Derived Thymic Involution Is Associated with a Peripheral CD8+ Inhibitory-Receptor Phenotype and Inferior Survival in Unresected Locally Advanced NSCLC
-  link:
-  authors: Miller DG*, Chaunzwa TL*, Book AJ*, Amoako-Boadu K, Krishnan G, Wu A, Gelblum DY, Okamura YT, Kagami S-I, Rimner A, Deasy JO, Simone CB II, Gomez DR, Chaft JE, Shaverdian N.
-  conference: "Manuscript under review, 2026. *Shared first authorship."
+  - type: original_research
+    title: "Actionable Tests and Treatments for Patients with Gastrointestinal Cancers and Historically Short Median Survival Times"
+    link: "https://doi.org/10.1371/journal.pone.0276492"
+    authors: "Bruckner HW, Bassali F, Dusowitz E, Gurell D, Book AJ, De Jager R."
+    conference: "PLOS ONE. 2022;17(11):e0276492. doi:10.1371/journal.pone.0276492."
 
-- title: Critical Role of Skin Mast Cells in Secondary Lymphedema Pathology
-  link:
-  authors: Roberts A, Chen X, Book AJ, Ashokan G, Shin J, Park HJ, Bodapati DG, Pollack BL, Stull-Lane AR, Rubin J, Campbell A-C, Wagner BD, Pal S, Chaunzwa TL, Hespe GE, Barrio AV, Mehrara BJ, Kataru RP.
-  conference: "Manuscript under review, 2026."
+  - type: review
+    title: "From Stasis to Systematics: Deciphering the Pathophysiology of Secondary Lymphedema Through Omics"
+    link: "https://doi.org/10.3389/fimmu.2026.1850725"
+    authors: "Stull-Lane AR, Chen X, Book AJ, Kratchmarov R, Pal S, Shin J, Ashokan G, Hespe GE, Mehrara BJ, Kataru RP."
+    conference: "Frontiers in Immunology. 2026;17:1850725. doi:10.3389/fimmu.2026.1850725."
 
-- title: Mechanistic Modeling and Machine Learning Identifies Optimum Radiotherapy Schedules to Prevent Treatment-Induced Metastasis
-  link:
-  authors: Graser CJ, Zhou Z, Schürch M, Moorhead G, Chaunzwa TL, Book AJ, Dean J, Lin C, Dean JA, Gomez D, Kozono D, Lahav G, Michor F.
-  conference: "Manuscript under review, 2026."
+  - type: correspondence
+    title: "Enhancing Toxicity Reporting with Objective Measures and Contemporary Tools"
+    link: "https://doi.org/10.1200/OP-25-00139"
+    authors: "Bruckner HW, Knopf E, Book AJ, De Jager R."
+    conference: "JCO Oncology Practice. 2025;21(12):1891–1892. doi:10.1200/OP-25-00139."
 
-- title: Thymus Composition, Disease Control, and Toxicity in Locally Advanced Lung Cancer
-  link: "https://doi.org/10.1101/2025.10.20.25338395"
-  authors: Chaunzwa TL, Book AJ, Garomsa B, Meng YJ, Yang E, Krishnan G, Chidi A, Kim R, Ma J, Riely GJ, Huang J, Simone CB, Shaverdian N, Gomez DR.
-  conference: "medRxiv. 2025. doi: 10.1101/2025.10.20.25338395."
+  - type: preprint
+    title: "Thymus Composition, Disease Control, and Toxicity in Locally Advanced Lung Cancer"
+    link: "https://doi.org/10.1101/2025.10.20.25338395"
+    authors: "Chaunzwa TL, Book AJ, Garomsa B, Meng YJ, Yang E, Krishnan G, Chidi A, Kim R, Ma J, Riely GJ, Huang J, Simone CB, Shaverdian N, Gomez DR."
+    conference: "medRxiv. 2025. doi:10.1101/2025.10.20.25338395."
 
-- title: Cholangiocarcinoma, Sequential Chemotherapy, and Prognostic Tests
-  link: "https://doi.org/10.3389/fonc.2024.1361420"
-  authors: Bruckner HW, De Jager R, Knopf E, Bassali F, Book A, Gurell D, Nghiem V, Schwartz M, Hirschfeld A.
-  conference: "Frontiers in Oncology. 2024;14:1361420. doi: 10.3389/fonc.2024.1361420."
+  - type: under_review
+    title: "CT-Derived Thymic Involution Is Associated with a Peripheral CD8+ Inhibitory-Receptor Phenotype and Inferior Survival in Unresected Locally Advanced NSCLC"
+    link:
+    authors: "Miller DG*, Chaunzwa TL*, Book AJ*, Amoako-Boadu K, Krishnan G, Wu A, Gelblum DY, Okamura YT, Kagami S-I, Rimner A, Deasy JO, Simone CB II, Gomez DR, Chaft JE, Shaverdian N."
+    conference: "Manuscript under review, 2026. *Shared first authorship."
 
-- title: Actionable Tests and Treatments for Patients with Gastrointestinal Cancers and Historically Short Median Survival Times
-  link: "https://doi.org/10.1371/journal.pone.0276492"
-  authors: Bruckner HW, Bassali F, Dusowitz E, Gurell D, Book A, De Jager R.
-  conference: "PLOS ONE. 2022;17(11):e0276492. doi: 10.1371/journal.pone.0276492."
+  - type: under_review
+    title: "Critical Role of Skin Mast Cells in Secondary Lymphedema Pathology"
+    link:
+    authors: "Roberts A, Chen X, Book AJ, Ashokan G, Shin J, Park HJ, Bodapati DG, Pollack BL, Stull-Lane AR, Rubin J, Campbell A-C, Wagner BD, Pal S, Chaunzwa TL, Hespe GE, Barrio AV, Mehrara BJ, Kataru RP."
+    conference: "Manuscript under review, 2026."
+
+  - type: under_review
+    title: "Mechanistic Modeling and Machine Learning Identifies Optimum Radiotherapy Schedules to Prevent Treatment-Induced Metastasis"
+    link:
+    authors: "Graser CJ, Zhou Z, Schürch M, Moorhead G, Chaunzwa TL, Book AJ, Dean J, Lin C, Dean JA, Gomez D, Kozono D, Lahav G, Michor F."
+    conference: "Manuscript under review, 2026."
+
+  - type: in_preparation
+    title: "CT-Derived Host Immuno-Metabolic Phenotyping Predicts Response to Neoadjuvant Chemoimmunotherapy in Resectable Locally Advanced NSCLC"
+    link:
+    authors: "Chaunzwa TL*, Yang E*, Book AJ*, Lee V, Krishnan G, Chitsike L, Amoako-Boadu K, Miller D, Xiong K, Meng J, Bott M, Schoenfeld A, Simone CB II, Gomez D, Chaft J, Shaverdian N."
+    conference: "Manuscript in preparation, 2026. *Shared first authorship."
+
+  - type: in_preparation
+    title: "Capecitabine Impairs Lymphatic Endothelial Repair and Collecting-Vessel Function"
+    link:
+    authors: "Chen X, Book AJ, Roberts A, Shin J, Ashokan G, Sevilimedu V, Montagna G, Pal S, Hespe GE, Barrio AV, Mehrara BJ, Kataru RP."
+    conference: "Manuscript in preparation, 2026."
+
+  - type: in_preparation
+    title: "Dermal Backflow Correlates with Inflammatory Responses and Epidermal Changes in Secondary Lymphedema"
+    link:
+    authors: "Pal S, Brown S, Wagner BD, Book AJ, Clement C, Chen X, Campbell A-C, Shin J, Dayan JH, Coriddi M, Yoshimatsu H, Rochlin D, Santambrogio L, Hespe GE, Mehrara BJ, Kataru RP."
+    conference: "Manuscript in preparation, 2026."

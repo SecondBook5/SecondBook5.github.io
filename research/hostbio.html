@@ -1,0 +1,124 @@
+---
+layout: portfolio
+page_title: HostBio / Comp-MRF
+nav: research
+permalink: /research/hostbio/
+description: HostBio and Comp-MRF, AJ Book's work on probabilistic host-tissue phenotyping from routine clinical CT.
+og_image: /assets/images/research/hostbio-compmrf-posterior-map.png
+---
+
+<header class="project-hero">
+  <div class="shell project-hero-inner">
+    <div>
+      <a class="back-link" href="{{ '/research/' | relative_url }}">← Research</a>
+      <p class="eyebrow">Quantitative imaging · Host biology</p>
+      <h1>HostBio / Comp-MRF</h1>
+      <p class="project-lede">Treating routine clinical CT as a quantitative measurement of host tissue state, then asking whether the inferred phenotype survives contact with biology outside the image.</p>
+    </div>
+  </div>
+</header>
+
+<section class="project-visual-section">
+  <div class="shell">
+    <figure class="project-hero-figure">
+      <img src="{{ '/assets/images/research/hostbio-compmrf-posterior-map.png' | relative_url }}" alt="Axial, coronal, and sagittal thoracic CT views showing voxel-level posterior estimates of thymic fat and parenchymal tissue composition from HostBio Comp-MRF">
+      <figcaption>Voxel-level posterior estimates of thymic tissue composition from routine thoracic CT.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="project-facts-section">
+  <div class="shell project-facts">
+    <div><span class="fact-label">Origin</span><strong>Conceived and engineered at MSK</strong></div>
+    <div><span class="fact-label">Scale</span><strong>1,078 patients across four NSCLC cohorts</strong></div>
+    <div><span class="fact-label">Translation</span><strong>Implemented through MIM Development</strong></div>
+    <div><span class="fact-label">Validation</span><strong>Immune, genomic, treatment, and outcome data</strong></div>
+  </div>
+</section>
+
+<section class="project-story-section">
+  <div class="shell story-grid">
+    <aside class="story-rail">
+      <p class="section-kicker">Scientific problem</p>
+      <h2>Routine scans are abundant. Interpretable host measurements are not.</h2>
+    </aside>
+    <div class="story-copy">
+      <p>Clinical CT is acquired repeatedly and at enormous scale, but scanner settings, contrast, anatomy, and partial-volume mixing make raw intensity difficult to interpret biologically. A thresholded organ volume can therefore miss the part of the signal that matters most: tissue composition.</p>
+      <p>I developed HostBio around a different question: can routine imaging be turned into a stable, interpretable measurement of host tissue state that can then be challenged with independent biological data?</p>
+    </div>
+  </div>
+</section>
+
+<section class="project-story-section alt-section">
+  <div class="shell story-grid">
+    <aside class="story-rail">
+      <p class="section-kicker">Core idea</p>
+      <h2>Transfer the inference structure, not the measurement model.</h2>
+    </aside>
+    <div class="story-copy">
+      <p>The original insight came from recognizing a structural analogy with deconvolution problems in spatial transcriptomics: a measured unit can contain mixtures of underlying biological components. The analogy is useful, but the physics are different. CT requires a model of partial-volume mixing, acquisition variability, contrast, and spatial dependence rather than a transcript-count model.</p>
+      <p>Comp-MRF therefore estimates tissue-composition posteriors using scan-adaptive mixture modeling, spatial regularization, nuisance-component handling, and within-scan reference tissues. The output remains interpretable at the level of biological composition rather than becoming an opaque image embedding.</p>
+    </div>
+  </div>
+</section>
+
+<section class="project-story-section">
+  <div class="shell story-grid">
+    <aside class="story-rail">
+      <p class="section-kicker">Validation at scale</p>
+      <h2>The phenotype has to earn its biological interpretation.</h2>
+    </aside>
+    <div class="story-copy">
+      <p>I validate HostBio-derived thymic phenotypes against measurements that do not come from CT. Across 1,078 patients in four independent NSCLC cohorts, including randomized RTOG-0617, the analyses integrate immune profiling, targeted tumor and cfDNA sequencing, treatment exposure, toxicity, response, and survival.</p>
+      <p>These studies identify treatment-context-dependent associations with outcome and toxicity, and link lower thymic reserve to persistent suppressive or exhaustion-associated peripheral immune programs and impaired treatment-emergent CD8+ proliferation. The point is not that CT substitutes for immunology. It is that imaging can provide a scalable host phenotype whose biological meaning can be tested directly.</p>
+      <div class="evidence-callout">
+        <span><small>Independent cohorts</small><strong>4</strong></span>
+        <span><small>Patients</small><strong>1,078</strong></span>
+        <span><small>Randomized data</small><strong>RTOG-0617</strong></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="project-story-section alt-section">
+  <div class="shell story-grid">
+    <aside class="story-rail">
+      <p class="section-kicker">Generalization</p>
+      <h2>From one organ to a host-state measurement layer.</h2>
+    </aside>
+    <div class="story-copy">
+      <p>The same framework is being extended beyond thymus to coordinated phenotyping of skeletal muscle, adipose tissue, liver, adrenal, thyroid, and other host compartments. In resectable NSCLC, ongoing work integrates thymic activity and myosteatosis with PD-L1, tumor genomics, chromosomal instability, toxicity, and pathologic response to study host immunometabolic state.</p>
+      <p>This broader program also includes deep-learning segmentation, pretrained CT risk models, serial cone-beam CT, and longitudinal imaging. The common objective is not simply better image analysis. It is to define quantitative measurements that can support biological and clinical inference.</p>
+    </div>
+  </div>
+</section>
+
+<section class="project-story-section inference-section">
+  <div class="shell story-grid">
+    <aside class="story-rail">
+      <p class="section-kicker">Research stance</p>
+      <h2>The objective is not segmentation. It is a defensible measurement layer.</h2>
+    </aside>
+    <div class="story-copy">
+      <p>Automated segmentation makes cohort-scale analysis possible, but HostBio is aimed at a different problem: extracting quantitative host phenotypes from routine clinical imaging and determining when those phenotypes represent meaningful immune and tissue biology.</p>
+      <p>That distinction is central to how I approach computational biology. A model is most useful when its representation has a clear measurement interpretation, its assumptions and uncertainty are visible, and its outputs can be challenged with orthogonal data.</p>
+    </div>
+  </div>
+</section>
+
+<section class="project-outputs-section">
+  <div class="shell">
+    <div class="section-head compact-head">
+      <div>
+        <p class="section-kicker">Selected outputs</p>
+        <h2>Related work</h2>
+      </div>
+    </div>
+    <ul class="output-list">
+      <li class="output-item"><p class="output-meta">Journal of Thoracic Oncology · 2026</p><p class="output-title"><a href="https://doi.org/10.1016/j.jtho.2026.103949">Thymic Composition Predicts Radiation Pneumonitis in Locally Advanced NSCLC</a></p></li>
+      <li class="output-item"><p class="output-meta">Shared first author · manuscript under review · 2026</p><p class="output-title">CT-Derived Thymic Involution Is Associated with a Peripheral CD8+ Inhibitory-Receptor Phenotype and Inferior Survival in Unresected Locally Advanced NSCLC</p></li>
+      <li class="output-item"><p class="output-meta">medRxiv · 2025</p><p class="output-title"><a href="https://doi.org/10.1101/2025.10.20.25338395">Thymus Composition, Disease Control, and Toxicity in Locally Advanced Lung Cancer</a></p></li>
+      <li class="output-item"><p class="output-meta">Shared first author · manuscript in preparation · 2026</p><p class="output-title">CT-Derived Host Immuno-Metabolic Phenotyping Predicts Response to Neoadjuvant Chemoimmunotherapy in Resectable Locally Advanced NSCLC</p></li>
+    </ul>
+  </div>
+</section>

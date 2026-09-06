@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.page_title %}{{ page.page_title }} · {% endif %}AJ Book</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="author" content="Abraham J. Book">
+  <meta name="theme-color" content="#fbfaf7">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AJ Book">
+  <meta property="og:title" content="{% if page.page_title %}{{ page.page_title }} · {% endif %}AJ Book">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  {% if page.og_image %}
+  <meta property="og:image" content="{{ page.og_image | absolute_url }}">
+  <meta name="twitter:card" content="summary_large_image">
+  {% else %}
+  <meta name="twitter:card" content="summary">
+  {% endif %}
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/portfolio-v2.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/portfolio-components.css' | relative_url }}">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Abraham J. Book",
+    "alternateName": "AJ Book",
+    "url": "{{ '/' | absolute_url }}",
+    "jobTitle": "Research Assistant",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Memorial Sloan Kettering Cancer Center"
+    },
+    "alumniOf": [
+      {"@type": "CollegeOrUniversity", "name": "Johns Hopkins University"},
+      {"@type": "CollegeOrUniversity", "name": "Yeshiva University"}
+    ],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=yK6YIE4AAAAJ&hl=en",
+      "https://github.com/SecondBook5",
+      "https://www.linkedin.com/in/aj-abraham-book/",
+      "https://orcid.org/0009-0004-7058-7510"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="shell nav-shell">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="AJ Book home">AJ Book</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="{{ '/research/' | relative_url }}"{% if page.nav == 'research' %} class="active" aria-current="page"{% endif %}>Research</a>
+        <a href="{{ '/publications/' | relative_url }}"{% if page.nav == 'publications' %} class="active" aria-current="page"{% endif %}>Publications</a>
+        <a href="{{ '/cv/' | relative_url }}"{% if page.nav == 'cv' %} class="active" aria-current="page"{% endif %}>CV</a>
+        <a href="{{ '/about/' | relative_url }}"{% if page.nav == 'about' %} class="active" aria-current="page"{% endif %}>About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-shell">
+      <div>
+        <strong>AJ Book</strong><br>
+        Research Assistant, Memorial Sloan Kettering Cancer Center
+      </div>
+      <div class="footer-links">
+        <a href="mailto:ajbook12@gmail.com">Email</a>
+        <a href="https://scholar.google.com/citations?user=yK6YIE4AAAAJ&hl=en">Google Scholar</a>
+        <a href="https://github.com/SecondBook5">GitHub</a>
+        <a href="https://www.linkedin.com/in/aj-abraham-book/">LinkedIn</a>
+        <a href="https://orcid.org/0009-0004-7058-7510">ORCID</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
