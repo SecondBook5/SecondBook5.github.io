@@ -3,14 +3,14 @@ layout: portfolio
 page_title: CV
 nav: cv
 permalink: /cv/
-description: Expanded online curriculum vitae for AJ Book, including research experience, education, publications, presentations, software, and technical methods.
+description: Online curriculum vitae for AJ Book, including research experience, education, publications, presentations, research software, and technical methods.
 ---
 
 <header class="page-header">
   <div class="shell">
     <p class="eyebrow">Curriculum vitae</p>
-    <h1>Expanded online CV</h1>
-    <p class="page-lede">The online record is intentionally more complete than my application CV. The application document is selective; this page preserves additional project detail, methodological contributions, and research infrastructure behind the strongest claims.</p>
+    <h1>Curriculum vitae</h1>
+    <p class="page-lede">Research experience, education, publications, presentations, software, and technical methods. This online record preserves additional project detail and links each major research program to the underlying scientific story.</p>
   </div>
 </header>
 
@@ -44,6 +44,7 @@ description: Expanded online curriculum vitae for AJ Book, including research ex
           <li>Developed longitudinal quantitative-imaging approaches for serial cone-beam CT and tumor trajectories using radiomics, morphology, deformation analysis, mixed-effects models, joint longitudinal-survival modeling, and dynamic prediction; contributed the MSK clinical-imaging analysis to a collaborative mechanistic-modeling and machine-learning study of radiation-induced tumor migration.</li>
           <li>Engineered reusable computational infrastructure for multimodal oncology, including <strong>COSMIC-IMPACT</strong> for integrated MSK-IMPACT tumor sequencing and MSK-ACCESS longitudinal ctDNA analysis; established reproducible laboratory workflows, trained researchers, and developed a departmental research-analytics platform at the request of the Chair of Radiation Oncology.</li>
         </ul>
+        <p class="cv-context-links"><a href="{{ '/research/hostbio/' | relative_url }}">HostBio research page →</a></p>
         <details>
           <summary>Additional project detail</summary>
           <ul>
@@ -71,6 +72,7 @@ description: Expanded online curriculum vitae for AJ Book, including research ex
           <li>Analyze label-free proteomics from healthy and secondary-lymphedema tissue using differential-abundance, pathway, network, and systems-level methods.</li>
           <li>Developed <strong>Dysbioscope</strong>, a measurement-aware cross-cohort microbiome workflow after detecting an apparent two-fold diversity discrepancy across related datasets; harmonized classification reduced the contrast from approximately 210 versus 104 genera to 213 versus 203.</li>
         </ul>
+        <p class="cv-context-links"><a href="{{ '/research/lymphedema/' | relative_url }}">Secondary lymphedema research page →</a></p>
       </article>
 
       <article class="cv-entry">
@@ -87,6 +89,7 @@ description: Expanded online curriculum vitae for AJ Book, including research ex
           <li>Diagnosed failure of an original context-neutral optimal-transport assumption using prespecified synthetic recoverability benchmarks; biological regulatory projection reduced Tier-2 recovery to cosine 0.27, while conditional stratification improved recovery to 0.84 and supported a narrower conditional-transport interpretation.</li>
           <li>Evaluated robustness with patient-held-out analysis, matched-context shuffles, degeneracy controls, and cross-disease testing; presented StageBridge at the 2026 Center for Tumor Immune Systems Biology Symposium at Sloan Kettering Institute.</li>
         </ul>
+        <p class="cv-context-links"><a href="{{ '/research/stagebridge/' | relative_url }}">StageBridge research page →</a> <span aria-hidden="true">·</span> <a href="https://github.com/SecondBook5/crrt-ude">Public implementation →</a></p>
       </article>
 
       <article class="cv-entry">
@@ -166,7 +169,7 @@ description: Expanded online curriculum vitae for AJ Book, including research ex
 
     <section class="cv-section" id="publications">
       <h2>Publications</h2>
-      <p>The complete record is reproduced here; the <a href="{{ '/publications/' | relative_url }}">publications page</a> provides the same work grouped by publication status.</p>
+      <p>The complete record is reproduced here; the <a href="{{ '/publications/' | relative_url }}">publications page</a> groups the same work by publication status.</p>
       <ul class="publication-list">
         {% for paper in site.data.publications.papers %}
         <li class="publication-item">
@@ -192,7 +195,7 @@ description: Expanded online curriculum vitae for AJ Book, including research ex
 
     <section class="cv-section" id="software">
       <h2>Research Software</h2>
-      <article class="cv-entry"><h3>HostBio / Comp-MRF</h3><p class="cv-role">Scan-adaptive probabilistic host-tissue phenotyping from routine CT; implemented for MSK clinical research through MIM Development.</p></article>
+      <article class="cv-entry"><h3><a href="{{ '/research/hostbio/' | relative_url }}">HostBio / Comp-MRF</a></h3><p class="cv-role">Scan-adaptive probabilistic host-tissue phenotyping from routine CT; implemented for MSK clinical research through MIM Development.</p></article>
       <article class="cv-entry"><h3><a href="https://github.com/SecondBook5/CellQuorum">CellQuorum</a></h3><p class="cv-role">Configuration-driven single-cell analysis infrastructure with explicit data contracts, provenance tracking, and quality control.</p></article>
       <article class="cv-entry"><h3>COSMIC-IMPACT</h3><p class="cv-role">Integrated MSK-IMPACT and MSK-ACCESS analysis across somatic alterations, clonality, mutational signatures, genomic burden, and longitudinal ctDNA.</p></article>
       <article class="cv-entry"><h3>Dysbioscope</h3><p class="cv-role">Measurement-aware microbiome workflow for taxonomic harmonization, compositional inference, and cross-cohort comparison.</p></article>
