@@ -120,10 +120,11 @@ description: Peer-reviewed research articles, reviews, preprints, manuscripts, p
       <p class="section-kicker">Presentations</p>
       <h2>Selected posters &amp; accepted abstracts</h2>
       <ul class="publication-list">
-        {% for item in site.data.data.oss.contributions %}
+        {% for item in site.data.presentations.items %}
         <li class="publication-item">
           <p class="pub-title">{% if item.link %}<a href="{{ item.link }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</p>
-          <p class="pub-venue">{{ item.tagline }}</p>
+          <p class="pub-authors">{{ item.authors | replace: 'Book AJ', '<strong>Book AJ</strong>' }}</p>
+          <p class="pub-venue">{{ item.venue }}</p>
         </li>
         {% endfor %}
       </ul>
