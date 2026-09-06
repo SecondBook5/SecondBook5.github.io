@@ -1,40 +1,40 @@
 ---
 layout: portfolio
 page_title: Home
-description: AJ Book is a Research Assistant at Memorial Sloan Kettering studying biological memory, quantitative imaging, radiobiology, regulatory biology, and interpretable computational models of cell and tissue state.
+description: AJ Book is a Research Assistant at Memorial Sloan Kettering studying how inflammatory, age-associated, and treatment history reshape immune and tissue states using quantitative imaging, regulatory genomics, and interpretable computational modeling.
 ---
 
 <section class="hero">
   <div class="shell hero-grid">
     <div>
-      <p class="eyebrow">Computational &amp; Systems Biology · Memorial Sloan Kettering</p>
-      <h1>I study how inflammation, aging, and treatment leave biological memory in tissues, and how those histories reshape future cell and immune states.</h1>
+      <p class="eyebrow">Research Assistant · Memorial Sloan Kettering Cancer Center</p>
+      <h1>I study how inflammatory, age-associated, and treatment history reshape immune and tissue states, and how those changes can be inferred from incomplete human measurements.</h1>
       <p class="hero-subtitle">
-        I build interpretable computational models that recover latent biological state from routine imaging,
-        single-cell and spatial transcriptomics, and other incomplete human measurements, with particular attention
-        to measurement physics, uncertainty, identifiability, and biological validation.
+        Across quantitative imaging, radiobiology, single-cell and spatial genomics, and regulatory modeling,
+        I develop interpretable computational approaches that make measurement assumptions, uncertainty,
+        and identifiability explicit.
       </p>
-      <p class="method-line">Quantitative imaging · Radiobiology · Regulatory biology · Single-cell and spatial genomics · Probabilistic modeling</p>
-      <div class="hero-links">
+      <p class="hero-affiliation">M.S. Bioinformatics, Johns Hopkins University · B.A. Biochemistry, Yeshiva University</p>
+      <nav class="hero-links" aria-label="Research profile links">
         <a class="button-link" href="{{ '/research/' | relative_url }}">Research</a>
         <a class="button-link" href="{{ '/publications/' | relative_url }}">Publications</a>
         <a class="button-link" href="{{ '/cv/' | relative_url }}">CV</a>
         <a class="button-link" href="https://github.com/SecondBook5">GitHub</a>
-      </div>
+      </nav>
     </div>
     <img class="hero-portrait" src="https://avatars.githubusercontent.com/u/42758438?v=4" alt="Portrait of AJ Book">
   </div>
 </section>
 
-<section class="section">
+<section class="section research-home-section">
   <div class="shell">
     <div class="section-head">
       <div>
         <p class="section-kicker">Featured research</p>
         <h2>Three measurement systems, one inference problem</h2>
-        <p class="section-intro">The modality changes, but the question does not: what biological state is hidden behind an imperfect measurement, and what can that state legitimately tell us about history, mechanism, and future behavior?</p>
+        <p class="section-intro">The modality changes, but the question does not: what latent biological state is hidden behind an imperfect measurement, and what can that state legitimately tell us about history, mechanism, and future behavior?</p>
       </div>
-      <a class="text-link" href="{{ '/research/' | relative_url }}">Explore the research →</a>
+      <a class="text-link" href="{{ '/research/' | relative_url }}">Research overview →</a>
     </div>
 
     <article class="research-feature">
@@ -43,16 +43,12 @@ description: AJ Book is a Research Assistant at Memorial Sloan Kettering studyin
         <figcaption>Voxel-level posterior mapping of thymic tissue composition from routine thoracic CT.</figcaption>
       </figure>
       <div class="feature-copy">
-        <p class="section-kicker">Imaging host biology</p>
+        <p class="feature-role">Method development · MSK</p>
         <h3>HostBio / Comp-MRF</h3>
-        <p>I conceived and engineered HostBio to turn routine CT into an interpretable measurement of host tissue state rather than a purely anatomical image. Comp-MRF models partial-volume composition, spatial dependence, nuisance components, and within-scan references, and the resulting framework is now implemented for MSK clinical research through MIM Development.</p>
-        <p>I use those phenotypes to test links between host composition, immune state, tumor genomics, treatment response, toxicity, and outcome across lung-cancer cohorts.</p>
-        <div class="tags">
-          <span class="tag">Quantitative CT</span>
-          <span class="tag">Probabilistic modeling</span>
-          <span class="tag">Clinical translation</span>
-        </div>
-        <a class="text-link" href="{{ '/research/#hostbio' | relative_url }}">Read the research story →</a>
+        <p>I conceived and engineered HostBio to turn routine CT into an interpretable measurement of host tissue state rather than a purely anatomical image. Comp-MRF models partial-volume composition, spatial dependence, nuisance components, and within-scan references, and is implemented for MSK clinical research through MIM Development.</p>
+        <p>I then test whether those imaging-derived phenotypes correspond to biology outside the image using immune profiling, tumor genomics, treatment context, toxicity, response, and outcomes.</p>
+        <p class="feature-meta">Quantitative CT · Probabilistic modeling · Systems immunology</p>
+        <a class="text-link" href="{{ '/research/hostbio/' | relative_url }}">Explore HostBio →</a>
       </div>
     </article>
 
@@ -62,35 +58,27 @@ description: AJ Book is a Research Assistant at Memorial Sloan Kettering studyin
         <figcaption>Spatial state structure used to study premalignant epithelial progression and regulatory transitions.</figcaption>
       </figure>
       <div class="feature-copy">
-        <p class="section-kicker">Regulatory dynamics</p>
+        <p class="feature-role">Master's thesis · Johns Hopkins</p>
         <h3>StageBridge</h3>
-        <p>My M.S. thesis asks what aspects of biological progression can actually be inferred when human tissue is observed only cross-sectionally. I developed StageBridge around spatial and single-nucleus transcriptomics, transcription-factor activity, gene regulatory networks, and context-conditioned transport.</p>
+        <p>StageBridge asks what aspects of biological progression can actually be inferred when human tissue is observed only cross-sectionally. I developed it around spatial and single-nucleus transcriptomics, transcription-factor activity, gene regulatory networks, and context-conditioned transport.</p>
         <p>When an initially plausible transport assumption failed in biological regulatory space, I redesigned the coupling and narrowed the claim rather than preserve an unsupported trajectory interpretation.</p>
-        <div class="tags">
-          <span class="tag">Spatial transcriptomics</span>
-          <span class="tag">Gene regulatory networks</span>
-          <span class="tag">Optimal transport</span>
-        </div>
-        <a class="text-link" href="{{ '/research/#stagebridge' | relative_url }}">Read the research story →</a>
+        <p class="feature-meta">Spatial transcriptomics · Regulatory networks · Optimal transport</p>
+        <a class="text-link" href="{{ '/research/stagebridge/' | relative_url }}">Explore StageBridge →</a>
       </div>
     </article>
 
     <article class="research-feature">
       <figure class="feature-media">
         <img src="{{ '/assets/images/research/lymphedema-par2-published.png' | relative_url }}" alt="Published secondary lymphedema figure showing epidermal inflammatory remodeling and single-cell localization of PAR2 expression">
-        <figcaption>Epidermal inflammatory remodeling and cell-specific PAR2 biology in secondary lymphedema. Adapted from Park et al., Clinical and Translational Medicine (2026), CC BY 4.0.</figcaption>
+        <figcaption>Epidermal inflammatory remodeling and cell-specific PAR2 biology in secondary lymphedema. Adapted from Park et al., <em>Clinical and Translational Medicine</em> (2026), CC BY 4.0.</figcaption>
       </figure>
       <div class="feature-copy">
-        <p class="section-kicker">Persistent inflammatory state</p>
-        <h3>Secondary lymphedema multi-omics</h3>
+        <p class="feature-role">Collaborative systems biology · MSK</p>
+        <h3>Secondary lymphedema</h3>
         <p>In collaboration with the Mehrara laboratory, I use human single-cell and bulk transcriptomics, proteomics, and microbiome data to study why epithelial, stromal, immune, and lymphatic compartments remain altered after chronic lymphatic injury.</p>
-        <p>This work provides a complementary system for asking when persistent molecular signatures reflect durable tissue-state biology and when they instead arise from composition, cohort structure, or measurement artifacts.</p>
-        <div class="tags">
-          <span class="tag">Single-cell RNA-seq</span>
-          <span class="tag">Proteomics</span>
-          <span class="tag">Multi-omics</span>
-        </div>
-        <a class="text-link" href="{{ '/research/#lymphedema' | relative_url }}">Read the research story →</a>
+        <p>The project is also a test bed for measurement-aware analysis: persistent molecular signatures are only useful if they survive compositional, cohort, and pipeline artifacts.</p>
+        <p class="feature-meta">Single-cell RNA-seq · Proteomics · Multi-omics</p>
+        <a class="text-link" href="{{ '/research/lymphedema/' | relative_url }}">Explore lymphedema research →</a>
       </div>
     </article>
   </div>
@@ -98,20 +86,23 @@ description: AJ Book is a Research Assistant at Memorial Sloan Kettering studyin
 
 <section class="section approach-section">
   <div class="shell">
-    <p class="section-kicker">How I approach problems</p>
+    <p class="section-kicker">Research approach</p>
     <h2>The model is useful only if the inference is defensible.</h2>
     <div class="approach-grid">
       <div class="approach-item">
-        <h3>What is the latent biological state?</h3>
-        <p>How can it be recovered from noisy, indirect measurements without confusing the measurement process for the biology itself?</p>
+        <span class="approach-number">01</span>
+        <h3>Separate biology from measurement.</h3>
+        <p>Ask how the observation was generated before interpreting the signal. Imaging intensity, transcript counts, and taxonomic profiles each distort biology differently.</p>
       </div>
       <div class="approach-item">
-        <h3>What structure can transfer?</h3>
-        <p>Which computational ideas remain useful across imaging, spatial genomics, and other modalities, and what must change when the measurement physics changes?</p>
+        <span class="approach-number">02</span>
+        <h3>Transfer structure carefully.</h3>
+        <p>Reuse mathematical ideas across modalities when the underlying inverse problem is shared, but rebuild the measurement model when the physics or biology changes.</p>
       </div>
       <div class="approach-item">
-        <h3>What is actually identifiable?</h3>
-        <p>Which conclusions are constrained by the observations, and which require stronger assumptions, orthogonal measurements, or experimental perturbation?</p>
+        <span class="approach-number">03</span>
+        <h3>Make limits part of the result.</h3>
+        <p>Test what is identifiable, stress assumptions, and narrow the claim when the data do not support the stronger interpretation.</p>
       </div>
     </div>
   </div>
@@ -122,9 +113,9 @@ description: AJ Book is a Research Assistant at Memorial Sloan Kettering studyin
     <div class="section-head">
       <div>
         <p class="section-kicker">Selected outputs</p>
-        <h2>Research record</h2>
+        <h2>Recent research</h2>
       </div>
-      <a class="text-link" href="{{ '/publications/' | relative_url }}">View full record →</a>
+      <a class="text-link" href="{{ '/publications/' | relative_url }}">Full record →</a>
     </div>
     <ul class="output-list">
       <li class="output-item">
