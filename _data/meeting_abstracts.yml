@@ -1,5 +1,11 @@
 title: Published Meeting Abstracts
 abstracts:
+  - title: "Leveraging large language models on personal computers for automated identification of lung cancer progression in radiology reports"
+    authors: "Kim A, Miller DG, Lee V, Simhal AK, Meng YJ, Book AJ, Chidi A, Gomez DR, Chaunzwa TL."
+    venue: "2025 ASCO Quality Care Symposium. JCO Oncology Practice. 2025;21(10_suppl):624."
+    doi: "10.1200/OP.2025.21.10_suppl.624"
+    link: "https://doi.org/10.1200/OP.2025.21.10_suppl.624"
+
   - title: "Routine prognostic blood tests to compare survival outcomes with low-dose therapy in treatment-naïve and resistant advanced pancreatic cancer"
     authors: "Bruckner HW, Knopf E, De Jager RL, Book AJ, Bassali F."
     venue: "2026 ASCO Annual Meeting. Journal of Clinical Oncology. 2026;44(16_suppl):e16349."
