@@ -1,7 +1,9 @@
-# Site Settings
+# Site settings
 title: AJ Book
 url: 'https://secondbook5.github.io/'
-description: Research Assistant at Memorial Sloan Kettering studying biological memory, immune and tissue-state dynamics through quantitative imaging, radiobiology, single-cell and spatial transcriptomics, and interpretable computational modeling.
+description: Research Assistant at Memorial Sloan Kettering studying persistent immune and tissue states through quantitative imaging, regulatory genomics, and interpretable computational modeling.
+author: Abraham J. Book
+lang: en-US
 
 theme_skin: olive
 chrome_mobile_color:
@@ -16,6 +18,8 @@ sass:
 
 # Build settings
 compress-site: yes
+plugins:
+  - jekyll-sitemap
 
 encoding: "utf-8"
 compress_html:
@@ -23,7 +27,7 @@ compress_html:
   ignore:
     envs: development
 
-# Development Settings
+# Development settings
 port: 4000
 host: 0.0.0.0
 safe: false
