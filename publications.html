@@ -3,14 +3,14 @@ layout: portfolio
 page_title: Publications
 nav: publications
 permalink: /publications/
-description: Peer-reviewed publications, preprints, manuscripts under review, and scientific presentations by AJ Book.
+description: Peer-reviewed publications, preprints, manuscripts under review, published meeting abstracts, and scientific presentations by AJ Book.
 ---
 
 <header class="page-header">
   <div class="shell">
     <p class="eyebrow">Scientific record</p>
     <h1>Publications &amp; presentations</h1>
-    <p class="page-lede">Peer-reviewed papers, public preprints, manuscripts under review, and selected scientific presentations. <strong>Book AJ</strong> is emphasized in author lists.</p>
+    <p class="page-lede">Peer-reviewed papers, public preprints, manuscripts under review, published meeting abstracts, and selected scientific presentations. <strong>Book AJ</strong> is emphasized in author lists.</p>
     <p class="record-link"><a class="text-link" href="https://scholar.google.com/citations?user=yK6YIE4AAAAJ&hl=en">Google Scholar →</a> &nbsp;·&nbsp; <a class="text-link" href="https://orcid.org/0009-0004-7058-7510">ORCID →</a></p>
   </div>
 </header>
@@ -61,6 +61,21 @@ description: Peer-reviewed publications, preprints, manuscripts under review, an
             <p class="pub-venue">{{ paper.conference }}</p>
           </li>
           {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="pub-group">
+      <p class="section-kicker">Published abstracts</p>
+      <h2>Published meeting abstracts</h2>
+      <p class="section-intro">Journal-indexed meeting abstracts are listed separately from full-length peer-reviewed papers.</p>
+      <ul class="publication-list">
+        {% for abstract in site.data.meeting_abstracts.abstracts %}
+        <li class="publication-item">
+          <p class="pub-title">{% if abstract.link %}<a href="{{ abstract.link }}">{{ abstract.title }}</a>{% else %}{{ abstract.title }}{% endif %}</p>
+          <p class="pub-authors">{{ abstract.authors | replace: 'Book AJ', '<strong>Book AJ</strong>' }}</p>
+          <p class="pub-venue">{{ abstract.venue }}{% if abstract.doi %} doi: {{ abstract.doi }}.{% endif %}</p>
+        </li>
         {% endfor %}
       </ul>
     </div>
