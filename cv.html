@@ -3,28 +3,37 @@ layout: portfolio
 page_title: CV
 nav: cv
 permalink: /cv/
-description: Online curriculum vitae for AJ Book, including research experience, education, publications, presentations, research software, and technical methods.
+description: Online curriculum vitae for AJ Book, including research experience, education, publications, presentations, honors, service, software, and technical methods.
 ---
 
 <header class="page-header">
   <div class="shell">
     <p class="eyebrow">Curriculum vitae</p>
     <h1>Curriculum vitae</h1>
-    <p class="page-lede">Research experience, education, publications, presentations, software, and technical methods. This online record preserves additional project detail and links each major research program to the underlying scientific story.</p>
+    <p class="page-lede">The online CV preserves more detail than the application document while keeping the research record auditable and linking major projects to their scientific context.</p>
+    <p class="record-link"><a class="text-link" href="https://scholar.google.com/citations?user=yK6YIE4AAAAJ&hl=en">Google Scholar →</a> &nbsp;·&nbsp; <a class="text-link" href="https://orcid.org/0009-0004-7058-7510">ORCID →</a></p>
   </div>
 </header>
 
 <div class="shell cv-shell">
   <nav class="cv-toc" aria-label="CV sections">
+    <a href="#research-interests">Research interests</a>
     <a href="#research-experience">Research experience</a>
     <a href="#education">Education</a>
     <a href="#publications">Publications</a>
     <a href="#presentations">Presentations</a>
+    <a href="#honors">Honors &amp; awards</a>
+    <a href="#service">Leadership &amp; service</a>
     <a href="#software">Research software</a>
-    <a href="#methods">Methods</a>
+    <a href="#methods">Technical expertise</a>
   </nav>
 
   <div>
+    <section class="cv-section" id="research-interests">
+      <h2>Research Interests</h2>
+      <p class="cv-lede">Biological memory and dynamic cell-state transitions in inflammation, aging, and disease; regulatory and spatial mechanisms of persistent cellular state; mechanistic and probabilistic inference of latent biological states and dynamics from sparse, heterogeneous observations; cross-modal integration of molecular, single-cell, spatial, and imaging measurements, with emphasis on uncertainty, identifiability, and perturbational testing.</p>
+    </section>
+
     <section class="cv-section" id="research-experience">
       <h2>Research Experience</h2>
 
@@ -38,23 +47,12 @@ description: Online curriculum vitae for AJ Book, including research experience,
         </div>
         <p class="cv-role">Graduate Research Assistant, Mar 2025–Jul 2026</p>
         <ul>
-          <li>Conceived and engineered <strong>HostBio (Comp-MRF)</strong>, an interpretable, scan-adaptive probabilistic framework for recovering host-tissue composition from routine CT; translated mixture-deconvolution ideas from spatial transcriptomics into quantitative imaging and developed the method into a tool implemented for clinical research at MSK through MIM Development.</li>
-          <li>Validated and generalized HostBio across independent lung-cancer cohorts, linking imaging-derived host phenotypes with immune state, tumor genomics, treatment exposures, toxicity, response, and outcome, and extending the framework from thymic composition to multi-organ host phenotyping.</li>
-          <li>Applied <strong>AI and deep learning</strong> to thoracic imaging, supporting training and deployment of an nnU-Net v2 thymus-segmentation model and evaluating the pretrained Sybil model for CT-based lung-cancer risk prediction in female never-smokers; predicted risk significantly separated cancer cases from controls across all six prediction horizons in a 77-patient analysis.</li>
-          <li>Developed longitudinal quantitative-imaging approaches for serial cone-beam CT and tumor trajectories using radiomics, morphology, deformation analysis, mixed-effects models, joint longitudinal-survival modeling, and dynamic prediction; contributed the MSK clinical-imaging analysis to a collaborative mechanistic-modeling and machine-learning study of radiation-induced tumor migration.</li>
-          <li>Engineered reusable computational infrastructure for multimodal oncology, including <strong>COSMIC-IMPACT</strong> for integrated MSK-IMPACT tumor sequencing and MSK-ACCESS longitudinal ctDNA analysis; established reproducible laboratory workflows, trained researchers, and developed a departmental research-analytics platform at the request of the Chair of Radiation Oncology.</li>
+          <li>Conceived and engineered <strong>HostBio (Comp-MRF)</strong>, an interpretable, scan-adaptive probabilistic framework for recovering host-tissue composition from routine CT by translating mixture-deconvolution concepts from spatial transcriptomics into quantitative imaging; developed the framework into a tool adopted for institution-wide clinical research use at MSK via MIM Development.</li>
+          <li>Designed multimodal translational studies integrating quantitative imaging with targeted tumor and cfDNA sequencing, bulk and single-cell transcriptomics, flow cytometry, cytokine profiling, treatment exposure, and longitudinal outcomes; validated HostBio-derived thymic phenotypes across <strong>1,078 patients in four independent NSCLC cohorts</strong>, including randomized RTOG-0617, identifying treatment-context-dependent associations with survival and toxicity and linking lower thymic reserve to persistent suppressive/exhaustion immune programs and impaired treatment-emergent CD8+ proliferation.</li>
+          <li>Applied deep-learning models to thoracic imaging, supporting training and deployment of an nnU-Net v2 model for automated thymus segmentation and evaluating the pretrained Sybil model for CT-based lung-cancer risk prediction in 77 women; predicted risk significantly separated cases from controls across all six prediction horizons.</li>
+          <li>Developed longitudinal quantitative-imaging approaches for serial cone-beam CT and tumor trajectories using radiomics, longitudinal-survival modeling, and dynamic prediction; contributed the MSK clinical-imaging arm to a collaborative mechanistic-modeling and machine-learning study of radiation-induced tumor migration and treatment scheduling.</li>
         </ul>
         <p class="cv-context-links"><a href="{{ '/research/hostbio/' | relative_url }}">HostBio research page →</a></p>
-        <details>
-          <summary>Additional project detail</summary>
-          <ul>
-            <li>Extended quantitative host phenotyping across thymus, skeletal muscle, adipose tissue, liver, adrenal, thyroid, and additional host compartments to study coordinated tissue-composition states rather than isolated organ-size measures.</li>
-            <li>Integrated CT-derived thymic composition with longitudinal flow cytometry, cytokine profiling, tumor genomics, treatment exposures, and outcomes in locally advanced NSCLC, including an 89-patient cohort contributing 175 pretreatment blood samples.</li>
-            <li>Defined a host immunometabolic phenotype in 73 patients with resectable NSCLC by integrating thymic activity and myosteatosis with PD-L1, tumor genomics, chromosomal instability, toxicity, and pathologic response.</li>
-            <li>Developed reusable longitudinal-imaging pipelines spanning radiomics, tumor geometry, deformation fields, and patient-level trajectories, including analyses of the CURB cohort.</li>
-            <li>Built shared data organization, provenance, automation, and reproducibility infrastructure for the laboratory and trained researchers in quantitative imaging and computational oncology workflows.</li>
-          </ul>
-        </details>
       </article>
 
       <article class="cv-entry">
@@ -66,11 +64,9 @@ description: Online curriculum vitae for AJ Book, including research experience,
           <div class="cv-date">Nov 2025–Present</div>
         </div>
         <ul>
-          <li>Lead and contribute computational analyses spanning human single-cell transcriptomics, bulk RNA-seq, proteomics, and microbiome data to study persistent epithelial, stromal, immune, and lymphatic remodeling in secondary lymphedema.</li>
-          <li>Analyzed paired-donor single-cell transcriptomic data from normal and lymphedematous human skin to characterize mast-cell and inflammatory-state remodeling and integrate cellular findings with orthogonal experimental evidence.</li>
-          <li>Lead bulk RNA-seq analysis of capecitabine-associated lymphatic injury and repair, identifying 2,128 FDR-significant genes and coordinated remodeling of inflammatory, endothelial-repair, and contractile programs.</li>
-          <li>Analyze label-free proteomics from healthy and secondary-lymphedema tissue using differential-abundance, pathway, network, and systems-level methods.</li>
-          <li>Developed <strong>Dysbioscope</strong>, a measurement-aware cross-cohort microbiome workflow after detecting an apparent two-fold diversity discrepancy across related datasets; harmonized classification reduced the contrast from approximately 210 versus 104 genera to 213 versus 203.</li>
+          <li>Developed state-aware analyses of paired human skin single-cell transcriptomes, distinguishing cell-state redistribution from within-state regulation; localized F2RL1/PAR2 enrichment to specific keratinocyte states and, in a separate 79,054-cell atlas, identified an inflammatory, IL13-enriched mast-cell program consistent with remodeling within established mast-cell states.</li>
+          <li>Led computational analyses spanning transcriptomics and proteomics within an iterative experimental collaboration; integrated molecular measurements with endothelial assays, genetic perturbation, lymphatic physiology, and spatial histopathology, showing that capecitabine-associated valve and contractile remodeling accompanied impaired collecting-vessel structure and pumping rather than functional recovery and linking lymphedema-fluid signatures of epithelial-barrier loss, TGF-β/EMT, and tissue stress to spatially localized dermal-backflow pathology.</li>
+          <li>Engineered reusable, config-driven systems for single-cell RNA-seq (<strong>CellQuorum</strong>), bulk transcriptomics (<strong>Tifzoret</strong>), and multi-cohort microbiome analysis (<strong>Dysbioscope</strong>), with explicit validation and provenance; harmonized more than 500 samples across three microbiome cohorts and showed that an apparent nearly twofold richness difference arose from incompatible taxonomic classification rather than biology.</li>
         </ul>
         <p class="cv-context-links"><a href="{{ '/research/lymphedema/' | relative_url }}">Secondary lymphedema research page →</a></p>
       </article>
@@ -79,135 +75,152 @@ description: Online curriculum vitae for AJ Book, including research experience,
         <div class="cv-entry-head">
           <div>
             <h3>Johns Hopkins University</h3>
-            <p class="cv-role">Master's Thesis Research, StageBridge / CRRT-UDE · Advisor: Christopher Bradburne, PhD</p>
+            <p class="cv-role">Master's Thesis Researcher · Advisor: Christopher Bradburne, PhD</p>
           </div>
           <div class="cv-date">2025–2026</div>
         </div>
         <ul>
-          <li>Conceived and developed <strong>StageBridge</strong>, a computational framework for inferring context-conditioned premalignant epithelial progression from cross-sectional spatial and single-nucleus transcriptomic data by coupling epithelial regulatory state with local immune, stromal, extracellular-matrix, inflammatory, and spatial context.</li>
-          <li>Formulated Context-Residual Regulatory Transport via Universal Differential Equations (CRRT-UDE) to separate intrinsic regulatory progression from niche-associated residual dynamics across transcription-factor and pathway activity space while representing uncertainty and limits on inference from cross-sectional observations.</li>
-          <li>Diagnosed failure of an original context-neutral optimal-transport assumption using prespecified synthetic recoverability benchmarks; biological regulatory projection reduced Tier-2 recovery to cosine 0.27, while conditional stratification improved recovery to 0.84 and supported a narrower conditional-transport interpretation.</li>
-          <li>Evaluated robustness with patient-held-out analysis, matched-context shuffles, degeneracy controls, and cross-disease testing; presented StageBridge at the 2026 Center for Tumor Immune Systems Biology Symposium at Sloan Kettering Institute.</li>
+          <li>Conceived and developed <strong>StageBridge</strong>, a niche-conditioned computational framework for inferring premalignant epithelial progression from cross-sectional spatial and single-cell measurements by jointly modeling epithelial regulatory state and the surrounding tissue microenvironment.</li>
+          <li>Identified a hidden recoverability failure in context-neutral transport, where strong coarse-grained performance masked poor recovery of context-dependent transitions; reformulated the model around conditional transport, improving transition recoverability from <strong>0.27 to 0.84</strong>.</li>
+          <li>Defined explicit limits on inference using donor-held-out evaluation, recoverability tests, and negative controls; recovered structured progression in lung adenocarcinoma while returning a calibrated null in an external PanIN setting, distinguishing supported transition structure from patterns the data could not identify reliably.</li>
         </ul>
         <p class="cv-context-links"><a href="{{ '/research/stagebridge/' | relative_url }}">StageBridge research page →</a> <span aria-hidden="true">·</span> <a href="https://github.com/SecondBook5/crrt-ude">Public implementation →</a></p>
       </article>
 
       <article class="cv-entry">
         <div class="cv-entry-head">
-          <div>
-            <h3>The Center for Skin Surgery</h3>
-            <p class="cv-role">Medical / Laboratory Assistant</p>
-          </div>
+          <div><h3>The Center for Skin Surgery</h3><p class="cv-role">Medical / Laboratory Assistant</p></div>
           <div class="cv-date">Jul 2023–Apr 2024</div>
         </div>
-        <ul>
-          <li>Prepared and processed tissue during Mohs micrographic surgery, including specimen handling, frozen-section preparation, H&amp;E staining, slide preparation, and coordination of surgical and dermatopathology workflows for cutaneous malignancies.</li>
-        </ul>
+        <ul><li>Prepared frozen tissue sections and performed H&amp;E staining for intraoperative Mohs margin assessment in basal and squamous cell carcinomas; applied histochemistry principles to streamline the rapid staining workflow while preserving preparation quality for pathologic review.</li></ul>
       </article>
 
       <article class="cv-entry">
         <div class="cv-entry-head">
-          <div>
-            <h3>Yeshiva University</h3>
-            <p class="cv-role">Undergraduate Honors Research · PI: Radhashree Maitra, PhD</p>
-          </div>
+          <div><h3>Yeshiva University</h3><p class="cv-role">Undergraduate Honors Researcher, Department of Biology · Advisor: Radhashree Maitra, PhD</p></div>
           <div class="cv-date">Jan–Jul 2023</div>
         </div>
         <ul>
-          <li>Investigated B7-H3, MMP14, PTK7, and LRRC15 as candidate antibody-drug-conjugate targets in head and neck squamous cell carcinoma by evaluating molecular expression, protein localization, pathway, survival, and therapeutic evidence from public datasets and the literature.</li>
-          <li>Completed an honors thesis comparing candidate targets and their biological and therapeutic relevance in head and neck cancer.</li>
+          <li>Developed a surfaceome-guided, multi-omic target-prioritization strategy for antibody-drug conjugate discovery in head and neck squamous cell carcinoma, integrating TCGA, CPTAC, GEO, and protein-localization resources to distinguish highly expressed genes from therapeutically actionable cell-surface targets.</li>
+          <li>Prioritized B7-H3, MMP14, PTK7, and LRRC15 through convergent molecular, localization, clinical, and therapeutic evidence and synthesized the analysis into an undergraduate honors thesis.</li>
         </ul>
       </article>
 
       <article class="cv-entry">
         <div class="cv-entry-head">
-          <div>
-            <h3>Bruckner Oncology</h3>
-            <p class="cv-role">Research Assistant</p>
-          </div>
+          <div><h3>Bruckner Oncology</h3><p class="cv-role">Research Assistant</p></div>
           <div class="cv-date">Apr–Aug 2019</div>
         </div>
-        <ul>
-          <li>Curated clinical oncology datasets and performed retrospective survival and prognostic analyses of gastrointestinal and other difficult-to-treat cancers, contributing to work that subsequently produced peer-reviewed publications and conference abstracts.</li>
-        </ul>
+        <ul><li>Built and curated a clinical oncology research database and performed retrospective survival and prognostic analyses in gastrointestinal malignancies, contributing to peer-reviewed studies of treatment sequencing, prognostic testing, and clinical outcomes.</li></ul>
       </article>
     </section>
 
     <section class="cv-section" id="education">
       <h2>Education</h2>
       <article class="cv-entry">
-        <div class="cv-entry-head">
-          <div>
-            <h3>Johns Hopkins University</h3>
-            <p class="cv-role">M.S. in Bioinformatics · GPA 4.0</p>
-          </div>
-          <div class="cv-date">2024–2026</div>
-        </div>
-        <p><strong>Thesis:</strong> <em>StageBridge: Niche-Conditioned Regulatory Transport in Premalignant Epithelial Progression</em></p>
-        <p><strong>Advisor:</strong> Christopher Bradburne, PhD, Department of Genetic Medicine, Johns Hopkins University School of Medicine.</p>
+        <div class="cv-entry-head"><div><h3>Johns Hopkins University</h3><p class="cv-role">M.S. in Bioinformatics · GPA 4.00/4.00</p></div><div class="cv-date">Aug 2026</div></div>
+        <p><strong>Thesis:</strong> <em>StageBridge: Niche-Conditioned Regulatory Transport in Premalignant Epithelial Progression</em><br><strong>Advisor:</strong> Christopher Bradburne, PhD, Department of Genetic Medicine, Johns Hopkins University School of Medicine.</p>
+        <p class="cv-small"><strong>Selected coursework:</strong> Systems Biology; Epigenetics, Gene Organization &amp; Expression; Cellular Signal Transduction; Advanced Genomics &amp; Genetics Analyses; Algorithms for Bioinformatics; Advanced Applied Machine Learning; Deep Learning Using Transformers.</p>
       </article>
       <article class="cv-entry">
-        <div class="cv-entry-head">
-          <div>
-            <h3>Yeshiva University</h3>
-            <p class="cv-role">B.A. in Biochemistry, Minor in Mathematics · Summa Cum Laude · GPA 3.9</p>
-          </div>
-          <div class="cv-date">2019–2023</div>
-        </div>
-        <p>J&amp;J Schottenstein Honors Program. Honors thesis on candidate antibody-drug-conjugate targets in head and neck cancer.</p>
+        <div class="cv-entry-head"><div><h3>Yeshiva University</h3><p class="cv-role">B.A. in Biochemistry, Minor in Mathematics · Summa Cum Laude · GPA 3.90/4.00</p></div><div class="cv-date">Sep 2023</div></div>
+        <p>J&amp;J Schottenstein Honors Program. Honors thesis: <em>Investigating the Role of MMP14, B7-H3, PTK7, and LRRC15 in Head and Neck Cancers: Implications for Antibody-Drug Conjugates</em>.</p>
       </article>
       <article class="cv-entry">
-        <div class="cv-entry-head">
-          <div>
-            <h3>Isaac Breuer College, Yeshiva University</h3>
-            <p class="cv-role">A.A. in Jewish Studies · GPA 3.93</p>
-          </div>
-          <div class="cv-date">2017–2023</div>
-        </div>
+        <div class="cv-entry-head"><div><h3>Isaac Breuer College, Yeshiva University</h3><p class="cv-role">A.A. in Jewish Studies · GPA 3.93/4.00</p></div><div class="cv-date">2017–2023</div></div>
       </article>
     </section>
 
     <section class="cv-section" id="publications">
       <h2>Publications</h2>
-      <p>The complete record is reproduced here; the <a href="{{ '/publications/' | relative_url }}">publications page</a> groups the same work by publication status.</p>
+      <p>See the <a href="{{ '/publications/' | relative_url }}">publications page</a> for the record grouped by status, including journal-indexed meeting abstracts.</p>
+      {% assign cv_groups = 'original_research,review,correspondence,preprint,under_review,in_preparation' | split: ',' %}
+      {% for group in cv_groups %}
+        {% case group %}
+          {% when 'original_research' %}<h3 class="cv-subhead">Original research articles</h3>
+          {% when 'review' %}<h3 class="cv-subhead">Reviews</h3>
+          {% when 'correspondence' %}<h3 class="cv-subhead">Correspondence</h3>
+          {% when 'preprint' %}<h3 class="cv-subhead">Preprints</h3>
+          {% when 'under_review' %}<h3 class="cv-subhead">Manuscripts under review</h3>
+          {% when 'in_preparation' %}<h3 class="cv-subhead">Manuscripts in preparation</h3>
+        {% endcase %}
+        <ul class="publication-list compact-publication-list">
+          {% for paper in site.data.publications.papers %}
+            {% if paper.type == group %}
+            <li class="publication-item">
+              <p class="pub-title">{% if paper.link %}<a href="{{ paper.link }}">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</p>
+              <p class="pub-authors">{{ paper.authors | replace: 'Book AJ', '<strong>Book AJ</strong>' }}</p>
+              <p class="pub-venue">{{ paper.conference }}</p>
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% endfor %}
+
+      <details class="archive-details cv-archive">
+        <summary>Published meeting abstracts ({{ site.data.meeting_abstracts.abstracts | size }})</summary>
+        <ul class="publication-list archive-list">
+          {% for item in site.data.meeting_abstracts.abstracts %}
+          <li class="publication-item">
+            <p class="pub-title">{% if item.link %}<a href="{{ item.link }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</p>
+            <p class="pub-authors">{{ item.authors | replace: 'Book AJ', '<strong>Book AJ</strong>' }}</p>
+            <p class="pub-venue">{{ item.venue }}</p>
+          </li>
+          {% endfor %}
+        </ul>
+      </details>
+    </section>
+
+    <section class="cv-section" id="presentations">
+      <h2>Selected Presentations &amp; Recent Abstracts</h2>
       <ul class="publication-list">
-        {% for paper in site.data.publications.papers %}
-        <li class="publication-item">
-          <p class="pub-title">{% if paper.link %}<a href="{{ paper.link }}">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</p>
-          <p class="pub-authors">{{ paper.authors | replace: 'Book AJ', '<strong>Book AJ</strong>' | replace: 'Book A,', '<strong>Book A</strong>,' }}</p>
-          <p class="pub-venue">{{ paper.conference }}</p>
-        </li>
+        {% for item in site.data.data.oss.contributions %}
+        <li class="publication-item"><p class="pub-title">{% if item.link %}<a href="{{ item.link }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</p><p class="pub-venue">{{ item.tagline }}</p></li>
         {% endfor %}
       </ul>
     </section>
 
-    <section class="cv-section" id="presentations">
-      <h2>Selected Presentations</h2>
-      <ul class="publication-list">
-        {% for item in site.data.data.oss.contributions %}
-        <li class="publication-item">
-          <p class="pub-title">{% if item.link %}<a href="{{ item.link }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</p>
-          <p class="pub-venue">{{ item.tagline }}</p>
-        </li>
-        {% endfor %}
-      </ul>
+    <section class="cv-section" id="honors">
+      <h2>Honors &amp; Awards</h2>
+      <div class="cv-simple-list">
+        <div><strong>First Place, Radiation Oncology Retreat Hackathon</strong><span>Memorial Sloan Kettering Cancer Center · 2026</span></div>
+        <div><strong>Benjamin Hurwitz Award for Excellence in Talmud</strong><span>Yeshiva University · 2022</span></div>
+        <div><strong>Sidney P. Rosenblum Award for Excellence in the Study of Jewish History</strong><span>Yeshiva University · 2022</span></div>
+      </div>
+    </section>
+
+    <section class="cv-section" id="service">
+      <h2>Leadership, Mentorship &amp; Service</h2>
+      <article class="cv-entry">
+        <div class="cv-entry-head"><div><h3>Computational Lab Operations &amp; Mentorship</h3><p class="cv-role">Memorial Sloan Kettering Cancer Center</p></div><div class="cv-date">2025–Present</div></div>
+        <p>Helped establish and maintain computational infrastructure, reproducible workflows, shared data organization, and onboarding practices; trained researchers in quantitative imaging and computational analysis and supervised a summer research intern whose project resulted in an accepted abstract for the 2026 MSK Cancer Engineering Symposium. At the request of the Chair of Radiation Oncology, developed a departmental platform for quantitative analysis of research output and productivity.</p>
+      </article>
+      <article class="cv-entry"><div class="cv-entry-head"><div><h3>Board Member, YU Sharsheret Club</h3><p class="cv-role">Yeshiva University</p></div><div class="cv-date">2019–2022</div></div><p>Organized campus-wide Pink Day programming and fundraising supporting breast and ovarian cancer awareness, education, and patient support.</p></article>
+      <article class="cv-entry"><div class="cv-entry-head"><div><h3>Treasurer, Yeshiva College Student Association</h3><p class="cv-role">Yeshiva University</p></div><div class="cv-date">2021</div></div><p>Managed budget allocations for more than 30 student clubs and helped coordinate university-wide programming and administrative engagement.</p></article>
+      <article class="cv-entry"><div class="cv-entry-head"><div><h3>Track Coach</h3><p class="cv-role">Torah Academy of Bergen County</p></div><div class="cv-date">2019–2020</div></div><p>Coached more than 30 high-school student-athletes and led the team to a first-place finish at the 2019 league championships.</p></article>
     </section>
 
     <section class="cv-section" id="software">
       <h2>Research Software</h2>
-      <article class="cv-entry"><h3><a href="{{ '/research/hostbio/' | relative_url }}">HostBio / Comp-MRF</a></h3><p class="cv-role">Scan-adaptive probabilistic host-tissue phenotyping from routine CT; implemented for MSK clinical research through MIM Development.</p></article>
-      <article class="cv-entry"><h3><a href="https://github.com/SecondBook5/CellQuorum">CellQuorum</a></h3><p class="cv-role">Configuration-driven single-cell analysis infrastructure with explicit data contracts, provenance tracking, and quality control.</p></article>
-      <article class="cv-entry"><h3>COSMIC-IMPACT</h3><p class="cv-role">Integrated MSK-IMPACT and MSK-ACCESS analysis across somatic alterations, clonality, mutational signatures, genomic burden, and longitudinal ctDNA.</p></article>
-      <article class="cv-entry"><h3>Dysbioscope</h3><p class="cv-role">Measurement-aware microbiome workflow for taxonomic harmonization, compositional inference, and cross-cohort comparison.</p></article>
-      <article class="cv-entry"><h3><a href="https://github.com/SecondBook5/crrt-ude">CRRT-UDE / StageBridge</a></h3><p class="cv-role">Research implementation for context-conditioned regulatory transport from cross-sectional tissue data.</p></article>
+      <div class="software-list">
+        <article class="cv-entry"><h3><a href="{{ '/research/hostbio/' | relative_url }}">HostBio / Comp-MRF</a></h3><p class="cv-role">Scan-adaptive probabilistic host-tissue phenotyping from routine CT; adopted for MSK clinical research through MIM Development.</p></article>
+        <article class="cv-entry"><h3><a href="https://github.com/SecondBook5/CellQuorum">CellQuorum</a></h3><p class="cv-role">Configuration-driven single-cell analysis infrastructure with explicit data contracts, provenance tracking, quality control, and modular downstream analysis.</p></article>
+        <article class="cv-entry"><h3>Tifzoret</h3><p class="cv-role">Config-driven bulk transcriptomics workflow for reproducible RNA-seq analysis and validation.</p></article>
+        <article class="cv-entry"><h3>Dysbioscope</h3><p class="cv-role">Measurement-aware multi-cohort microbiome workflow for taxonomic harmonization, compositional inference, and cross-cohort comparison.</p></article>
+        <article class="cv-entry"><h3>COSMIC-IMPACT</h3><p class="cv-role">Integrated MSK-IMPACT and MSK-ACCESS analysis across somatic alterations, clonality, mutational signatures, genomic burden, and longitudinal ctDNA.</p></article>
+        <article class="cv-entry"><h3><a href="https://github.com/SecondBook5/crrt-ude">CRRT-UDE / StageBridge</a></h3><p class="cv-role">Research implementation for context-conditioned regulatory transport from cross-sectional tissue data.</p></article>
+      </div>
     </section>
 
     <section class="cv-section" id="methods">
-      <h2>Technical Methods</h2>
-      <p><strong>Languages:</strong> Python, R, Rust, SQL.</p>
-      <p><strong>Modeling:</strong> interpretable deep learning, probabilistic modeling, optimal transport, mixed-effects models, survival analysis, joint longitudinal-survival modeling, dynamic prediction, statistical learning.</p>
-      <p><strong>Biology and data:</strong> quantitative clinical imaging, radiobiology, single-cell and spatial transcriptomics, bulk RNA-seq, cancer genomics, ctDNA, proteomics, microbiome analysis, systems immunology, gene regulatory networks.</p>
-      <p><strong>Infrastructure:</strong> reproducible workflow systems, HPC and SLURM, containers, continuous integration, provenance tracking.</p>
+      <h2>Technical Expertise</h2>
+      <div class="methods-grid">
+        <div><h3>Programming &amp; research computing</h3><p>Python, R, Rust, Java, SQL, Bash; Linux, Git, Snakemake, Docker, SLURM/HPC; reproducible workflow design, software testing, and provenance tracking.</p></div>
+        <div><h3>Computational &amp; systems biology</h3><p>Single-cell and single-nucleus RNA-seq, spatial transcriptomics, bulk RNA-seq, ATAC-seq, ChIP-seq, proteomics, microbiome analysis, targeted tumor and cfDNA sequencing, regulatory-network and pathway analysis, and multimodal integration.</p></div>
+        <div><h3>Quantitative methods</h3><p>Probabilistic graphical and mixture models, EM/HMRF inference, optimal transport, representation learning, deep learning, longitudinal and survival modeling, trajectory and state-transition inference, and statistical hypothesis testing.</p></div>
+        <div><h3>Imaging &amp; phenotyping</h3><p>CT and cone-beam CT, DICOM/NIfTI workflows, radiomics, image segmentation, partial-volume modeling, quantitative tissue phenotyping, and imaging-omics integration.</p></div>
+        <div><h3>Histology &amp; tissue methods</h3><p>Frozen-section tissue preparation, H&amp;E staining, brightfield microscopy of histologic sections, and rapid histopathology workflows.</p></div>
+      </div>
     </section>
   </div>
 </div>
