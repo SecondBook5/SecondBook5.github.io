@@ -1,0 +1,80 @@
+---
+layout: portfolio
+page_title: Publications
+nav: publications
+permalink: /publications/
+description: Publications, preprints, manuscripts, and scientific presentations by AJ Book.
+---
+
+<header class="page-header">
+  <div class="shell">
+    <p class="eyebrow">Publications &amp; presentations</p>
+    <h1>Scientific record</h1>
+    <p class="page-lede">Peer-reviewed publications, preprints, manuscripts under review, and selected scientific presentations. My name is bolded within author lists.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="shell">
+    <div class="pub-group">
+      <p class="section-kicker">Peer reviewed</p>
+      <h2>Publications</h2>
+      <ul class="publication-list">
+        {% for paper in site.data.publications.papers %}
+          {% unless paper.conference contains 'Manuscript under review' or paper.conference contains 'medRxiv' %}
+          <li class="publication-item">
+            <p class="pub-title">{% if paper.link %}<a href="{{ paper.link }}">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</p>
+            <p class="pub-authors">{{ paper.authors | replace: 'Book AJ', '<strong>Book AJ</strong>' | replace: 'Book A,', '<strong>Book A</strong>,' }}</p>
+            <p class="pub-venue">{{ paper.conference }}</p>
+          </li>
+          {% endunless %}
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="pub-group">
+      <p class="section-kicker">Preprints</p>
+      <h2>Publicly available work</h2>
+      <ul class="publication-list">
+        {% for paper in site.data.publications.papers %}
+          {% if paper.conference contains 'medRxiv' %}
+          <li class="publication-item">
+            <p class="pub-title">{% if paper.link %}<a href="{{ paper.link }}">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</p>
+            <p class="pub-authors">{{ paper.authors | replace: 'Book AJ', '<strong>Book AJ</strong>' | replace: 'Book A,', '<strong>Book A</strong>,' }}</p>
+            <p class="pub-venue">{{ paper.conference }}</p>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="pub-group">
+      <p class="section-kicker">In review</p>
+      <h2>Manuscripts</h2>
+      <ul class="publication-list">
+        {% for paper in site.data.publications.papers %}
+          {% if paper.conference contains 'Manuscript under review' %}
+          <li class="publication-item">
+            <p class="pub-title">{{ paper.title }}</p>
+            <p class="pub-authors">{{ paper.authors | replace: 'Book AJ', '<strong>Book AJ</strong>' | replace: 'Book A,', '<strong>Book A</strong>,' }}</p>
+            <p class="pub-venue">{{ paper.conference }}</p>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="pub-group">
+      <p class="section-kicker">Selected presentations</p>
+      <h2>Posters &amp; conference abstracts</h2>
+      <ul class="publication-list">
+        {% for item in site.data.data.oss.contributions %}
+        <li class="publication-item">
+          <p class="pub-title">{% if item.link %}<a href="{{ item.link }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</p>
+          <p class="pub-venue">{{ item.tagline }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
