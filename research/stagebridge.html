@@ -1,0 +1,111 @@
+---
+layout: portfolio
+page_title: StageBridge
+nav: research
+permalink: /research/stagebridge/
+description: StageBridge, AJ Book's Johns Hopkins master's thesis on context-conditioned regulatory progression from cross-sectional spatial and single-nucleus transcriptomics.
+---
+
+<header class="project-hero">
+  <div class="shell project-hero-inner">
+    <div>
+      <a class="back-link" href="{{ '/research/' | relative_url }}">← Research</a>
+      <p class="eyebrow">Spatial genomics · Regulatory dynamics</p>
+      <h1>StageBridge</h1>
+      <p class="project-lede">Asking what aspects of biological progression can actually be inferred when human tissue is observed only cross-sectionally.</p>
+    </div>
+  </div>
+</header>
+
+<section class="project-visual-section">
+  <div class="shell">
+    <figure class="project-hero-figure">
+      <img src="{{ '/assets/images/research/stagebridge-spatial-progression.png' | relative_url }}" alt="Spatial transcriptomics panels showing pathological stage, CytoTRACE, and spatial pseudotime in lung adenocarcinoma progression">
+      <figcaption>Spatial state structure used to study premalignant epithelial progression and regulatory transitions.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="project-facts-section">
+  <div class="shell project-facts">
+    <div><span class="fact-label">Thesis</span><strong>M.S. Bioinformatics, Johns Hopkins</strong></div>
+    <div><span class="fact-label">Data</span><strong>Spatial + single-nucleus transcriptomics</strong></div>
+    <div><span class="fact-label">Representation</span><strong>TF activity + gene regulatory structure</strong></div>
+    <div><span class="fact-label">Inference</span><strong>Context-conditioned transport</strong></div>
+  </div>
+</section>
+
+<section class="project-story-section">
+  <div class="shell story-grid">
+    <aside class="story-rail">
+      <p class="section-kicker">Scientific problem</p>
+      <h2>Progression is longitudinal. Human tissue usually is not.</h2>
+    </aside>
+    <div class="story-copy">
+      <p>Premalignant progression unfolds over time, but human tissue is typically sampled once. Cross-sectional data can reveal structure, association, and ordering, but they do not uniquely determine an individual's trajectory.</p>
+      <p>I developed StageBridge to ask a narrower and more defensible question: which features of regulatory progression can be constrained by stage, spatial context, regulatory structure, and distributional relationships across many lesions?</p>
+    </div>
+  </div>
+</section>
+
+<section class="project-story-section alt-section">
+  <div class="shell story-grid">
+    <aside class="story-rail">
+      <p class="section-kicker">Representation</p>
+      <h2>Model regulatory state, not just expression geometry.</h2>
+    </aside>
+    <div class="story-copy">
+      <p>The framework combines spatial and single-nucleus transcriptomics with transcription-factor activity, pathway activity, and gene regulatory structure. Local immune, stromal, extracellular-matrix, inflammatory, and spatial context are represented alongside epithelial state.</p>
+      <p>The goal is to move beyond a generic pseudotime coordinate toward a representation in which changes can be discussed in terms of regulatory programs and tissue context.</p>
+    </div>
+  </div>
+</section>
+
+<section class="project-story-section">
+  <div class="shell story-grid">
+    <aside class="story-rail">
+      <p class="section-kicker">Model criticism</p>
+      <h2>The first plausible model failed the benchmark that mattered.</h2>
+    </aside>
+    <div class="story-copy">
+      <p>An early context-neutral transport assumption looked acceptable in an abstract latent benchmark. After projection into biologically meaningful regulatory space, prespecified Tier-2 recoverability fell to a cosine of 0.27.</p>
+      <p>I treated that as a failure of the model rather than a plotting problem. Conditional stratification raised Tier-2 recovery to 0.84, but it also changed the interpretation. The resulting estimand is a supported conditional transport relationship, not an individual's reconstructed causal path.</p>
+      <div class="benchmark-callout" aria-label="StageBridge recoverability benchmark">
+        <span><small>Original assumption</small><strong>0.27</strong></span>
+        <span class="benchmark-arrow">→</span>
+        <span><small>Conditional redesign</small><strong>0.84</strong></span>
+        <span class="benchmark-note">Tier-2 cosine recoverability</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="project-story-section inference-section">
+  <div class="shell story-grid">
+    <aside class="story-rail">
+      <p class="section-kicker">Inference, not reconstruction</p>
+      <h2>Explicitly separating what the data support from what they do not.</h2>
+    </aside>
+    <div class="story-copy">
+      <p>Cross-sectional tissue does not uniquely determine longitudinal dynamics. StageBridge therefore does not claim to recover a person's true causal trajectory.</p>
+      <p>I evaluate whether context-associated regulatory structure is reproducible using patient-held-out analysis, matched-context shuffles, degeneracy controls, and cross-disease testing. The broader objective is methodological: make identifiability and failure modes part of the biological analysis rather than an afterthought.</p>
+      <p><a class="text-link" href="https://github.com/SecondBook5/crrt-ude">View public research implementation →</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="project-outputs-section">
+  <div class="shell">
+    <div class="section-head compact-head">
+      <div>
+        <p class="section-kicker">Selected outputs</p>
+        <h2>Related work</h2>
+      </div>
+    </div>
+    <ul class="output-list">
+      <li class="output-item"><p class="output-meta">Johns Hopkins University · M.S. thesis · 2026</p><p class="output-title"><em>StageBridge: Niche-Conditioned Regulatory Transport in Premalignant Epithelial Progression</em></p></li>
+      <li class="output-item"><p class="output-meta">Center for Tumor Immune Systems Biology Symposium · 2026</p><p class="output-title">StageBridge Resolves Inflammatory-Stromal Transition Niches in Lung Adenocarcinoma Progression</p></li>
+      <li class="output-item"><p class="output-meta">Public research implementation</p><p class="output-title"><a href="https://github.com/SecondBook5/crrt-ude">CRRT-UDE / StageBridge</a></p></li>
+    </ul>
+  </div>
+</section>
