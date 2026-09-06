@@ -14,8 +14,32 @@
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="{{ '/assets/css/portfolio.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/portfolio-v2.css' | relative_url }}">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "AJ Book",
+    "url": "{{ '/' | absolute_url }}",
+    "jobTitle": "Research Assistant",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Memorial Sloan Kettering Cancer Center"
+    },
+    "alumniOf": [
+      {"@type": "CollegeOrUniversity", "name": "Johns Hopkins University"},
+      {"@type": "CollegeOrUniversity", "name": "Yeshiva University"}
+    ],
+    "sameAs": [
+      "https://github.com/SecondBook5",
+      "https://www.linkedin.com/in/aj-abraham-book/",
+      "https://orcid.org/0009-0004-7058-7510"
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
     <div class="shell nav-shell">
       <a class="brand" href="{{ '/' | relative_url }}" aria-label="AJ Book home">AJ Book</a>
@@ -28,7 +52,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     {{ content }}
   </main>
 
