@@ -4,13 +4,14 @@ page_title: Research
 nav: research
 permalink: /research/
 description: Research by AJ Book on latent biological state, quantitative imaging, regulatory dynamics, and persistent inflammatory remodeling.
+og_image: /assets/images/research/stagebridge-spatial-progression.png
 ---
 
 <header class="page-header research-page-header">
   <div class="shell">
     <p class="eyebrow">Research program</p>
     <h1>Inferring biological state from incomplete measurements</h1>
-    <p class="page-lede">Human biology is usually observed indirectly, asynchronously, and after the fact. My work asks how far we can go from those measurements without hiding the assumptions required to get there.</p>
+    <p class="page-lede">Human biology is usually observed indirectly, asynchronously, and after the fact. My work asks how to turn those measurements into interpretable representations without hiding the assumptions required to get there.</p>
   </div>
 </header>
 
@@ -20,19 +21,19 @@ description: Research by AJ Book on latent biological state, quantitative imagin
       <div class="principle-step">
         <span class="step-number">01</span>
         <h2>Measurement</h2>
-        <p>Model how the observation is generated, including tissue mixing, sampling, preprocessing, and technical nuisance.</p>
+        <p>Model how the observation is generated, including tissue mixing, sampling, preprocessing, technical nuisance, and modality-specific physics.</p>
       </div>
       <div class="principle-connector" aria-hidden="true">→</div>
       <div class="principle-step">
         <span class="step-number">02</span>
         <h2>Representation</h2>
-        <p>Recover a latent state that remains biologically interpretable enough to test, compare, and challenge.</p>
+        <p>Recover latent state in a form that remains biologically interpretable enough to compare, test, and challenge.</p>
       </div>
       <div class="principle-connector" aria-hidden="true">→</div>
       <div class="principle-step">
         <span class="step-number">03</span>
         <h2>Validation</h2>
-        <p>Ask whether the state survives held-out data, orthogonal measurements, alternative assumptions, and identifiability checks.</p>
+        <p>Ask whether the representation survives held-out data, orthogonal measurements, alternative assumptions, negative controls, and identifiability checks.</p>
       </div>
     </div>
   </div>
@@ -53,7 +54,8 @@ description: Research by AJ Book on latent biological state, quantitative imagin
         <p class="feature-role">Method development · MSK</p>
         <h3>HostBio / Comp-MRF</h3>
         <p class="research-index-lede">Can routine CT become a quantitative measurement of host tissue state?</p>
-        <p>I developed a scan-adaptive probabilistic framework for tissue composition that explicitly handles partial-volume mixing, spatial dependence, nuisance components, and within-scan references. The resulting phenotypes are tested against immune, genomic, treatment, and outcome data rather than judged only by image appearance.</p>
+        <p>I developed a scan-adaptive probabilistic framework for tissue composition that explicitly handles partial-volume mixing, spatial dependence, nuisance components, and within-scan references. HostBio-derived thymic phenotypes have now been evaluated across 1,078 patients in four independent NSCLC cohorts, including randomized RTOG-0617, using immune, genomic, treatment, toxicity, response, and survival data.</p>
+        <p class="evidence-line">1,078 patients · 4 cohorts · randomized trial data · MSK implementation</p>
         <a class="text-link" href="{{ '/research/hostbio/' | relative_url }}">HostBio research story →</a>
       </div>
       <figure class="research-index-figure">
@@ -66,7 +68,8 @@ description: Research by AJ Book on latent biological state, quantitative imagin
         <p class="feature-role">Master's thesis · Johns Hopkins</p>
         <h3>StageBridge</h3>
         <p class="research-index-lede">What can cross-sectional human tissue legitimately tell us about progression?</p>
-        <p>StageBridge represents regulatory state using transcription-factor and pathway activity, gene regulatory structure, and tissue context. A failed recoverability benchmark forced a redesign of the coupling and a narrower interpretation, making model criticism part of the method rather than a post hoc caveat.</p>
+        <p>StageBridge represents regulatory state using transcription-factor and pathway activity, gene regulatory structure, and tissue context. A hidden recoverability failure forced a redesign from context-neutral to conditional transport, improving transition recovery from 0.27 to 0.84. In an external PanIN setting, the framework returned a calibrated null rather than forcing a progression signal.</p>
+        <p class="evidence-line">0.27 → 0.84 recoverability · donor holdout · external calibrated null</p>
         <a class="text-link" href="{{ '/research/stagebridge/' | relative_url }}">StageBridge research story →</a>
       </div>
       <figure class="research-index-figure">
@@ -79,7 +82,8 @@ description: Research by AJ Book on latent biological state, quantitative imagin
         <p class="feature-role">Collaborative systems biology · MSK</p>
         <h3>Secondary lymphedema</h3>
         <p class="research-index-lede">Which tissue programs persist after chronic inflammatory injury, and which apparent signals are artifacts?</p>
-        <p>I analyze human single-cell and bulk transcriptomics, proteomics, and microbiome data in collaboration with the Mehrara laboratory. The project is both biological and methodological: persistent tissue-state claims must survive donor structure, composition, preprocessing, and cross-cohort measurement differences.</p>
+        <p>I analyze human single-cell and bulk transcriptomics, proteomics, microbiome data, and orthogonal experimental measurements in collaboration with the Mehrara laboratory. State-aware single-cell analyses localize disease programs within keratinocyte and mast-cell states, while harmonization across more than 500 microbiome samples exposed a large pipeline-driven richness artifact.</p>
+        <p class="evidence-line">Paired human tissue · 79,054-cell mast-cell atlas · &gt;500 microbiome samples</p>
         <a class="text-link" href="{{ '/research/lymphedema/' | relative_url }}">Lymphedema research story →</a>
       </div>
       <figure class="research-index-figure">
@@ -97,20 +101,20 @@ description: Research by AJ Book on latent biological state, quantitative imagin
         <p class="section-kicker">Cross-cutting work</p>
         <h2>Methods that support the broader program</h2>
       </div>
-      <a class="text-link" href="{{ '/cv/' | relative_url }}">Expanded CV →</a>
+      <a class="text-link" href="{{ '/cv/' | relative_url }}">Full CV →</a>
     </div>
     <div class="cross-cutting-grid">
       <article>
         <h3>AI and deep learning for thoracic imaging</h3>
-        <p>Support for nnU-Net v2 thymus segmentation and evaluation of pretrained Sybil lung-cancer risk predictions, with model outputs integrated into quantitative imaging analyses rather than treated as endpoints in isolation.</p>
+        <p>Training and deployment support for nnU-Net v2 thymus segmentation and evaluation of pretrained Sybil lung-cancer risk predictions in 77 women, where predicted risk separated cancer cases from controls across all six prediction horizons.</p>
       </article>
       <article>
         <h3>Longitudinal imaging and dynamic prediction</h3>
-        <p>Serial cone-beam CT, radiomics, tumor geometry, deformation, mixed-effects models, joint longitudinal-survival analysis, and dynamic prediction for treatment-course imaging.</p>
+        <p>Serial cone-beam CT, radiomics, tumor geometry, longitudinal-survival modeling, and dynamic prediction, including the MSK clinical-imaging arm of a collaborative mechanistic-modeling study of radiation-induced tumor migration and treatment scheduling.</p>
       </article>
       <article>
         <h3>Cancer genomics and reusable infrastructure</h3>
-        <p>COSMIC-IMPACT and related workflows for MSK-IMPACT tumor sequencing, MSK-ACCESS ctDNA, somatic alterations, clonality, mutational signatures, and reproducible multimodal analysis.</p>
+        <p>COSMIC-IMPACT and related workflows for MSK-IMPACT tumor sequencing, MSK-ACCESS longitudinal ctDNA, somatic alterations, clonality, mutational signatures, and reproducible multimodal analysis.</p>
       </article>
     </div>
   </div>
