@@ -4,6 +4,7 @@ page_title: StageBridge
 nav: research
 permalink: /research/stagebridge/
 description: StageBridge, AJ Book's Johns Hopkins master's thesis on context-conditioned regulatory progression from cross-sectional spatial and single-nucleus transcriptomics.
+og_image: /assets/images/research/stagebridge-spatial-progression.png
 ---
 
 <header class="project-hero">
@@ -31,7 +32,7 @@ description: StageBridge, AJ Book's Johns Hopkins master's thesis on context-con
     <div><span class="fact-label">Thesis</span><strong>M.S. Bioinformatics, Johns Hopkins</strong></div>
     <div><span class="fact-label">Data</span><strong>Spatial + single-nucleus transcriptomics</strong></div>
     <div><span class="fact-label">Representation</span><strong>TF activity + gene regulatory structure</strong></div>
-    <div><span class="fact-label">Inference</span><strong>Context-conditioned transport</strong></div>
+    <div><span class="fact-label">Evaluation</span><strong>Recoverability, donor holdout, external null</strong></div>
   </div>
 </section>
 
@@ -68,8 +69,8 @@ description: StageBridge, AJ Book's Johns Hopkins master's thesis on context-con
       <h2>The first plausible model failed the benchmark that mattered.</h2>
     </aside>
     <div class="story-copy">
-      <p>An early context-neutral transport assumption looked acceptable in an abstract latent benchmark. After projection into biologically meaningful regulatory space, prespecified Tier-2 recoverability fell to a cosine of 0.27.</p>
-      <p>I treated that as a failure of the model rather than a plotting problem. Conditional stratification raised Tier-2 recovery to 0.84, but it also changed the interpretation. The resulting estimand is a supported conditional transport relationship, not an individual's reconstructed causal path.</p>
+      <p>An early context-neutral transport assumption looked acceptable in a coarse-grained latent benchmark. After projection into biologically meaningful regulatory space, prespecified Tier-2 recoverability fell to a cosine of 0.27.</p>
+      <p>I treated that as a failure of the model rather than a visualization problem. Reformulating the coupling around conditional transport raised Tier-2 recovery to 0.84, but it also changed the scientific interpretation. The supported estimand is a context-conditioned transport relationship, not an individual's reconstructed causal path.</p>
       <div class="benchmark-callout" aria-label="StageBridge recoverability benchmark">
         <span><small>Original assumption</small><strong>0.27</strong></span>
         <span class="benchmark-arrow">→</span>
@@ -80,15 +81,32 @@ description: StageBridge, AJ Book's Johns Hopkins master's thesis on context-con
   </div>
 </section>
 
+<section class="project-story-section alt-section">
+  <div class="shell story-grid">
+    <aside class="story-rail">
+      <p class="section-kicker">Falsification</p>
+      <h2>A method should know when not to produce a trajectory.</h2>
+    </aside>
+    <div class="story-copy">
+      <p>In lung adenocarcinoma, StageBridge recovered structured progression under donor-held-out evaluation and negative controls. In an external PanIN setting, the same framework returned a calibrated null rather than forcing a directional progression signal.</p>
+      <p>That negative result is important. A flexible trajectory method can almost always produce an ordering; a useful inference framework should also be able to say when the available data do not identify one reliably.</p>
+      <div class="evidence-callout two-up">
+        <span><small>LUAD</small><strong>Structured signal</strong></span>
+        <span><small>External PanIN</small><strong>Calibrated null</strong></span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="project-story-section inference-section">
   <div class="shell story-grid">
     <aside class="story-rail">
       <p class="section-kicker">Inference, not reconstruction</p>
-      <h2>Explicitly separating what the data support from what they do not.</h2>
+      <h2>Make the boundary of the claim part of the result.</h2>
     </aside>
     <div class="story-copy">
       <p>Cross-sectional tissue does not uniquely determine longitudinal dynamics. StageBridge therefore does not claim to recover a person's true causal trajectory.</p>
-      <p>I evaluate whether context-associated regulatory structure is reproducible using patient-held-out analysis, matched-context shuffles, degeneracy controls, and cross-disease testing. The broader objective is methodological: make identifiability and failure modes part of the biological analysis rather than an afterthought.</p>
+      <p>I evaluate whether context-associated regulatory structure is reproducible using donor-held-out analysis, recoverability tests, matched-context shuffles, degeneracy controls, and cross-disease testing. The broader objective is methodological: make identifiability and failure modes part of the biological analysis rather than an afterthought.</p>
       <p><a class="text-link" href="https://github.com/SecondBook5/crrt-ude">View public research implementation →</a></p>
     </div>
   </div>
