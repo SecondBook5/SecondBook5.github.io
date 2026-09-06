@@ -1,0 +1,104 @@
+---
+layout: portfolio
+page_title: HostBio / Comp-MRF
+nav: research
+permalink: /research/hostbio/
+description: HostBio and Comp-MRF, AJ Book's work on probabilistic host-tissue phenotyping from routine clinical CT.
+---
+
+<header class="project-hero">
+  <div class="shell project-hero-inner">
+    <div>
+      <a class="back-link" href="{{ '/research/' | relative_url }}">← Research</a>
+      <p class="eyebrow">Quantitative imaging · Host biology</p>
+      <h1>HostBio / Comp-MRF</h1>
+      <p class="project-lede">Treating routine clinical CT as a quantitative measurement of host tissue state, not only anatomy.</p>
+    </div>
+  </div>
+</header>
+
+<section class="project-visual-section">
+  <div class="shell">
+    <figure class="project-hero-figure">
+      <img src="{{ '/assets/images/research/hostbio-compmrf-posterior-map.png' | relative_url }}" alt="Axial, coronal, and sagittal thoracic CT views showing voxel-level posterior estimates of thymic fat and parenchymal tissue composition from HostBio Comp-MRF">
+      <figcaption>Voxel-level posterior estimates of thymic tissue composition from routine thoracic CT.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="project-facts-section">
+  <div class="shell project-facts">
+    <div><span class="fact-label">Origin</span><strong>Conceived and engineered at MSK</strong></div>
+    <div><span class="fact-label">Measurement</span><strong>Probabilistic tissue composition</strong></div>
+    <div><span class="fact-label">Translation</span><strong>Implemented through MIM Development</strong></div>
+    <div><span class="fact-label">Validation</span><strong>Immune, genomic, treatment, and outcome data</strong></div>
+  </div>
+</section>
+
+<section class="project-story-section">
+  <div class="shell story-grid">
+    <aside class="story-rail">
+      <p class="section-kicker">Scientific problem</p>
+      <h2>Routine scans are abundant. Biological measurements are not.</h2>
+    </aside>
+    <div class="story-copy">
+      <p>Clinical CT is acquired repeatedly and at enormous scale, but scanner settings, contrast, tissue mixing, and anatomy make raw intensity difficult to interpret biologically. A thresholded organ volume can therefore miss the part of the signal that matters most: composition.</p>
+      <p>I developed HostBio around a different question: can routine imaging be turned into a stable, interpretable measurement of host tissue state that can then be tested against independent biology?</p>
+    </div>
+  </div>
+</section>
+
+<section class="project-story-section alt-section">
+  <div class="shell story-grid">
+    <aside class="story-rail">
+      <p class="section-kicker">Core idea</p>
+      <h2>Transfer the inference structure, not the measurement model.</h2>
+    </aside>
+    <div class="story-copy">
+      <p>The original insight came from recognizing a structural analogy with deconvolution problems in spatial transcriptomics: a measured unit can contain mixtures of underlying biological components. The analogy is useful, but the physics are different. CT requires a model of partial-volume mixing, acquisition variability, contrast, and spatial dependence rather than a transcript-count model.</p>
+      <p>Comp-MRF therefore estimates tissue-composition posteriors using scan-adaptive mixture modeling, spatial regularization, nuisance-component handling, and within-scan reference tissues. The output is intended to remain interpretable at the level of biological composition rather than becoming an opaque image embedding.</p>
+    </div>
+  </div>
+</section>
+
+<section class="project-story-section">
+  <div class="shell story-grid">
+    <aside class="story-rail">
+      <p class="section-kicker">Biological validation</p>
+      <h2>A phenotype is useful only if it corresponds to biology outside the image.</h2>
+    </aside>
+    <div class="story-copy">
+      <p>I test HostBio-derived phenotypes against measurements that do not come from CT: longitudinal flow cytometry, cytokines, tumor genomics, treatment exposure, pathologic response, toxicity, survival, and other clinical outcomes.</p>
+      <p>Across independent lung-cancer cohorts, this program has connected thymic composition and broader host phenotypes to peripheral immune state, treatment toxicity, disease control, and host immunometabolic state. The same framework is being extended from thymus to muscle, adipose tissue, liver, adrenal, thyroid, and other host compartments.</p>
+    </div>
+  </div>
+</section>
+
+<section class="project-story-section alt-section">
+  <div class="shell story-grid">
+    <aside class="story-rail">
+      <p class="section-kicker">Why it matters</p>
+      <h2>The objective is not segmentation. It is a new measurement layer.</h2>
+    </aside>
+    <div class="story-copy">
+      <p>Automated segmentation makes cohort-scale analysis possible, but HostBio is aimed at a different problem: extracting quantitative host phenotypes from routine clinical imaging and determining when those phenotypes represent meaningful immune and tissue biology.</p>
+      <p>That distinction is central to how I think about computational biology. A model is most useful when its representation has a clear measurement interpretation, its uncertainty is visible, and its outputs can be challenged with orthogonal data.</p>
+    </div>
+  </div>
+</section>
+
+<section class="project-outputs-section">
+  <div class="shell">
+    <div class="section-head compact-head">
+      <div>
+        <p class="section-kicker">Selected outputs</p>
+        <h2>Related work</h2>
+      </div>
+    </div>
+    <ul class="output-list">
+      <li class="output-item"><p class="output-meta">Journal of Thoracic Oncology · 2026</p><p class="output-title"><a href="https://doi.org/10.1016/j.jtho.2026.103949">Thymic Composition Predicts Radiation Pneumonitis in Locally Advanced NSCLC</a></p></li>
+      <li class="output-item"><p class="output-meta">Shared first author · manuscript under review · 2026</p><p class="output-title">CT-Derived Thymic Involution Is Associated with a Peripheral CD8+ Inhibitory-Receptor Phenotype and Inferior Survival in Unresected Locally Advanced NSCLC</p></li>
+      <li class="output-item"><p class="output-meta">medRxiv · 2025</p><p class="output-title"><a href="https://doi.org/10.1101/2025.10.20.25338395">Thymus Composition, Disease Control, and Toxicity in Locally Advanced Lung Cancer</a></p></li>
+    </ul>
+  </div>
+</section>
