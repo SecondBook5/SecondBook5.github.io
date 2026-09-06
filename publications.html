@@ -3,18 +3,19 @@ layout: portfolio
 page_title: Publications
 nav: publications
 permalink: /publications/
-description: Publications, preprints, manuscripts, and scientific presentations by AJ Book.
+description: Peer-reviewed publications, preprints, manuscripts under review, and scientific presentations by AJ Book.
 ---
 
 <header class="page-header">
   <div class="shell">
-    <p class="eyebrow">Publications &amp; presentations</p>
-    <h1>Scientific record</h1>
-    <p class="page-lede">Peer-reviewed publications, preprints, manuscripts under review, and selected scientific presentations. My name is bolded within author lists.</p>
+    <p class="eyebrow">Scientific record</p>
+    <h1>Publications &amp; presentations</h1>
+    <p class="page-lede">Peer-reviewed papers, public preprints, manuscripts under review, and selected scientific presentations. <strong>Book AJ</strong> is emphasized in author lists.</p>
+    <p class="record-link"><a class="text-link" href="https://orcid.org/0009-0004-7058-7510">ORCID record →</a></p>
   </div>
 </header>
 
-<section class="section">
+<section class="section publications-section">
   <div class="shell">
     <div class="pub-group">
       <p class="section-kicker">Peer reviewed</p>
@@ -34,7 +35,7 @@ description: Publications, preprints, manuscripts, and scientific presentations 
 
     <div class="pub-group">
       <p class="section-kicker">Preprints</p>
-      <h2>Publicly available work</h2>
+      <h2>Publicly available manuscripts</h2>
       <ul class="publication-list">
         {% for paper in site.data.publications.papers %}
           {% if paper.conference contains 'medRxiv' %}
@@ -50,7 +51,7 @@ description: Publications, preprints, manuscripts, and scientific presentations 
 
     <div class="pub-group">
       <p class="section-kicker">In review</p>
-      <h2>Manuscripts</h2>
+      <h2>Manuscripts under review</h2>
       <ul class="publication-list">
         {% for paper in site.data.publications.papers %}
           {% if paper.conference contains 'Manuscript under review' %}
@@ -65,8 +66,8 @@ description: Publications, preprints, manuscripts, and scientific presentations 
     </div>
 
     <div class="pub-group">
-      <p class="section-kicker">Selected presentations</p>
-      <h2>Posters &amp; conference abstracts</h2>
+      <p class="section-kicker">Presentations</p>
+      <h2>Selected posters &amp; conference abstracts</h2>
       <ul class="publication-list">
         {% for item in site.data.data.oss.contributions %}
         <li class="publication-item">
