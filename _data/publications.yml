@@ -44,6 +44,12 @@ papers:
     authors: "Chaunzwa TL, Book AJ, Garomsa B, Meng YJ, Yang E, Krishnan G, Chidi A, Kim R, Ma J, Riely GJ, Huang J, Simone CB, Shaverdian N, Gomez DR."
     conference: "medRxiv. 2025. doi:10.1101/2025.10.20.25338395."
 
+  - type: preprint
+    title: "Mechanistic Modeling and Machine Learning Identifies Optimum Radiotherapy Schedules to Prevent Treatment-Induced Metastasis"
+    link: "https://www.biorxiv.org/content/10.1101/2025.07.02.662373v1.full"
+    authors: "Graser CJ, Zhou Z, Schürch M, Moorhead G, Chaunzwa TL, Book AJ, Dean J, Lin C, Dean JA, Gomez D, Kozono D, Lahav G, Michor F."
+    conference: "bioRxiv. 2025. doi:10.1101/2025.07.02.662373. Manuscript also under review."
+
   - type: under_review
     title: "CT-Derived Thymic Involution Is Associated with a Peripheral CD8+ Inhibitory-Receptor Phenotype and Inferior Survival in Unresected Locally Advanced NSCLC"
     link:
@@ -58,9 +64,9 @@ papers:
 
   - type: under_review
     title: "Mechanistic Modeling and Machine Learning Identifies Optimum Radiotherapy Schedules to Prevent Treatment-Induced Metastasis"
-    link:
+    link: "https://www.biorxiv.org/content/10.1101/2025.07.02.662373v1.full"
     authors: "Graser CJ, Zhou Z, Schürch M, Moorhead G, Chaunzwa TL, Book AJ, Dean J, Lin C, Dean JA, Gomez D, Kozono D, Lahav G, Michor F."
-    conference: "Manuscript under review, 2026."
+    conference: "Manuscript under review, 2026. Preprint: bioRxiv doi:10.1101/2025.07.02.662373."
 
   - type: in_preparation
     title: "CT-Derived Host Immuno-Metabolic Phenotyping Predicts Response to Neoadjuvant Chemoimmunotherapy in Resectable Locally Advanced NSCLC"
