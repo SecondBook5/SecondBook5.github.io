@@ -1,0 +1,120 @@
+---
+layout: portfolio
+page_title: Research
+nav: research
+permalink: /research/
+description: Research by AJ Book in quantitative imaging, radiobiology, systems immunology, regulatory biology, spatial transcriptomics, and multi-omics.
+---
+
+<header class="page-header">
+  <div class="shell">
+    <p class="eyebrow">Research</p>
+    <h1>Inferring biological state from incomplete measurements</h1>
+    <p class="page-lede">My work spans clinical imaging and molecular data, but the central problem is consistent: biological history is rarely observed directly. I develop and apply models that turn noisy measurements into testable representations of latent tissue, immune, and regulatory state.</p>
+  </div>
+</header>
+
+<section class="project-deepdive" id="hostbio">
+  <div class="shell project-grid">
+    <div class="project-copy">
+      <p class="section-kicker">Quantitative imaging · Host biology</p>
+      <h2>HostBio / Comp-MRF</h2>
+      <p class="project-subtitle">Using routine CT as a quantitative measurement of host tissue state</p>
+      <p>I conceived HostBio after recognizing that tissue-mixture problems in clinical imaging share useful structure with deconvolution problems I had encountered in spatial transcriptomics, while requiring a different measurement model. Comp-MRF treats partial-volume composition, spatial dependence, nuisance components, and within-scan reference tissues explicitly rather than reducing the thymus or other host compartments to a single thresholded volume.</p>
+
+      <h3>Why the problem matters</h3>
+      <p>Routine scans are abundant, longitudinal, and clinically embedded, but scanner settings, contrast, anatomy, and tissue mixing can obscure biology. The goal is not simply better segmentation. It is to recover phenotypes that remain interpretable enough to test against immune and clinical measurements.</p>
+
+      <h3>What I developed</h3>
+      <ul>
+        <li>A scan-adaptive probabilistic tissue-composition framework for routine CT.</li>
+        <li>Partial-volume mixture modeling with spatial regularization, nuisance-component handling, and within-scan calibration.</li>
+        <li>A clinical-research implementation adopted across MSK through MIM Development.</li>
+        <li>Extensions from thymic composition to multi-organ host phenotyping across muscle, adipose, liver, adrenal, thyroid, and additional compartments.</li>
+      </ul>
+
+      <h3>How I test biological meaning</h3>
+      <p>I integrate imaging-derived phenotypes with longitudinal flow cytometry, cytokine profiling, tumor genomics, treatment exposure, and outcomes. Across lung-cancer cohorts, this work has linked thymic involution to peripheral inhibitory-receptor phenotypes, treatment toxicity, disease control, and host immunometabolic states.</p>
+
+      <div class="tags">
+        <span class="tag">Probabilistic modeling</span>
+        <span class="tag">Quantitative CT</span>
+        <span class="tag">Radiobiology</span>
+        <span class="tag">Systems immunology</span>
+      </div>
+    </div>
+    <figure class="project-figure">
+      <img src="{{ '/assets/images/research/hostbio-compmrf-posterior-map.png' | relative_url }}" alt="Axial, coronal, and sagittal thoracic CT views showing voxel-level posterior estimates of thymic fat and parenchymal tissue composition">
+      <figcaption>Voxel-level posterior mapping of thymic tissue composition from routine thoracic CT.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="project-deepdive" id="stagebridge">
+  <div class="shell project-grid">
+    <div class="project-copy">
+      <p class="section-kicker">Spatial genomics · Regulatory dynamics</p>
+      <h2>StageBridge</h2>
+      <p class="project-subtitle">What can a static human tissue sample actually tell us about progression?</p>
+      <p>For my M.S. thesis in Bioinformatics at Johns Hopkins University, I developed StageBridge to study premalignant epithelial progression from cross-sectional spatial and single-nucleus transcriptomic data. Rather than treating progression as a generic pseudotime problem, I represent epithelial regulatory state together with local immune, stromal, extracellular-matrix, inflammatory, and spatial context.</p>
+
+      <h3>Regulatory representation</h3>
+      <p>The framework operates on transcription-factor and pathway activities and gene regulatory structure rather than relying only on raw expression coordinates. This makes the latent space more biologically interpretable and lets the model ask whether tissue context is associated with different regulatory transitions.</p>
+
+      <h3>Model criticism became part of the method</h3>
+      <p>An early context-neutral transport assumption looked plausible in an abstract latent benchmark but failed after projection into biological regulatory space. Prespecified recoverability testing dropped to a Tier-2 cosine of 0.27. I redesigned the coupling using conditional stratification, improving Tier-2 recovery to 0.84, and narrowed the estimand accordingly. The point was not to rescue a preferred model at any cost. It was to determine which claim the data could actually support.</p>
+
+      <h3>Current interpretation</h3>
+      <p>StageBridge is therefore framed as conditional regulatory transport from sparse cross-sectional observations, not as reconstruction of an individual's causal trajectory. I evaluate robustness with patient-held-out analyses, matched-context shuffles, degeneracy controls, and cross-disease testing.</p>
+
+      <div class="tags">
+        <span class="tag">Spatial transcriptomics</span>
+        <span class="tag">Single-nucleus RNA-seq</span>
+        <span class="tag">Gene regulatory networks</span>
+        <span class="tag">Optimal transport</span>
+      </div>
+      <a class="text-link" href="https://github.com/SecondBook5/crrt-ude">Public code →</a>
+    </div>
+    <figure class="project-figure">
+      <img src="{{ '/assets/images/research/stagebridge-spatial-progression.png' | relative_url }}" alt="Spatial transcriptomics panels showing pathological stage, CytoTRACE, and pseudotime in lung adenocarcinoma progression">
+      <figcaption>Spatial state structure used to study premalignant epithelial progression and regulatory transitions.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="project-deepdive" id="lymphedema">
+  <div class="shell project-grid">
+    <div class="project-copy">
+      <p class="section-kicker">Multi-omics · Chronic inflammation</p>
+      <h2>Secondary lymphedema</h2>
+      <p class="project-subtitle">Persistent tissue remodeling after inflammatory injury</p>
+      <p>In collaboration with the Mehrara laboratory at Memorial Sloan Kettering, I study how epithelial, stromal, immune, and lymphatic compartments remain altered after chronic inflammatory injury in secondary lymphedema.</p>
+
+      <h3>Computational scope</h3>
+      <ul>
+        <li>Paired-donor single-cell transcriptomics of normal and lymphedematous human skin.</li>
+        <li>Bulk RNA-seq of lymphatic injury and repair.</li>
+        <li>Label-free proteomics of healthy and diseased tissue.</li>
+        <li>Cross-cohort microbiome analysis with measurement-aware harmonization.</li>
+      </ul>
+
+      <h3>Why this work matters to my broader research program</h3>
+      <p>Lymphedema gives me a system in which biological memory is visible at multiple scales. The disease is not simply an acute inflammatory state. Tissue compartments remain remodeled after injury, raising the question of which regulatory programs stabilize those states and which measurements can distinguish persistent biology from technical or compositional artifacts.</p>
+
+      <h3>Public work</h3>
+      <p>Published studies have examined PAR2-associated epidermal remodeling and the broader omic architecture of secondary lymphedema. Ongoing analyses are described here only at the level that is already appropriate for public disclosure.</p>
+
+      <div class="tags">
+        <span class="tag">Single-cell RNA-seq</span>
+        <span class="tag">Bulk RNA-seq</span>
+        <span class="tag">Proteomics</span>
+        <span class="tag">Microbiome</span>
+      </div>
+      <a class="text-link" href="https://doi.org/10.1002/ctm2.70682">Published PAR2 study →</a>
+    </div>
+    <figure class="project-figure">
+      <img src="{{ '/assets/images/research/lymphedema-par2-published.png' | relative_url }}" alt="Published secondary lymphedema figure showing epidermal inflammatory remodeling and single-cell localization of PAR2 expression">
+      <figcaption>Epidermal inflammatory remodeling and cell-specific PAR2 biology in secondary lymphedema. Adapted from Park et al., Clinical and Translational Medicine (2026), CC BY 4.0.</figcaption>
+    </figure>
+  </div>
+</section>
