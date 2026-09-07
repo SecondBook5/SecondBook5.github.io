@@ -57,12 +57,6 @@ papers:
     conference: "Manuscript under review, 2026. *Shared first authorship."
 
   - type: under_review
-    title: "Critical Role of Skin Mast Cells in Secondary Lymphedema Pathology"
-    link:
-    authors: "Roberts A, Chen X, Book AJ, Ashokan G, Shin J, Park HJ, Bodapati DG, Pollack BL, Stull-Lane AR, Rubin J, Campbell A-C, Wagner BD, Pal S, Chaunzwa TL, Hespe GE, Barrio AV, Mehrara BJ, Kataru RP."
-    conference: "Manuscript under review, 2026."
-
-  - type: under_review
     title: "Mechanistic Modeling and Machine Learning Identifies Optimum Radiotherapy Schedules to Prevent Treatment-Induced Metastasis"
     link: "https://www.biorxiv.org/content/10.1101/2025.07.02.662373v1.full"
     authors: "Graser CJ, Zhou Z, Schürch M, Moorhead G, Chaunzwa TL, Book AJ, Dean J, Lin C, Dean JA, Gomez D, Kozono D, Lahav G, Michor F."
@@ -73,15 +67,3 @@ papers:
     link:
     authors: "Chaunzwa TL*, Yang E*, Book AJ*, Lee V, Krishnan G, Chitsike L, Amoako-Boadu K, Miller D, Xiong K, Meng J, Bott M, Schoenfeld A, Simone CB II, Gomez D, Chaft J, Shaverdian N."
     conference: "Manuscript in preparation, 2026. *Shared first authorship."
-
-  - type: in_preparation
-    title: "Capecitabine Impairs Lymphatic Endothelial Repair and Collecting-Vessel Function"
-    link:
-    authors: "Chen X, Book AJ, Roberts A, Shin J, Ashokan G, Sevilimedu V, Montagna G, Pal S, Hespe GE, Barrio AV, Mehrara BJ, Kataru RP."
-    conference: "Manuscript in preparation, 2026."
-
-  - type: in_preparation
-    title: "Dermal Backflow Correlates with Inflammatory Responses and Epidermal Changes in Secondary Lymphedema"
-    link:
-    authors: "Pal S, Brown S, Wagner BD, Book AJ, Clement C, Chen X, Campbell A-C, Shin J, Dayan JH, Coriddi M, Yoshimatsu H, Rochlin D, Santambrogio L, Hespe GE, Mehrara BJ, Kataru RP."
-    conference: "Manuscript in preparation, 2026."
