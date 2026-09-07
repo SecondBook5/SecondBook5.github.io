@@ -8,20 +8,23 @@ og_image: /assets/images/research/stagebridge-spatial-progression.png
 <section class="hero">
   <div class="shell hero-grid">
     <div>
-      <p class="eyebrow">Research Assistant · Memorial Sloan Kettering Cancer Center</p>
+      <p class="eyebrow">Computational &amp; Systems Biology</p>
       <h1>AJ Book</h1>
+      <p class="hero-role">Research Assistant, Memorial Sloan Kettering Cancer Center</p>
       <p class="hero-subtitle">
-        I work in computational and systems biology, using quantitative imaging, single-cell and spatial genomics,
-        and interpretable modeling to study persistent immune and tissue states. I am especially interested in how
-        inflammation, aging, and treatment history shape future cell states, and what can be inferred reliably from incomplete human data.
+        I study how inflammatory, age-associated, and treatment history shape immune and tissue states.
+        My work combines quantitative imaging, single-cell and spatial genomics, and interpretable modeling to recover biological state from sparse human data.
       </p>
-      <p class="hero-affiliation">M.S. Bioinformatics, Johns Hopkins University · B.A. Biochemistry, Yeshiva University</p>
+      <p class="hero-secondary">
+        At MSK, I develop imaging-derived host phenotypes and connect them to immune, genomic, treatment, and outcome data. My M.S. thesis at Johns Hopkins focused on regulatory progression from cross-sectional spatial and single-nucleus transcriptomics.
+      </p>
+      <p class="hero-affiliation">M.S. Bioinformatics, Johns Hopkins University (2026) · B.A. Biochemistry, Yeshiva University (2023)</p>
       <nav class="hero-links" aria-label="Research profile links">
-        <a class="button-link" href="{{ '/research/' | relative_url }}">Research</a>
-        <a class="button-link" href="{{ '/publications/' | relative_url }}">Publications</a>
         <a class="button-link" href="{{ '/cv/' | relative_url }}">CV</a>
         <a class="button-link" href="https://scholar.google.com/citations?user=yK6YIE4AAAAJ&hl=en">Google Scholar</a>
         <a class="button-link" href="https://github.com/SecondBook5">GitHub</a>
+        <a class="button-link" href="https://www.linkedin.com/in/aj-abraham-book/">LinkedIn</a>
+        <a class="button-link" href="mailto:ajbook12@gmail.com">Email</a>
       </nav>
     </div>
     <img class="hero-portrait" src="https://avatars.githubusercontent.com/u/42758438?v=4" alt="Portrait of AJ Book">
@@ -32,9 +35,9 @@ og_image: /assets/images/research/stagebridge-spatial-progression.png
   <div class="shell">
     <div class="section-head">
       <div>
-        <p class="section-kicker">Featured research</p>
-        <h2>Different measurements. The same inferential question.</h2>
-        <p class="section-intro">What latent biological state is hidden behind an imperfect observation, how can it be represented without losing interpretability, and what claims remain defensible after the model is stressed?</p>
+        <p class="section-kicker">Current work</p>
+        <h2>Selected research</h2>
+        <p class="section-intro">Three projects that best represent my current work in quantitative imaging, regulatory genomics, and systems biology.</p>
       </div>
       <a class="text-link" href="{{ '/research/' | relative_url }}">Research overview →</a>
     </div>
@@ -47,10 +50,8 @@ og_image: /assets/images/research/stagebridge-spatial-progression.png
       <div class="feature-copy">
         <p class="feature-role">Method development · MSK</p>
         <h3>HostBio / Comp-MRF</h3>
-        <p>I conceived and engineered HostBio to turn routine CT into an interpretable measurement of host tissue composition. Comp-MRF explicitly models partial-volume mixing, spatial dependence, nuisance components, and within-scan references rather than reducing the problem to thresholding or segmentation.</p>
-        <p>The framework is implemented for MSK clinical research through MIM Development and has been validated across 1,078 patients in four independent NSCLC cohorts, including randomized RTOG-0617, using immune, genomic, treatment, toxicity, response, and survival data.</p>
+        <p>I conceived and engineered HostBio, an interpretable probabilistic framework for recovering host-tissue composition from routine CT. The framework is implemented for MSK clinical research and has been evaluated across 1,078 patients in four independent NSCLC cohorts, including randomized RTOG-0617, using immune, genomic, treatment, toxicity, response, and survival data.</p>
         <p class="evidence-line">1,078 patients · 4 NSCLC cohorts · randomized trial data</p>
-        <p class="feature-meta">Quantitative CT · Probabilistic modeling · Systems immunology</p>
         <a class="text-link" href="{{ '/research/hostbio/' | relative_url }}">Explore HostBio →</a>
       </div>
     </article>
@@ -61,12 +62,10 @@ og_image: /assets/images/research/stagebridge-spatial-progression.png
         <figcaption>Spatial state structure used to study premalignant epithelial progression and regulatory transitions.</figcaption>
       </figure>
       <div class="feature-copy">
-        <p class="feature-role">Master's thesis · Johns Hopkins</p>
+        <p class="feature-role">M.S. thesis · Johns Hopkins</p>
         <h3>StageBridge</h3>
-        <p>StageBridge asks what aspects of progression can actually be inferred when human tissue is observed only cross-sectionally. I developed it around spatial and single-nucleus transcriptomics, transcription-factor activity, gene regulatory networks, and context-conditioned transport.</p>
-        <p>A hidden recoverability failure exposed an initially plausible transport assumption. Reformulating the model around conditional transport improved transition recoverability from 0.27 to 0.84, while external PanIN testing returned a calibrated null where the data did not support reliable transition structure.</p>
+        <p>I developed StageBridge to test what aspects of epithelial progression can be inferred from cross-sectional spatial and single-nucleus transcriptomics. A hidden recoverability failure led me to reformulate the model around conditional transport, improving transition recoverability from 0.27 to 0.84; external PanIN testing returned a calibrated null where the data did not support reliable transition structure.</p>
         <p class="evidence-line">Recoverability 0.27 → 0.84 · donor-held-out testing · calibrated external null</p>
-        <p class="feature-meta">Spatial transcriptomics · Regulatory networks · Optimal transport</p>
         <a class="text-link" href="{{ '/research/stagebridge/' | relative_url }}">Explore StageBridge →</a>
       </div>
     </article>
@@ -79,37 +78,11 @@ og_image: /assets/images/research/stagebridge-spatial-progression.png
       <div class="feature-copy">
         <p class="feature-role">Collaborative systems biology · MSK</p>
         <h3>Secondary lymphedema</h3>
-        <p>In collaboration with the Mehrara laboratory, I use human single-cell and bulk transcriptomics, proteomics, microbiome data, and orthogonal experimental measurements to study persistent epithelial, stromal, immune, and lymphatic remodeling after chronic injury.</p>
-        <p>The same work has become a test bed for measurement-aware analysis. Across more than 500 microbiome samples, harmonized classification showed that an apparent nearly two-fold richness difference was largely created by incompatible taxonomic processing rather than biology.</p>
-        <p class="evidence-line">State-aware single-cell analysis · &gt;500 microbiome samples · multimodal validation</p>
-        <p class="feature-meta">Single-cell RNA-seq · Proteomics · Multi-omics</p>
+        <p>In collaboration with the Mehrara laboratory, I analyze human single-cell and bulk transcriptomics, proteomics, microbiome data, and orthogonal experimental measurements to study persistent tissue remodeling after chronic injury. This work includes state-aware keratinocyte and mast-cell analyses and cross-cohort microbiome harmonization across more than 500 samples.</p>
+        <p class="evidence-line">Paired human tissue · 79,054-cell mast-cell atlas · &gt;500 microbiome samples</p>
         <a class="text-link" href="{{ '/research/lymphedema/' | relative_url }}">Explore lymphedema research →</a>
       </div>
     </article>
-  </div>
-</section>
-
-<section class="section approach-section">
-  <div class="shell">
-    <p class="section-kicker">Research approach</p>
-    <h2>The model is useful only if the inference is defensible.</h2>
-    <div class="approach-grid">
-      <div class="approach-item">
-        <span class="approach-number">01</span>
-        <h3>Separate biology from measurement.</h3>
-        <p>Ask how the observation was generated before interpreting the signal. Imaging intensity, transcript counts, and taxonomic profiles each distort biology differently.</p>
-      </div>
-      <div class="approach-item">
-        <span class="approach-number">02</span>
-        <h3>Transfer structure carefully.</h3>
-        <p>Reuse mathematical ideas across modalities when the underlying inverse problem is shared, but rebuild the measurement model when the physics or biology changes.</p>
-      </div>
-      <div class="approach-item">
-        <span class="approach-number">03</span>
-        <h3>Make limits part of the result.</h3>
-        <p>Test what is identifiable, stress assumptions, and narrow the claim when the data do not support the stronger interpretation.</p>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -118,9 +91,9 @@ og_image: /assets/images/research/stagebridge-spatial-progression.png
     <div class="section-head">
       <div>
         <p class="section-kicker">Selected outputs</p>
-        <h2>Recent research</h2>
+        <h2>Publications &amp; manuscripts</h2>
       </div>
-      <a class="text-link" href="{{ '/publications/' | relative_url }}">Full record →</a>
+      <a class="text-link" href="{{ '/publications/' | relative_url }}">Full publication record →</a>
     </div>
     <ul class="output-list">
       <li class="output-item">
@@ -132,8 +105,8 @@ og_image: /assets/images/research/stagebridge-spatial-progression.png
         <p class="output-title"><a href="https://doi.org/10.1016/j.jtho.2026.103949">Thymic Composition Predicts Radiation Pneumonitis in Locally Advanced NSCLC</a></p>
       </li>
       <li class="output-item">
-        <p class="output-meta">Johns Hopkins University · M.S. thesis · 2026</p>
-        <p class="output-title"><a href="{{ '/research/stagebridge/' | relative_url }}">StageBridge: Niche-Conditioned Regulatory Transport in Premalignant Epithelial Progression</a></p>
+        <p class="output-meta">bioRxiv preprint · manuscript under review</p>
+        <p class="output-title"><a href="https://www.biorxiv.org/content/10.1101/2025.07.02.662373v1.full">Mechanistic Modeling and Machine Learning Identifies Optimum Radiotherapy Schedules to Prevent Treatment-Induced Metastasis</a></p>
       </li>
       <li class="output-item">
         <p class="output-meta">Clinical and Translational Medicine · 2026</p>
