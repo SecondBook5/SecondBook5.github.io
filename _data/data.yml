@@ -125,18 +125,6 @@ projects:
       M.S. thesis defended at Johns Hopkins University; methodological and biological
       follow-up is ongoing.
 
-  - title: Secondary Lymphedema Multi-omics
-    link: "https://github.com/SecondBook5/lymphedema_keratinocyte_par2"
-    problem: >
-      Chronic lymphatic dysfunction produces persistent epithelial, stromal, and immune
-      remodeling whose regulatory programs remain incompletely resolved.
-    contribution: >
-      I analyze single-cell and bulk transcriptomic, proteomic, and microbiome data to
-      characterize inflammatory tissue states, regulatory programs, and cross-compartment
-      remodeling across secondary lymphedema studies.
-    status: >
-      Work includes peer-reviewed studies and ongoing multi-omic analyses and manuscripts.
-
 research-software:
   title: Research software
   intro: >
@@ -159,11 +147,6 @@ research-software:
     description: >
       Five-fold nnUNetv2 framework for scalable thymus segmentation, inference,
       quantitative evaluation, and multiplanar quality control in thoracic CT.
-  - title: Dysbioscope
-    link:
-    description: >
-      Reproducible microbiome workflow for raw 16S processing, taxonomic classification,
-      compositional inference, cross-cohort comparison, and visualization.
 
 education:
   title: Education
