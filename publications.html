@@ -10,9 +10,9 @@ description: Peer-reviewed research articles, reviews, preprints, manuscripts, p
   <div class="shell">
     <p class="eyebrow">Scientific record</p>
     <h1>Publications &amp; presentations</h1>
-    <p class="page-lede">A complete research record, separated by publication status so full articles, current manuscripts, and journal-indexed meeting abstracts remain easy to distinguish.</p>
+    <p class="page-lede">Peer-reviewed articles, public preprints, current manuscripts, journal-indexed meeting abstracts, and selected scientific presentations.</p>
     <p class="record-link"><a class="text-link" href="https://scholar.google.com/citations?user=yK6YIE4AAAAJ&hl=en">Google Scholar →</a> &nbsp;·&nbsp; <a class="text-link" href="https://orcid.org/0009-0004-7058-7510">ORCID →</a></p>
-    <p class="record-note"><strong>Book AJ</strong> is emphasized in author lists. An asterisk denotes shared first authorship where indicated.</p>
+    <p class="record-note"><strong>Book AJ</strong> is emphasized in author lists. An asterisk denotes shared first authorship where indicated. A manuscript that is both publicly available as a preprint and currently under review is intentionally listed in both sections.</p>
   </div>
 </header>
 
@@ -73,7 +73,7 @@ description: Peer-reviewed research articles, reviews, preprints, manuscripts, p
         {% for paper in site.data.publications.papers %}
           {% if paper.type == 'under_review' %}
           <li class="publication-item">
-            <p class="pub-title">{{ paper.title }}</p>
+            <p class="pub-title">{% if paper.link %}<a href="{{ paper.link }}">{{ paper.title }}</a>{% else %}{{ paper.title }}{% endif %}</p>
             <p class="pub-authors">{{ paper.authors | replace: 'Book AJ', '<strong>Book AJ</strong>' }}</p>
             <p class="pub-venue">{{ paper.conference }}</p>
           </li>
