@@ -8,3 +8,9 @@ stagebridge:
   link: "https://github.com/SecondBook5/crrt-ude"
   alt: "Three spatial transcriptomics panels showing pathological stage, spatial CytoTRACE, and spatial pseudotime for a lung adenocarcinoma sample."
   caption: "Spatial state structure used to study premalignant epithelial progression and regulatory transitions."
+
+lymphedema:
+  image: "/assets/images/research/lymphedema-par2-published.png"
+  link: "https://doi.org/10.1002/ctm2.70682"
+  alt: "Published secondary lymphedema figure showing epidermal inflammatory remodeling and cell-specific PAR2 biology."
+  caption: "Published findings on epidermal inflammatory remodeling and PAR2 biology in secondary lymphedema. Adapted from Park et al., Clinical and Translational Medicine (2026), CC BY 4.0."
